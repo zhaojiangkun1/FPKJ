@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="臻票云接口自动化测试">
+    <test name="臻票云接口自动化测试">
+        <groups>
+            <run>
+                <include name="开具电子票"/>
+                <include name="异常开票"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Case.Fpqqlsh"/>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="Config.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="获取一些应用信息">
+    <select id="getAppInfo" resultType="Bean.AppInfo" parameterType="String">
+        select * from appinfo where env = #{env};
+    </select>
+    <select id="getFpInfo" resultType="Bean.SaveFpInfo" parameterType="Integer">
+        select * from savefpinfo order by id desc limit 1;
+    </select>
+
+    <select id="getSaveAddr" resultType="Bean.SaveAddr" parameterType="String">
+        select * from saveaddr where env = #{env};
+    </select>
+
+    <update id="updateToken" parameterType="Bean.AppInfo">
+        update appinfo set updatetime = #{updateTime},accesstoken = #{accessToken} where env = #{env};
+    </update>
+
+    <insert id="insertfpinfo" parameterType="Bean.SaveFpInfo">
+        insert into savefpinfo(id,fpqqlsh,fplxdm,nsrsbh,updatetime) values (#{id},#{fpqqlsh},#{fplxdm},#{nsrsbh},#{updatetime})
+    </insert>
+
+
+</mapper>
