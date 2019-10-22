@@ -17,7 +17,7 @@ public class GetSaveAddr {
     public static String getSaveAddr(EnvNum num) throws IOException {
         SqlSession session = DataBaseUtil.getSqlSession();
         SaveAddr saveAddr = new SaveAddr();
-        if (num == EnvNum.PRO){
+        if (num == EnvNum.PRO || num == EnvNum.PRO1){
             saveAddr = session.selectOne("getSaveAddr","PRO");
         }
         if (num == EnvNum.DEV){
