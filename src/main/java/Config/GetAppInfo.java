@@ -28,6 +28,9 @@ public class GetAppInfo {
         if (num == EnvNum.TEST1){
             appInfo = sqlSession.selectOne("getAppInfo","TEST1");
         }
+        if (num == EnvNum.PRO1){
+            appInfo = sqlSession.selectOne("getAppInfo","PRO1");
+        }
         return appInfo;
     }
 

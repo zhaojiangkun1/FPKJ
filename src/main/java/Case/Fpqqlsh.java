@@ -32,9 +32,9 @@ public class Fpqqlsh {
         Assert.assertEquals(jsonObject,arrayObject);
     }
 
-    @Test(groups = {"开具电子票"},description = "发票请求流水号为1个数字")
+    @Test(groups = {"开具电子票"},description = "发票请求流水号为1个数字",priority = 4)
     public void fpqqlsh2() throws IOException, NoSuchAlgorithmException {
-        map.put("fpqqlsh","1");
+        map.put("fpqqlsh","0");
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println("本次请求的报文:"+file);
         jsonObject = ActualResult.resultCorrect();
@@ -147,7 +147,7 @@ public class Fpqqlsh {
         map.put("fpqqlsh","0");
         System.out.println("本次请求的报文:"+Java2XML.BuildXMLDoc(map));
         jsonObject = ActualResult.resultCorrect();
-        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map), EnvNum.TEST1);
+        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map), EnvNum.PRO1);
         System.out.println(result);
         JSONObject arrayObject = AcquireSubstr.analyzeString(result);
         Assert.assertEquals(jsonObject,arrayObject);
