@@ -11,7 +11,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 
 
-public class fplxdm {
+public class Fplxdm {
     JSONObject jsonObject = new JSONObject();
     HashMap<String,String> map = new HashMap();
 
@@ -19,6 +19,7 @@ public class fplxdm {
     @Test(groups = {"异常开票"},description = "发票类型为空")
     public void fplxdm() throws IOException,NoSuchAlgorithmException{
         map.put("fplxdm","");
+        map.put("fpqqlsh",UpdateFpqqlsh.numbersLetters());
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println("本次请求的报文为:"+file);
         jsonObject = ActualResult.resultCorrect();
