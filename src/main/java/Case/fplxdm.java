@@ -27,8 +27,15 @@ public class fplxdm {
         JSONObject arrayObject = AcquireSubstr.analyzeString(result);
         Assert.assertEquals(jsonObject,arrayObject);
     }
-    @Test(groups = {"正常开票"},description = "")
+    @Test(groups = {"正常开票"},description = "发票类型为026")
     public void  fplxdm1() throws IOException,NoSuchAlgorithmException{
-
+        map.put("fplxdm","026");
+        String file = Java2XML.BuildXMLDoc(map);
+        System.out.println("本次请求的报文为:"+file);
+        jsonObject = ActualResult.resultCorrect();
+        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
+        System.out.println(result);
+        JSONObject arrayObject = AcquireSubstr.analyzeString(result);
+        Assert.assertEquals(jsonObject,arrayObject);
     }
 }

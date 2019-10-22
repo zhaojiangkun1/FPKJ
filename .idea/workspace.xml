@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9403abc8-09e3-4bd9-a2bf-c4e6188d65c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Case/fplxdm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Case/jsbh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Case/shnsrsbh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FPKJ.iml" beforeDir="false" />
+    <list default="true" id="9403abc8-09e3-4bd9-a2bf-c4e6188d65c1" name="Default Changelist" comment="once commit">
+      <change afterPath="$PROJECT_DIR$/target/classes/Case/fplxdm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Case/jsbh.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/fplxdm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/fplxdm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/shnsrsbh.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,8 +27,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="152">
-                      <caret line="86" column="24" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="24" />
+                    <state relative-caret-position="159">
+                      <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
                       <folding>
                         <element signature="imports" expanded="true" />
                       </folding>
@@ -89,10 +88,10 @@
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/main/java/Case/jsbh.java">
+                <entry file="file://$PROJECT_DIR$/src/main/java/Case/Jsbh.java">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="164">
-                      <caret line="57" column="45" lean-forward="true" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
+                      <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
                       <folding>
                         <element signature="imports" expanded="true" />
                       </folding>
@@ -113,10 +112,10 @@
                 </entry>
               </file>
               <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/main/java/Case/fplxdm.java">
+                <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fplxdm.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="240">
-                      <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+                    <state relative-caret-position="177">
+                      <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
                       <folding>
                         <element signature="imports" expanded="true" />
                       </folding>
@@ -140,8 +139,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/main/java/Config/UpdateFpqqlsh.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="266">
-                      <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+                    <state relative-caret-position="1007">
+                      <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
                       <folding>
                         <element signature="imports" expanded="true" />
                       </folding>
@@ -211,7 +210,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
     <option name="y" value="-12" />
     <option name="width" value="1752" />
@@ -256,46 +255,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workspace" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Case" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workspace" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workspace" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workspace" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workspace" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
@@ -345,7 +305,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.jsbh.jsbh1">
+  <component name="RunManager" selected="TestNG.fplxdm.fplxdm1">
+    <configuration name="fplxdm.fplxdm1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FPKJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Case.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Case" />
+      <option name="MAIN_CLASS_NAME" value="Case.fplxdm" />
+      <option name="METHOD_NAME" value="fplxdm1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="jsbh.jsbh1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
@@ -418,38 +396,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="shnsrsbh.shnsrsbh2" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FPKJ" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Case.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.shnsrsbh" />
-      <option name="METHOD_NAME" value="shnsrsbh2" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="TestNG.shnsrsbh.shnsrsbh" />
-      <item itemvalue="TestNG.shnsrsbh.shnsrsbh2" />
       <item itemvalue="TestNG.shnsrsbh.jsbh" />
       <item itemvalue="TestNG.shnsrsbh.jsbh2" />
       <item itemvalue="TestNG.jsbh.jsbh1" />
+      <item itemvalue="TestNG.fplxdm.fplxdm1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.fplxdm.fplxdm1" />
         <item itemvalue="TestNG.jsbh.jsbh1" />
         <item itemvalue="TestNG.shnsrsbh.jsbh2" />
         <item itemvalue="TestNG.shnsrsbh.jsbh" />
         <item itemvalue="TestNG.shnsrsbh.shnsrsbh" />
-        <item itemvalue="TestNG.shnsrsbh.shnsrsbh2" />
       </list>
     </recent_temporary>
   </component>
@@ -473,14 +433,19 @@
       <workItem from="1571195960249" duration="8416000" />
       <workItem from="1571275979677" duration="6928000" />
       <workItem from="1571624969887" duration="19351000" />
-      <workItem from="1571707372287" duration="1889000" />
+      <workItem from="1571707372287" duration="2571000" />
     </task>
+    <task id="LOCAL-00001" summary="once commit">
+      <created>1571711509113</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571711509113</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Fpqqlsh_fpqqlsh2 - 2019.10.17 at 16h 22m 08s.xml">
-      <configuration name="Fpqqlsh.fpqqlsh2" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="Fpqqlsh_fpqqlsh11 - 2019.10.17 at 16h 33m 59s.xml">
       <configuration name="Fpqqlsh.fpqqlsh11" configurationId="TestNG" />
     </history-entry>
@@ -508,9 +473,12 @@
     <history-entry file="jsbh_jsbh1 - 2019.10.21 at 17h 47m 56s.xml">
       <configuration name="jsbh.jsbh1" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="fplxdm_fplxdm1 - 2019.10.22 at 10h 35m 56s.xml">
+      <configuration name="fplxdm.fplxdm1" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92194000" />
+    <option name="totallyTimeSpent" value="92876000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -523,9 +491,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.26758286" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26677445" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -533,8 +500,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.33570158" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7069272" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.33504274" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6803419" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -559,6 +526,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="once commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="once commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/dianzifapiao.xml" />
@@ -713,40 +684,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="86" column="24" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Model/Java2XML.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4047">
           <caret line="222" column="30" selection-start-line="222" selection-start-column="24" selection-end-line="222" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/jsbh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="57" column="45" lean-forward="true" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Config/UpdateFpqqlsh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -760,10 +701,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/fplxdm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Jsbh.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        <state relative-caret-position="164">
+          <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/UpdateFpqqlsh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1007">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fplxdm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
