@@ -1,5 +1,4 @@
 package Case;
-
 import Bean.*;
 import Config.UpdateFpqqlsh;
 import Model.*;
@@ -9,16 +8,13 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
-
-
-public class Fplxdm {
-
+public class Yhzcbs {
     JSONObject jsonObject = new JSONObject();
     HashMap<String,String> map = new HashMap();
 
-    @Test(groups = {"异常开票"},description = "发票类型为空")
-    public void fplxdm() throws IOException,NoSuchAlgorithmException{
-        map.put("fplxdm","");
+    @Test(groups = {"正常开票"},description = "优惠政策标识为空")
+    public void  yhzcbs() throws IOException,NoSuchAlgorithmException{
+        map.put("yhzcbs","");
         map.put("fpqqlsh",UpdateFpqqlsh.numbersLetters());
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println("本次请求的报文为:"+file);
@@ -28,9 +24,9 @@ public class Fplxdm {
         JSONObject arrayObject = AcquireSubstr.analyzeString(result);
         Assert.assertEquals(jsonObject,arrayObject);
     }
-    @Test(groups = {"正常开票"},description = "发票类型为026")
-    public void  fplxdm1() throws IOException,NoSuchAlgorithmException{
-        map.put("fplxdm","026");
+    @Test(groups = {"正常开票"},description = "优惠政策标识为0")
+    public void  yhzcbs1() throws IOException,NoSuchAlgorithmException{
+        map.put("yhzcbs","0");
         map.put("fpqqlsh",UpdateFpqqlsh.numbersLetters());
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println("本次请求的报文为:"+file);
@@ -40,9 +36,10 @@ public class Fplxdm {
         JSONObject arrayObject = AcquireSubstr.analyzeString(result);
         Assert.assertEquals(jsonObject,arrayObject);
     }
-    @Test(groups = {"异常开票"},description = "发票类型代码为0 2 6")
-    public void  fplxdm2() throws IOException,NoSuchAlgorithmException{
-        map.put("fplxdm","0 2 6");
+    @Test(groups = {"正常开票"},description = "优惠政策标识为1,增值税特殊管理为免税")
+    public void  yhzcbs2() throws IOException,NoSuchAlgorithmException{
+        map.put("yhzcbs","1");
+        map.put("zzstsgl","免税");
         map.put("fpqqlsh",UpdateFpqqlsh.numbersLetters());
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println("本次请求的报文为:"+file);
@@ -52,9 +49,10 @@ public class Fplxdm {
         JSONObject arrayObject = AcquireSubstr.analyzeString(result);
         Assert.assertEquals(jsonObject,arrayObject);
     }
-    @Test(groups = {"异常开票"},description = "发票类型代码为Null")
-    public void  fplxdm3() throws IOException,NoSuchAlgorithmException{
-        map.put("fplxdm",null);
+    @Test(groups = {"异常开票"},description = "优惠政策标识含特殊字符")
+    public void  yhzcbs3() throws IOException,NoSuchAlgorithmException{
+        //入库失败(业务单据明细表)
+        map.put("yhzcbs","$%$%$$%%$$%");
         map.put("fpqqlsh",UpdateFpqqlsh.numbersLetters());
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println("本次请求的报文为:"+file);

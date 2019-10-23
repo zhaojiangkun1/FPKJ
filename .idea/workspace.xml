@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9403abc8-09e3-4bd9-a2bf-c4e6188d65c1" name="Default Changelist" comment="once commit">
-      <change afterPath="$PROJECT_DIR$/target/classes/Case/fplxdm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Case/jsbh.class" afterDir="false" />
+    <list default="true" id="9403abc8-09e3-4bd9-a2bf-c4e6188d65c1" name="Default Changelist" comment="twice commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Bz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Case/De.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Fphxz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Ggxh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Ghdwdzdh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Ghdwmc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Ghdwsbh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Ghdwyhzh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Kplx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Spbm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Spmc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Yhlx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Yhzcbs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Zxbm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Case/fplxdm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/fplxdm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/shnsrsbh.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/jsbh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/jsbh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Java2XML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Java2XML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Case/fplxdm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/fplxdm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Case/jsbh.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/jsbh.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Java2XML.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Java2XML.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,18 +36,28 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.42279708">
+    <splitter split-orientation="horizontal" split-proportion="0.48100242">
       <split-first>
-        <splitter split-orientation="vertical" split-proportion="0.46536413">
+        <splitter split-orientation="vertical" split-proportion="0.3232682">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="true">
+              <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="159">
-                      <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+                    <state relative-caret-position="532">
+                      <caret line="97" column="72" selection-start-line="97" selection-start-column="72" selection-end-line="97" selection-end-column="72" />
                       <folding>
-                        <element signature="imports" expanded="true" />
+                        <element signature="method#fpqqlsh1#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh2#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh3#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh4#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh5#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh6#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh7#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh8#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh9#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh10#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh11#0;class#Fpqqlsh#0" />
                       </folding>
                     </state>
                   </provider>
@@ -45,20 +72,11 @@
                   </provider>
                 </entry>
               </file>
-              <file pinned="false" current-in-tab="false">
+              <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/main/java/Bean/EnvNum.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="95">
+                    <state relative-caret-position="14">
                       <caret line="5" selection-start-line="5" selection-end-line="5" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SQLMapper.xml">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="361">
-                      <caret line="19" selection-start-line="19" selection-end-line="19" />
                     </state>
                   </provider>
                 </entry>
@@ -68,12 +86,23 @@
           <split-second>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
+                <entry file="file://$PROJECT_DIR$/src/main/java/Model/ActualResult.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="19">
-                      <caret line="16" selection-start-line="16" selection-end-line="16" />
+                    <state relative-caret-position="290">
+                      <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/Case/Bz.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="176">
+                      <caret line="40" selection-start-line="40" selection-end-line="40" />
                       <folding>
-                        <element signature="imports" expanded="true" />
+                        <element signature="method#bz#0;class#Bz#0" />
+                        <element signature="method#bz1#0;class#Bz#0" />
+                        <element signature="method#bz2#0;class#Bz#0" />
                       </folding>
                     </state>
                   </provider>
@@ -90,11 +119,8 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/Case/Jsbh.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="164">
-                      <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
-                      <folding>
-                        <element signature="imports" expanded="true" />
-                      </folding>
+                    <state relative-caret-position="19">
+                      <caret line="1" selection-start-line="1" selection-end-line="15" selection-end-column="25" />
                     </state>
                   </provider>
                 </entry>
@@ -102,8 +128,39 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/Model/Java2XML.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="4047">
-                      <caret line="222" column="30" selection-start-line="222" selection-start-column="24" selection-end-line="222" selection-end-column="30" />
+                    <state relative-caret-position="1691">
+                      <caret line="89" column="58" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="58" />
+                      <folding>
+                        <element signature="imports" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/main/java/Case/Kplx.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="19">
+                      <caret line="1" selection-start-line="1" selection-end-line="9" selection-end-column="25" />
+                      <folding>
+                        <element signature="method#kplx#0;class#Kplx#0" />
+                        <element signature="method#kplx2#0;class#Kplx#0" />
+                        <element signature="method#kplx3#0;class#Kplx#0" />
+                        <element signature="method#kplx4#0;class#Kplx#0" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/Config/UpdateFpqqlsh.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="437">
+                      <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
                       <folding>
                         <element signature="imports" expanded="true" />
                       </folding>
@@ -114,35 +171,13 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fplxdm.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="177">
-                      <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+                    <state relative-caret-position="64">
+                      <caret line="67" selection-start-line="67" selection-end-line="67" />
                       <folding>
-                        <element signature="imports" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/main/java/Model/ActualResult.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="282">
-                      <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/main/java/Config/UpdateFpqqlsh.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="1007">
-                      <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-                      <folding>
-                        <element signature="imports" expanded="true" />
+                        <element signature="method#fplxdm#0;class#Fplxdm#0" />
+                        <element signature="method#fplxdm1#0;class#Fplxdm#0" />
+                        <element signature="method#fplxdm2#0;class#Fplxdm#0" />
+                        <element signature="method#fplxdm3#0;class#Fplxdm#0" />
                       </folding>
                     </state>
                   </provider>
@@ -162,6 +197,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>spsl</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -179,7 +219,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Config/DataBaseUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/Config/GetFpInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/Config/AddFpInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/Java2XML.java" />
         <option value="$PROJECT_DIR$/src/main/java/Config/ExtentTestNGIReporterListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/AcquireSubstr.java" />
         <option value="$PROJECT_DIR$/src/main/resources/sql.xml" />
@@ -200,6 +239,23 @@
         <option value="$PROJECT_DIR$/src/main/java/Case/shnsrsbh.java" />
         <option value="$PROJECT_DIR$/src/main/java/Case/jsbh.java" />
         <option value="$PROJECT_DIR$/src/main/java/Case/fplxdm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Jsbh.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Fplxdm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Yhlx.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Ghdwsbh.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Ghdwmc.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Ghdwdzdh.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Ghdwyhzh.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Fphxz.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Kplx.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Spmc.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Ggxh.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/Java2XML.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/De.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Spbm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Zxbm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Yhzcbs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Bz.java" />
       </list>
     </option>
   </component>
@@ -210,7 +266,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-12" />
     <option name="y" value="-12" />
     <option name="width" value="1752" />
@@ -222,8 +278,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -257,15 +311,12 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Case" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workspace" type="462c0819:PsiDirectoryNode" />
-              <item name="test-output" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -305,8 +356,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.fplxdm.fplxdm1">
-    <configuration name="fplxdm.fplxdm1" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Bz.bz2">
+    <configuration name="Bz.bz2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -315,8 +366,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.fplxdm" />
-      <option name="METHOD_NAME" value="fplxdm1" />
+      <option name="MAIN_CLASS_NAME" value="Case.Bz" />
+      <option name="METHOD_NAME" value="bz2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -324,7 +375,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="jsbh.jsbh1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Yhzcbs.yhzcbs" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -333,8 +384,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.jsbh" />
-      <option name="METHOD_NAME" value="jsbh1" />
+      <option name="MAIN_CLASS_NAME" value="Case.Yhzcbs" />
+      <option name="METHOD_NAME" value="yhzcbs" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -342,7 +393,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="shnsrsbh.jsbh" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Yhzcbs.yhzcbs2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -351,8 +402,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.shnsrsbh" />
-      <option name="METHOD_NAME" value="jsbh" />
+      <option name="MAIN_CLASS_NAME" value="Case.Yhzcbs" />
+      <option name="METHOD_NAME" value="yhzcbs2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -360,7 +411,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="shnsrsbh.jsbh2" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Yhzcbs.yhzcbs3" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -369,8 +420,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.shnsrsbh" />
-      <option name="METHOD_NAME" value="jsbh2" />
+      <option name="MAIN_CLASS_NAME" value="Case.Yhzcbs" />
+      <option name="METHOD_NAME" value="yhzcbs3" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -378,7 +429,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="shnsrsbh.shnsrsbh" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Zxbm.zxbm1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -387,8 +438,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.shnsrsbh" />
-      <option name="METHOD_NAME" value="shnsrsbh" />
+      <option name="MAIN_CLASS_NAME" value="Case.Zxbm" />
+      <option name="METHOD_NAME" value="zxbm1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -397,19 +448,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.shnsrsbh.shnsrsbh" />
-      <item itemvalue="TestNG.shnsrsbh.jsbh" />
-      <item itemvalue="TestNG.shnsrsbh.jsbh2" />
-      <item itemvalue="TestNG.jsbh.jsbh1" />
-      <item itemvalue="TestNG.fplxdm.fplxdm1" />
+      <item itemvalue="TestNG.Zxbm.zxbm1" />
+      <item itemvalue="TestNG.Yhzcbs.yhzcbs" />
+      <item itemvalue="TestNG.Yhzcbs.yhzcbs2" />
+      <item itemvalue="TestNG.Yhzcbs.yhzcbs3" />
+      <item itemvalue="TestNG.Bz.bz2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.fplxdm.fplxdm1" />
-        <item itemvalue="TestNG.jsbh.jsbh1" />
-        <item itemvalue="TestNG.shnsrsbh.jsbh2" />
-        <item itemvalue="TestNG.shnsrsbh.jsbh" />
-        <item itemvalue="TestNG.shnsrsbh.shnsrsbh" />
+        <item itemvalue="TestNG.Bz.bz2" />
+        <item itemvalue="TestNG.Yhzcbs.yhzcbs3" />
+        <item itemvalue="TestNG.Yhzcbs.yhzcbs2" />
+        <item itemvalue="TestNG.Yhzcbs.yhzcbs" />
+        <item itemvalue="TestNG.Zxbm.zxbm1" />
       </list>
     </recent_temporary>
   </component>
@@ -434,6 +485,9 @@
       <workItem from="1571275979677" duration="6928000" />
       <workItem from="1571624969887" duration="19351000" />
       <workItem from="1571707372287" duration="2571000" />
+      <workItem from="1571712368636" duration="12055000" />
+      <workItem from="1571737731118" duration="188000" />
+      <workItem from="1571794469026" duration="13516000" />
     </task>
     <task id="LOCAL-00001" summary="once commit">
       <created>1571711509113</created>
@@ -442,43 +496,50 @@
       <option name="project" value="LOCAL" />
       <updated>1571711509113</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="twice commit">
+      <created>1571712492931</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571712492931</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Fpqqlsh_fpqqlsh11 - 2019.10.17 at 16h 33m 59s.xml">
-      <configuration name="Fpqqlsh.fpqqlsh11" configurationId="TestNG" />
+    <history-entry file="Spbm_spbm - 2019.10.23 at 15h 29m 53s.xml">
+      <configuration name="Spbm.spbm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Fpqqlsh_fpqqlsh10 - 2019.10.17 at 16h 41m 55s.xml">
-      <configuration name="Fpqqlsh.fpqqlsh10" configurationId="TestNG" />
+    <history-entry file="Spbm_spbm - 2019.10.23 at 15h 32m 08s.xml">
+      <configuration name="Spbm.spbm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Fpqqlsh_fpqqlsh10 - 2019.10.17 at 16h 42m 14s.xml">
-      <configuration name="Fpqqlsh.fpqqlsh10" configurationId="TestNG" />
+    <history-entry file="Spbm_spbm - 2019.10.23 at 15h 36m 50s.xml">
+      <configuration name="Spbm.spbm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Fpqqlsh_fpqqlsh6 - 2019.10.21 at 10h 41m 46s.xml">
-      <configuration name="Fpqqlsh.fpqqlsh6" configurationId="TestNG" />
+    <history-entry file="Zxbm_zxbm - 2019.10.23 at 15h 42m 12s.xml">
+      <configuration name="Zxbm.zxbm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="shnsrsbh_shnsrsbh - 2019.10.21 at 11h 58m 57s.xml">
-      <configuration name="shnsrsbh.shnsrsbh" configurationId="TestNG" />
+    <history-entry file="Zxbm_zxbm1 - 2019.10.23 at 15h 44m 01s.xml">
+      <configuration name="Zxbm.zxbm1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="shnsrsbh_shnsrsbh2 - 2019.10.21 at 15h 16m 25s.xml">
-      <configuration name="shnsrsbh.shnsrsbh2" configurationId="TestNG" />
+    <history-entry file="Yhzcbs_yhzcbs - 2019.10.23 at 15h 51m 12s.xml">
+      <configuration name="Yhzcbs.yhzcbs" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="shnsrsbh_jsbh - 2019.10.21 at 15h 39m 24s.xml">
-      <configuration name="shnsrsbh.jsbh" configurationId="TestNG" />
+    <history-entry file="Yhzcbs_yhzcbs2 - 2019.10.23 at 15h 54m 09s.xml">
+      <configuration name="Yhzcbs.yhzcbs2" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="shnsrsbh_jsbh2 - 2019.10.21 at 16h 51m 45s.xml">
-      <configuration name="shnsrsbh.jsbh2" configurationId="TestNG" />
+    <history-entry file="Yhzcbs_yhzcbs2 - 2019.10.23 at 15h 57m 44s.xml">
+      <configuration name="Yhzcbs.yhzcbs2" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="jsbh_jsbh1 - 2019.10.21 at 17h 47m 56s.xml">
-      <configuration name="jsbh.jsbh1" configurationId="TestNG" />
+    <history-entry file="Yhzcbs_yhzcbs3 - 2019.10.23 at 16h 01m 21s.xml">
+      <configuration name="Yhzcbs.yhzcbs3" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="fplxdm_fplxdm1 - 2019.10.22 at 10h 35m 56s.xml">
-      <configuration name="fplxdm.fplxdm1" configurationId="TestNG" />
+    <history-entry file="Bz_bz2 - 2019.10.23 at 16h 08m 15s.xml">
+      <configuration name="Bz.bz2" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92876000" />
+    <option name="totallyTimeSpent" value="118698000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -491,8 +552,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26677445" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2708165" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -501,15 +563,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.33504274" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6803419" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.678508" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3285968" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32820514" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.31623933" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3285968" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -529,7 +591,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="once commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="once commit" />
+    <MESSAGE value="twice commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="twice commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/dianzifapiao.xml" />
@@ -598,13 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-986">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -653,15 +709,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/AcquireSubstr.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/shnsrsbh.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SQLMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        <state relative-caret-position="137">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/shnsrsbh.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="250" column="23" selection-start-line="250" selection-start-column="23" selection-end-line="250" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="97" column="72" selection-start-line="97" selection-start-column="72" selection-end-line="97" selection-end-column="72" />
+          <folding>
+            <element signature="method#fpqqlsh1#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh2#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh3#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh4#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh5#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh6#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh7#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh8#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh9#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh10#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh11#0;class#Fpqqlsh#0" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Bean/TestEnv.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -670,74 +751,243 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/EnvNum.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Yhlx.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="209">
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+          <folding>
+            <element signature="method#yhlx#0;class#Yhlx#0" />
+            <element signature="method#yhlx1#0;class#Yhlx#0" />
+            <element signature="method#yhlx2#0;class#Yhlx#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SQLMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ghdwsbh.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="437">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+          <folding>
+            <element signature="method#ghdwsbh#0;class#Ghdwsbh#0" />
+            <element signature="method#ghdwsbh1#0;class#Ghdwsbh#0" />
+            <element signature="method#ghdwsbh2#0;class#Ghdwsbh#0" />
+            <element signature="method#ghdwsbh3#0;class#Ghdwsbh#0" />
+            <element signature="method#ghdwsbh4#0;class#Ghdwsbh#0" />
+            <element signature="method#ghdwsbh5#0;class#Ghdwsbh#0" />
+            <element signature="method#ghdwsbh6#0;class#Ghdwsbh#0" />
+            <element signature="method#ghdwsbh7#0;class#Ghdwsbh#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ghdwmc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="method#ghdwmc#0;class#Ghdwmc#0" />
+            <element signature="method#ghdwmc1#0;class#Ghdwmc#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ghdwdzdh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+          <folding>
+            <element signature="method#ghdwdzdh#0;class#Ghdwdzdh#0" />
+            <element signature="method#ghdwdzdh1#0;class#Ghdwdzdh#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ghdwyhzh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding>
+            <element signature="method#ghdwyhzh#0;class#Ghdwyhzh#0" />
+            <element signature="method#ghdwyhzh1#0;class#Ghdwyhzh#0" />
+            <element signature="method#ghdwyhzh2#0;class#Ghdwyhzh#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fphxz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+          <folding>
+            <element signature="method#fphxz#0;class#Fphxz#0" />
+            <element signature="method#fphxz2#0;class#Fphxz#0" />
+            <element signature="method#fphxz3#0;class#Fphxz#0" />
+            <element signature="method#fphxz4#0;class#Fphxz#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Jsbh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/UpdateFpqqlsh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Spmc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="method#spmc#0;class#Spmc#0" />
+            <element signature="method#spmc1#0;class#Spmc#0" />
+            <element signature="method#spmc2#0;class#Spmc#0" />
+            <element signature="method#spmc3#0;class#Spmc#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/AcquireSubstr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fplxdm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="method#fplxdm#0;class#Fplxdm#0" />
+            <element signature="method#fplxdm1#0;class#Fplxdm#0" />
+            <element signature="method#fplxdm2#0;class#Fplxdm#0" />
+            <element signature="method#fplxdm3#0;class#Fplxdm#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1104">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/De.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+          <folding>
+            <element signature="method#de#0;class#De#0" />
+            <element signature="method#de1#0;class#De#0" />
+            <element signature="method#de2#0;class#De#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Model/Java2XML.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4047">
-          <caret line="222" column="30" selection-start-line="222" selection-start-column="24" selection-end-line="222" selection-end-column="30" />
+        <state relative-caret-position="1691">
+          <caret line="89" column="58" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Spbm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="method#spbm#0;class#Spbm#0" />
+            <element signature="method#spbm#0;class#Spbm#0" />
+            <element signature="method#spbm#0;class#Spbm#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Zxbm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="method#zxbm#0;class#Zxbm#0" />
+            <element signature="method#zxbm1#0;class#Zxbm#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Yhzcbs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="64" column="1" lean-forward="true" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+          <folding>
+            <element signature="method#yhzcbs#0;class#Yhzcbs#0" />
+            <element signature="method#yhzcbs1#0;class#Yhzcbs#0" />
+            <element signature="method#yhzcbs2#0;class#Yhzcbs#0" />
+            <element signature="method#yhzcbs3#0;class#Yhzcbs#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/EnvNum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Kplx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="method#kplx#0;class#Kplx#0" />
+            <element signature="method#kplx2#0;class#Kplx#0" />
+            <element signature="method#kplx3#0;class#Kplx#0" />
+            <element signature="method#kplx4#0;class#Kplx#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Bz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="method#bz#0;class#Bz#0" />
+            <element signature="method#bz1#0;class#Bz#0" />
+            <element signature="method#bz2#0;class#Bz#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ggxh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="24" selection-end-column="52" />
+          <folding>
+            <element signature="method#ggxh1#0;class#Ggxh#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Model/ActualResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
+        <state relative-caret-position="290">
           <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Jsbh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Config/UpdateFpqqlsh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fplxdm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

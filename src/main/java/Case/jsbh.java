@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 
-public class jsbh {
+public class Jsbh {
 
     JSONObject jsonObject = new JSONObject();
     HashMap<String,String> map = new HashMap();
@@ -45,6 +45,7 @@ public class jsbh {
     @Test(groups = {"异常开票"},description = "机身编号为null")
     public void jsbh2() throws IOException,NoSuchAlgorithmException{
         map.put("jsbh",null);
+        map.put("fpqqlsh",UpdateFpqqlsh.numbersLetters());
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println("本次请求的报文为:"+file);
         jsonObject = ActualResult.resultCorrect();
