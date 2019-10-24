@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9403abc8-09e3-4bd9-a2bf-c4e6188d65c1" name="Default Changelist" comment="">
-<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Skr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Case/fplxdm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/fplxdm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Config/Md5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Config/Md5.java" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Skr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,268 +19,71 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="141" column="52" lean-forward="true" selection-start-line="141" selection-start-column="52" selection-end-line="141" selection-end-column="52" />
+            <state relative-caret-position="285">
+              <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Case/fplxdm.java">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="114">
+              <caret line="6" column="81" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Config/Md5.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Case/Jsbh.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="-726">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Config/DataBaseUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ghdwmc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-475">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Case/shnsrsbh.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Case/jsbh.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ggxh.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="57" column="45" lean-forward="true" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="38">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Config/AddFpInfo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fphxz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-29">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="53">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Bean/AppInfo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fplxdm.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="7" selection-start-line="7" selection-end-line="15" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Bean/EnvNum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="21" />
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-=======
-    <splitter split-orientation="horizontal" split-proportion="0.48100242">
-      <split-first>
-        <splitter split-orientation="vertical" split-proportion="0.3232682">
-          <split-first>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="532">
-                      <caret line="97" column="72" selection-start-line="97" selection-start-column="72" selection-end-line="97" selection-end-column="72" />
-                      <folding>
-                        <element signature="method#fpqqlsh1#0;class#Fpqqlsh#0" />
-                        <element signature="method#fpqqlsh2#0;class#Fpqqlsh#0" />
-                        <element signature="method#fpqqlsh3#0;class#Fpqqlsh#0" />
-                        <element signature="method#fpqqlsh4#0;class#Fpqqlsh#0" />
-                        <element signature="method#fpqqlsh5#0;class#Fpqqlsh#0" />
-                        <element signature="method#fpqqlsh6#0;class#Fpqqlsh#0" />
-                        <element signature="method#fpqqlsh7#0;class#Fpqqlsh#0" />
-                        <element signature="method#fpqqlsh8#0;class#Fpqqlsh#0" />
-                        <element signature="method#fpqqlsh9#0;class#Fpqqlsh#0" />
-                        <element signature="method#fpqqlsh10#0;class#Fpqqlsh#0" />
-                        <element signature="method#fpqqlsh11#0;class#Fpqqlsh#0" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/main/java/Bean/TestEnv.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="57">
-                      <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/main/java/Bean/EnvNum.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="19">
-                      <caret line="5" selection-start-line="5" selection-end-line="5" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/main/java/Model/ActualResult.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="171">
-                      <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/main/java/Case/Bz.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="228">
-                      <caret line="40" selection-start-line="40" selection-end-line="40" />
-                      <folding>
-                        <element signature="method#bz#0;class#Bz#0" />
-                        <element signature="method#bz1#0;class#Bz#0" />
-                        <element signature="method#bz2#0;class#Bz#0" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/main/java/Case/Skr.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="133">
-                      <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-                      <folding>
-                        <element signature="method#skr#0;class#Skr#0" />
-                        <element signature="method#skr1#0;class#Skr#0" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
-      </split-first>
-      <split-second>
-        <splitter split-orientation="vertical" split-proportion="0.589698">
-          <split-first>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/main/java/Case/Jsbh.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="19">
-                      <caret line="1" selection-start-line="1" selection-end-line="15" selection-end-column="25" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/main/java/Model/Java2XML.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="1520">
-                      <caret line="89" column="58" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="58" />
-                      <folding>
-                        <element signature="imports" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/main/java/Case/Kplx.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="19">
-                      <caret line="1" selection-start-line="1" selection-end-line="9" selection-end-column="25" />
-                      <folding>
-                        <element signature="method#kplx#0;class#Kplx#0" />
-                        <element signature="method#kplx2#0;class#Kplx#0" />
-                        <element signature="method#kplx3#0;class#Kplx#0" />
-                        <element signature="method#kplx4#0;class#Kplx#0" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/main/java/Config/UpdateFpqqlsh.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="437">
-                      <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-                      <folding>
-                        <element signature="imports" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fplxdm.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="65">
-                      <caret line="67" selection-start-line="67" selection-end-line="67" />
-                      <folding>
-                        <element signature="method#fplxdm#0;class#Fplxdm#0" />
-                        <element signature="method#fplxdm1#0;class#Fplxdm#0" />
-                        <element signature="method#fplxdm2#0;class#Fplxdm#0" />
-                        <element signature="method#fplxdm3#0;class#Fplxdm#0" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
-      </split-second>
-    </splitter>
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -371,16 +170,13 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-<<<<<<< HEAD
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="480" />
     <option name="height" value="515" />
-=======
     <option name="x" value="949" />
     <option name="width" value="980" />
     <option name="height" value="1031" />
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -388,10 +184,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< HEAD
+      <pane id="PackagesPane" />
       <pane id="Scope" />
-=======
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -402,6 +196,11 @@
             <path>
               <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -418,19 +217,13 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-<<<<<<< HEAD
               <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workspace" type="462c0819:PsiDirectoryNode" />
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Case" type="462c0819:PsiDirectoryNode" />
             </path>
-<<<<<<< HEAD
             <path>
               <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
@@ -459,17 +252,10 @@
               <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
               <item name="test-output" type="462c0819:PsiDirectoryNode" />
             </path>
-=======
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-<<<<<<< HEAD
-=======
-      <pane id="Scope" />
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -509,13 +295,8 @@
       </list>
     </option>
   </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="TestNG.jsbh.jsbh1">
-    <configuration name="jsbh.jsbh1" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-=======
   <component name="RunManager" selected="TestNG.Skr.skr1">
-    <configuration name="Bz.bz2" type="TestNG" temporary="true" nameIsGenerated="true">
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
+    <configuration name="Bz.bz2" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -533,11 +314,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-    <configuration name="shnsrsbh.jsbh" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-=======
-    <configuration name="Skr.skr" type="TestNG" temporary="true" nameIsGenerated="true">
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
+    <configuration name="Skr.skr" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -555,11 +332,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-    <configuration name="shnsrsbh.jsbh2" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-=======
-    <configuration name="Skr.skr1" type="TestNG" temporary="true" nameIsGenerated="true">
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
+    <configuration name="Skr.skr1" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -577,11 +350,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-    <configuration name="shnsrsbh.shnsrsbh" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-=======
-    <configuration name="Yhzcbs.yhzcbs2" type="TestNG" temporary="true" nameIsGenerated="true">
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
+    <configuration name="Yhzcbs.yhzcbs2" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -599,11 +368,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-    <configuration name="shnsrsbh.shnsrsbh2" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-=======
-    <configuration name="Yhzcbs.yhzcbs3" type="TestNG" temporary="true" nameIsGenerated="true">
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
+    <configuration name="Yhzcbs.yhzcbs3" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -721,11 +486,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="93052000" />
-=======
-    <option name="totallyTimeSpent" value="121673000" />
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
+    <option name="totallyTimeSpent" value="121689000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -737,16 +498,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.288874" />
-=======
-    <frame x="633" y="0" width="653" height="687" extended-state="0" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.56302524" />
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2969169" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -754,26 +508,16 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Find" order="1" weight="0.5744681" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7069272" />
-=======
       <window_info anchor="bottom" id="Find" order="1" weight="0.33504274" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.678508" />
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7069272" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-<<<<<<< HEAD
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2822695" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-=======
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33153152" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.6269504" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.31623933" />
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3285968" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -820,6 +564,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="once commit" />
@@ -915,9 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -935,7 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/shnsrsbh.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SQLMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -954,11 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-          <folding>
-            <element signature="method#yhlx#0;class#Yhlx#0" />
-            <element signature="method#yhlx1#0;class#Yhlx#0" />
-            <element signature="method#yhlx2#0;class#Yhlx#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -966,27 +704,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="117" selection-start-line="117" selection-end-line="117" />
-          <folding>
-            <element signature="method#ghdwsbh#0;class#Ghdwsbh#0" />
-            <element signature="method#ghdwsbh1#0;class#Ghdwsbh#0" />
-            <element signature="method#ghdwsbh2#0;class#Ghdwsbh#0" />
-            <element signature="method#ghdwsbh3#0;class#Ghdwsbh#0" />
-            <element signature="method#ghdwsbh4#0;class#Ghdwsbh#0" />
-            <element signature="method#ghdwsbh5#0;class#Ghdwsbh#0" />
-            <element signature="method#ghdwsbh6#0;class#Ghdwsbh#0" />
-            <element signature="method#ghdwsbh7#0;class#Ghdwsbh#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ghdwmc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="method#ghdwmc#0;class#Ghdwmc#0" />
-            <element signature="method#ghdwmc1#0;class#Ghdwmc#0" />
-          </folding>
+        <state relative-caret-position="-475">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -994,10 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
-          <folding>
-            <element signature="method#ghdwdzdh#0;class#Ghdwdzdh#0" />
-            <element signature="method#ghdwdzdh1#0;class#Ghdwdzdh#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1005,24 +725,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-          <folding>
-            <element signature="method#ghdwyhzh#0;class#Ghdwyhzh#0" />
-            <element signature="method#ghdwyhzh1#0;class#Ghdwyhzh#0" />
-            <element signature="method#ghdwyhzh2#0;class#Ghdwyhzh#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fphxz.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
-          <folding>
-            <element signature="method#fphxz#0;class#Fphxz#0" />
-            <element signature="method#fphxz2#0;class#Fphxz#0" />
-            <element signature="method#fphxz3#0;class#Fphxz#0" />
-            <element signature="method#fphxz4#0;class#Fphxz#0" />
-          </folding>
+        <state relative-caret-position="53">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1030,12 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="method#spmc#0;class#Spmc#0" />
-            <element signature="method#spmc1#0;class#Spmc#0" />
-            <element signature="method#spmc2#0;class#Spmc#0" />
-            <element signature="method#spmc3#0;class#Spmc#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1046,8 +749,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-=======
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1104">
@@ -1059,11 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
-          <folding>
-            <element signature="method#de#0;class#De#0" />
-            <element signature="method#de1#0;class#De#0" />
-            <element signature="method#de2#0;class#De#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1071,11 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="method#spbm#0;class#Spbm#0" />
-            <element signature="method#spbm#0;class#Spbm#0" />
-            <element signature="method#spbm#0;class#Spbm#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1083,10 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="method#zxbm#0;class#Zxbm#0" />
-            <element signature="method#zxbm1#0;class#Zxbm#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1094,46 +781,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="64" column="1" lean-forward="true" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
-          <folding>
-            <element signature="method#yhzcbs#0;class#Yhzcbs#0" />
-            <element signature="method#yhzcbs1#0;class#Yhzcbs#0" />
-            <element signature="method#yhzcbs2#0;class#Yhzcbs#0" />
-            <element signature="method#yhzcbs3#0;class#Yhzcbs#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ggxh.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="24" selection-end-column="52" />
-          <folding>
-            <element signature="method#ggxh1#0;class#Ggxh#0" />
-          </folding>
+        <state relative-caret-position="38">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="97" column="72" selection-start-line="97" selection-start-column="72" selection-end-line="97" selection-end-column="72" />
-          <folding>
-            <element signature="method#fpqqlsh1#0;class#Fpqqlsh#0" />
-            <element signature="method#fpqqlsh2#0;class#Fpqqlsh#0" />
-            <element signature="method#fpqqlsh3#0;class#Fpqqlsh#0" />
-            <element signature="method#fpqqlsh4#0;class#Fpqqlsh#0" />
-            <element signature="method#fpqqlsh5#0;class#Fpqqlsh#0" />
-            <element signature="method#fpqqlsh6#0;class#Fpqqlsh#0" />
-            <element signature="method#fpqqlsh7#0;class#Fpqqlsh#0" />
-            <element signature="method#fpqqlsh8#0;class#Fpqqlsh#0" />
-            <element signature="method#fpqqlsh9#0;class#Fpqqlsh#0" />
-            <element signature="method#fpqqlsh10#0;class#Fpqqlsh#0" />
-            <element signature="method#fpqqlsh11#0;class#Fpqqlsh#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
     <entry file="file://$PROJECT_DIR$/src/main/java/Bean/TestEnv.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -1143,61 +800,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Bean/EnvNum.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="57">
           <caret line="3" column="21" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="21" />
-=======
-        <state relative-caret-position="19">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/ActualResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Java2XML.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4047">
-          <caret line="222" column="30" selection-start-line="222" selection-start-column="24" selection-end-line="222" selection-end-column="30" />
-=======
     <entry file="file://$PROJECT_DIR$/src/main/java/Case/Bz.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
-          <folding>
-            <element signature="method#bz#0;class#Bz#0" />
-            <element signature="method#bz1#0;class#Bz#0" />
-            <element signature="method#bz2#0;class#Bz#0" />
-          </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/Config/UpdateFpqqlsh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-=======
     <entry file="file://$PROJECT_DIR$/src/main/java/Case/Skr.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
-          <folding>
-            <element signature="method#skr#0;class#Skr#0" />
-            <element signature="method#skr1#0;class#Skr#0" />
-          </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/java/Model/ActualResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -1205,13 +826,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/jsbh.java">
-=======
     <entry file="file://$PROJECT_DIR$/src/main/java/Case/Jsbh.java">
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="-726">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1225,14 +843,11 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/shnsrsbh.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Shnsrsbh.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="141" column="52" lean-forward="true" selection-start-line="141" selection-start-column="52" selection-end-line="141" selection-end-column="52" />
+        <state relative-caret-position="285">
+          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1240,17 +855,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
           <caret line="45" selection-start-line="45" selection-end-line="45" />
-=======
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Case/Kplx.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" selection-start-line="1" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="method#kplx#0;class#Kplx#0" />
-            <element signature="method#kplx2#0;class#Kplx#0" />
-            <element signature="method#kplx3#0;class#Kplx#0" />
-            <element signature="method#kplx4#0;class#Kplx#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1258,28 +869,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fplxdm.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="323">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-=======
-        <state relative-caret-position="65">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
->>>>>>> d6f4e005a9a9aaf496c09a8df1a12cea0d2073a0
-          <folding>
-            <element signature="method#fplxdm#0;class#Fplxdm#0" />
-            <element signature="method#fplxdm1#0;class#Fplxdm#0" />
-            <element signature="method#fplxdm2#0;class#Fplxdm#0" />
-            <element signature="method#fplxdm3#0;class#Fplxdm#0" />
-          </folding>
+        <state relative-caret-position="95">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
