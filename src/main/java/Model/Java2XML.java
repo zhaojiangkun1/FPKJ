@@ -123,7 +123,7 @@ public class Java2XML {
         input.addContent(yfphm.setText(""));
 
         Element sprsjh = new Element("sprsjh");
-        input.addContent(sprsjh.setText("zhaokun@shuzutech.com"));
+        input.addContent(sprsjh.setText("dongfu@shuzutech.com"));
 
         Iterator entries = map.entrySet().iterator();
         while (entries.hasNext()){
