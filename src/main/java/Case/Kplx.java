@@ -9,8 +9,6 @@ import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 
-
-
 public class Kplx {
     JSONObject jsonObject = new JSONObject();
     HashMap<String,String> map = new HashMap();

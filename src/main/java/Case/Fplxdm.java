@@ -12,7 +12,6 @@ import java.util.HashMap;
 
 
 public class Fplxdm {
-
     JSONObject jsonObject = new JSONObject();
     HashMap<String,String> map = new HashMap();
 
