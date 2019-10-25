@@ -25,7 +25,7 @@ public class Kplx {
         JSONObject arrayObject = AcquireSubstr.analyzeString(result);
         Assert.assertEquals(jsonObject,arrayObject);
     }
-    @Test(groups = {"正常开票"},description = "开票类型为0")
+    @Test(groups = {"正常开票"},description = "开票类型为0，正数发票")
     public void  kplx2() throws IOException,NoSuchAlgorithmException{
         //正数发票开具
         map.put("kplx","0");
@@ -38,7 +38,7 @@ public class Kplx {
         JSONObject arrayObject = AcquireSubstr.analyzeString(result);
         Assert.assertEquals(jsonObject,arrayObject);
     }
-    @Test(groups = {"正常开票"},description = "开票类型为1")
+    @Test(groups = {"正常开票"},description = "开票类型为1，开负数电子发票")
     public void  kplx3() throws IOException,NoSuchAlgorithmException{
         //负数开票：需要原发票代码,发票号码
         map.put("kplx","1");
@@ -62,5 +62,17 @@ public class Kplx {
         System.out.println(result);
         JSONObject arrayObject = AcquireSubstr.analyzeString(result);
         Assert.assertEquals(jsonObject,arrayObject);
+    }
+    @Test(groups = {"正常开票"},description = "开票类型为1，开增值税普通发票")
+    public void  kplx5() throws IOException,NoSuchAlgorithmException{
+    
+    }
+    @Test(groups = {"正常开票"},description = "开票类型为1，开增值税卷式发票")
+    public void  kplx6() throws IOException,NoSuchAlgorithmException{
+
+    }
+    @Test(groups = {"正常开票"},description = "开票类型为1，冲红增值专票")
+    public void  kplx7() throws IOException,NoSuchAlgorithmException{
+
     }
 }

@@ -23,6 +23,7 @@ public class Jsbh {
     @Test(groups = {"正常开票"},description = "机身编号为空")
     public void jsbh() throws IOException,NoSuchAlgorithmException{
         map.put("jsbh","");
+        map.put("fpqqlsh",UpdateFpqqlsh.numbersLetters());
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println("本次请求的报文为:"+file);
         jsonObject = ActualResult.resultCorrect();
@@ -34,6 +35,7 @@ public class Jsbh {
     @Test(groups = {"正常开票"},description = "纳税人标号~~开票终端编号")
     public void jsbh1() throws IOException,NoSuchAlgorithmException{
         map.put("jbbh","110101201707010037~~A10016420000196");
+        map.put("fpqqlsh",UpdateFpqqlsh.numbersLetters());
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println("本次请求的报文为;"+file);
         jsonObject = ActualResult.resultCorrect();
@@ -58,6 +60,7 @@ public class Jsbh {
     public void jsbh3() throws IOException,NoSuchAlgorithmException{
         //110101201707010037~~A10016420000196
         map.put("jsbh","A10016420000196~~110101201707010037");
+        map.put("fpqqlsh",UpdateFpqqlsh.numbersLetters());
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println("本次请求的报文为:"+file);
         jsonObject = ActualResult.resultCorrect();
