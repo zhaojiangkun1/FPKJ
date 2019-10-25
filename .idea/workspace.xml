@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ad659f1-25f6-4b01-acf8-690446417eea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Fhr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Kpr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Sprsjh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Yfpdm.java" afterDir="false" />
+    <list default="true" id="9403abc8-09e3-4bd9-a2bf-c4e6188d65c1" name="Default Changelist" comment="">
+<<<<<<<<< Temporary merge branch 1
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FPKJ" beforeDir="false" afterPath="$PROJECT_DIR$/FPKJ" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FPKJ/src/main/java/Case/Kplx.java" beforeDir="false" afterPath="$PROJECT_DIR$/FPKJ/src/main/java/Case/Kplx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FPKJ/src/main/java/Case/Skr.java" beforeDir="false" afterPath="$PROJECT_DIR$/FPKJ/src/main/java/Case/Skr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Fplxdm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Fplxdm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Ghdwdzdh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Ghdwdzdh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Ghdwmc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Ghdwmc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Jsbh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Jsbh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Kplx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Kplx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Yhlx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Yhlx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/ActualResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/ActualResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/Ghdwdzdh.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Ghdwdzdh.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/Ghdwmc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Ghdwmc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/Kplx.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Kplx.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/Yhlx.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Yhlx.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/fplxdm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/fplxdm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/jsbh.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/jsbh.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Config/Md5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Config/Md5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/ActualResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/ActualResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/fplxdm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/fplxdm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Config/Md5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Config/Md5.java" afterDir="false" />
+=========
+      <change afterPath="$PROJECT_DIR$/src/main/java/Case/Skr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>>>> Temporary merge branch 2
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,81 +23,281 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
+<<<<<<<<< Temporary merge branch 1
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Model/ActualResult.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-              <folding>
-                <element signature="method#parametersError#0;class#ActualResult#0" />
-                <element signature="method#resultCorrect#0;class#ActualResult#0" />
-                <element signature="method#resultCorrect1#0;class#ActualResult#0" />
-                <element signature="method#resultCorrect2#0;class#ActualResult#0" />
-                <element signature="method#resultCorrect3#0;class#ActualResult#0" />
-                <element signature="method#re#0;class#ActualResult#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ghdwmc.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-              <folding>
-                <element signature="method#ghdwmc#0;class#Ghdwmc#0" />
-                <element signature="method#ghdwmc1#0;class#Ghdwmc#0" />
-                <element signature="method#ghdwmc2#0;class#Ghdwmc#0" />
-                <element signature="method#ghdwmc3#0;class#Ghdwmc#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Case/Spbm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="method#spbm#0;class#Spbm#0" />
-                <element signature="method#spbm1#0;class#Spbm#0" />
-                <element signature="method#spbm2#0;class#Spbm#0" />
-              </folding>
+            <state relative-caret-position="160">
+              <caret line="141" column="52" lean-forward="true" selection-start-line="141" selection-start-column="52" selection-end-line="141" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Case/Spmc.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Case/fplxdm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="323">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
               <folding>
-                <element signature="method#spmc#0;class#Spmc#0" />
-                <element signature="method#spmc1#0;class#Spmc#0" />
-                <element signature="method#spmc2#0;class#Spmc#0" />
-                <element signature="method#spmc3#0;class#Spmc#0" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Config/Md5.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Config/DataBaseUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Case/shnsrsbh.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Case/jsbh.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="57" column="45" lean-forward="true" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Config/AddFpInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-29">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Bean/AppInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="7" selection-start-line="7" selection-end-line="15" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Bean/EnvNum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="21" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+=========
+    <splitter split-orientation="horizontal" split-proportion="0.48100242">
+      <split-first>
+        <splitter split-orientation="vertical" split-proportion="0.3232682">
+          <split-first>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="532">
+                      <caret line="97" column="72" selection-start-line="97" selection-start-column="72" selection-end-line="97" selection-end-column="72" />
+                      <folding>
+                        <element signature="method#fpqqlsh1#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh2#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh3#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh4#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh5#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh6#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh7#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh8#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh9#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh10#0;class#Fpqqlsh#0" />
+                        <element signature="method#fpqqlsh11#0;class#Fpqqlsh#0" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/Bean/TestEnv.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="57">
+                      <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/main/java/Bean/EnvNum.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="19">
+                      <caret line="5" selection-start-line="5" selection-end-line="5" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/Model/ActualResult.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="171">
+                      <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/Case/Bz.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="228">
+                      <caret line="40" selection-start-line="40" selection-end-line="40" />
+                      <folding>
+                        <element signature="method#bz#0;class#Bz#0" />
+                        <element signature="method#bz1#0;class#Bz#0" />
+                        <element signature="method#bz2#0;class#Bz#0" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/main/java/Case/Skr.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="133">
+                      <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+                      <folding>
+                        <element signature="method#skr#0;class#Skr#0" />
+                        <element signature="method#skr1#0;class#Skr#0" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
+      </split-first>
+      <split-second>
+        <splitter split-orientation="vertical" split-proportion="0.589698">
+          <split-first>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/Case/Jsbh.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="19">
+                      <caret line="1" selection-start-line="1" selection-end-line="15" selection-end-column="25" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/Model/Java2XML.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="1520">
+                      <caret line="89" column="58" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="58" />
+                      <folding>
+                        <element signature="imports" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/main/java/Case/Kplx.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="19">
+                      <caret line="1" selection-start-line="1" selection-end-line="9" selection-end-column="25" />
+                      <folding>
+                        <element signature="method#kplx#0;class#Kplx#0" />
+                        <element signature="method#kplx2#0;class#Kplx#0" />
+                        <element signature="method#kplx3#0;class#Kplx#0" />
+                        <element signature="method#kplx4#0;class#Kplx#0" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/main/java/Config/UpdateFpqqlsh.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="437">
+                      <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+                      <folding>
+                        <element signature="imports" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fplxdm.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="65">
+                      <caret line="67" selection-start-line="67" selection-end-line="67" />
+                      <folding>
+                        <element signature="method#fplxdm#0;class#Fplxdm#0" />
+                        <element signature="method#fplxdm1#0;class#Fplxdm#0" />
+                        <element signature="method#fplxdm2#0;class#Fplxdm#0" />
+                        <element signature="method#fplxdm3#0;class#Fplxdm#0" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
+      </split-second>
+    </splitter>
+>>>>>>>>> Temporary merge branch 2
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
+    <findStrings>
+      <find>spsl</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -120,94 +305,197 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/FPKJ/src/main/java/Case/Skr.java" />
-        <option value="$PROJECT_DIR$/FPKJ/src/main/java/Case/Kplx.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Skr.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Fhr.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Kpr.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Yfpdm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Sprsjh.java" />
+        <option value="$PROJECT_DIR$/src/main/java/config/Md5.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Java2XML.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/AppInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/SaveAddr.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/SaveFpInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Config/EnvNum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Config/DataBaseUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Config/GetFpInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Config/AddFpInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Config/ExtentTestNGIReporterListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/AcquireSubstr.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/sql.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/SQLMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/databaseconfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/ActualResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/PostRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/GetAccessToken.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/DianZiPuTongFaPiao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/TestEnv.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Config/UpdateFpqqlsh.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/EnvNum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Config/GetAppInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Config/GetSaveAddr.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Config/UpdateToken.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/shnsrsbh.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/jsbh.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Config/Md5.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/fplxdm.java" />
         <option value="$PROJECT_DIR$/src/main/java/Case/Jsbh.java" />
         <option value="$PROJECT_DIR$/src/main/java/Case/Fplxdm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Kplx.java" />
         <option value="$PROJECT_DIR$/src/main/java/Case/Yhlx.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Ghdwsbh.java" />
         <option value="$PROJECT_DIR$/src/main/java/Case/Ghdwmc.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/ActualResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/Case/Ghdwdzdh.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Ghdwyhzh.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Fphxz.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Kplx.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Spmc.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Ggxh.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/Java2XML.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/De.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Spbm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Zxbm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Yhzcbs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Bz.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/Skr.java" />
       </list>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="FPKJ" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1113" />
-    <option name="y" value="123" />
-    <option name="width" value="981" />
-    <option name="height" value="1032" />
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<<<< Temporary merge branch 1
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="480" />
+    <option name="height" value="515" />
+=========
+    <option name="x" value="949" />
+    <option name="width" value="980" />
+    <option name="height" value="1031" />
+>>>>>>>>> Temporary merge branch 2
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<<<< Temporary merge branch 1
+      <pane id="Scope" />
+=========
+>>>>>>>>> Temporary merge branch 2
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="workspace" type="462c0819:PsiDirectoryNode" />
+              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
+<<<<<<<<< Temporary merge branch 1
+              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
+=========
               <item name="workspace" type="b2602c69:ProjectViewProjectNode" />
               <item name="workspace" type="462c0819:PsiDirectoryNode" />
+>>>>>>>>> Temporary merge branch 2
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Case" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<<<< Temporary merge branch 1
+            <path>
+              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
+              <item name="test-output" type="462c0819:PsiDirectoryNode" />
+            </path>
+=========
+>>>>>>>>> Temporary merge branch 2
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+<<<<<<<<< Temporary merge branch 1
+=========
+      <pane id="Scope" />
+>>>>>>>>> Temporary merge branch 2
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571712416247" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Config" />
+      <recent name="config" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -221,8 +509,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.Ghdwdzdh.ghdwdzdh">
-    <configuration name="Ghdwdzdh.ghdwdzdh" type="TestNG" temporary="true" nameIsGenerated="true">
+<<<<<<<<< Temporary merge branch 1
+  <component name="RunManager" selected="TestNG.jsbh.jsbh1">
+    <configuration name="jsbh.jsbh1" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+=========
+  <component name="RunManager" selected="TestNG.Skr.skr1">
+    <configuration name="Bz.bz2" type="TestNG" temporary="true" nameIsGenerated="true">
+>>>>>>>>> Temporary merge branch 2
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -231,8 +524,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.Ghdwdzdh" />
-      <option name="METHOD_NAME" value="ghdwdzdh" />
+      <option name="MAIN_CLASS_NAME" value="Case.Bz" />
+      <option name="METHOD_NAME" value="bz2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -240,7 +533,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ghdwdzdh.ghdwdzdh1" type="TestNG" temporary="true" nameIsGenerated="true">
+<<<<<<<<< Temporary merge branch 1
+    <configuration name="shnsrsbh.jsbh" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+=========
+    <configuration name="Skr.skr" type="TestNG" temporary="true" nameIsGenerated="true">
+>>>>>>>>> Temporary merge branch 2
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -249,8 +546,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.Ghdwdzdh" />
-      <option name="METHOD_NAME" value="ghdwdzdh1" />
+      <option name="MAIN_CLASS_NAME" value="Case.Skr" />
+      <option name="METHOD_NAME" value="skr" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -258,7 +555,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ghdwmc.ghdwmc1" type="TestNG" temporary="true" nameIsGenerated="true">
+<<<<<<<<< Temporary merge branch 1
+    <configuration name="shnsrsbh.jsbh2" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+=========
+    <configuration name="Skr.skr1" type="TestNG" temporary="true" nameIsGenerated="true">
+>>>>>>>>> Temporary merge branch 2
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -267,8 +568,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.Ghdwmc" />
-      <option name="METHOD_NAME" value="ghdwmc1" />
+      <option name="MAIN_CLASS_NAME" value="Case.Skr" />
+      <option name="METHOD_NAME" value="skr1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -276,7 +577,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ghdwmc.ghdwmc3" type="TestNG" temporary="true" nameIsGenerated="true">
+<<<<<<<<< Temporary merge branch 1
+    <configuration name="shnsrsbh.shnsrsbh" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+=========
+    <configuration name="Yhzcbs.yhzcbs2" type="TestNG" temporary="true" nameIsGenerated="true">
+>>>>>>>>> Temporary merge branch 2
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -285,8 +590,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.Ghdwmc" />
-      <option name="METHOD_NAME" value="ghdwmc3" />
+      <option name="MAIN_CLASS_NAME" value="Case.Yhzcbs" />
+      <option name="METHOD_NAME" value="yhzcbs2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -294,7 +599,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Yhlx.yhlx3" type="TestNG" temporary="true" nameIsGenerated="true">
+<<<<<<<<< Temporary merge branch 1
+    <configuration name="shnsrsbh.shnsrsbh2" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+=========
+    <configuration name="Yhzcbs.yhzcbs3" type="TestNG" temporary="true" nameIsGenerated="true">
+>>>>>>>>> Temporary merge branch 2
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -303,8 +612,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.Yhlx" />
-      <option name="METHOD_NAME" value="yhlx3" />
+      <option name="MAIN_CLASS_NAME" value="Case.Yhzcbs" />
+      <option name="METHOD_NAME" value="yhzcbs3" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -312,13 +621,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="TestNG.Yhzcbs.yhzcbs2" />
+      <item itemvalue="TestNG.Yhzcbs.yhzcbs3" />
+      <item itemvalue="TestNG.Bz.bz2" />
+      <item itemvalue="TestNG.Skr.skr" />
+      <item itemvalue="TestNG.Skr.skr1" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Ghdwdzdh.ghdwdzdh" />
-        <item itemvalue="TestNG.Ghdwdzdh.ghdwdzdh1" />
-        <item itemvalue="TestNG.Ghdwmc.ghdwmc3" />
-        <item itemvalue="TestNG.Ghdwmc.ghdwmc1" />
-        <item itemvalue="TestNG.Yhlx.yhlx3" />
+        <item itemvalue="TestNG.Skr.skr1" />
+        <item itemvalue="TestNG.Skr.skr" />
+        <item itemvalue="TestNG.Bz.bz2" />
+        <item itemvalue="TestNG.Yhzcbs.yhzcbs3" />
+        <item itemvalue="TestNG.Yhzcbs.yhzcbs2" />
       </list>
     </recent_temporary>
   </component>
@@ -327,59 +643,110 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9ad659f1-25f6-4b01-acf8-690446417eea" name="Default Changelist" comment="" />
-      <created>1571901002383</created>
+      <changelist id="9403abc8-09e3-4bd9-a2bf-c4e6188d65c1" name="Default Changelist" comment="" />
+      <created>1570671734857</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1571901002383</updated>
-      <workItem from="1571901024567" duration="107000" />
-      <workItem from="1571901225706" duration="2025000" />
-      <workItem from="1571903415460" duration="1674000" />
-      <workItem from="1571905316295" duration="5067000" />
-      <workItem from="1571968341877" duration="3582000" />
+      <updated>1570671734857</updated>
+      <workItem from="1570671737949" duration="11769000" />
+      <workItem from="1570703394297" duration="879000" />
+      <workItem from="1570784898917" duration="5004000" />
+      <workItem from="1570846573479" duration="14015000" />
+      <workItem from="1571034648536" duration="11295000" />
+      <workItem from="1571103464923" duration="10127000" />
+      <workItem from="1571132740135" duration="2521000" />
+      <workItem from="1571195960249" duration="8416000" />
+      <workItem from="1571275979677" duration="6928000" />
+      <workItem from="1571624969887" duration="19351000" />
+      <workItem from="1571707372287" duration="2571000" />
+      <workItem from="1571712368636" duration="12055000" />
+      <workItem from="1571737731118" duration="188000" />
+      <workItem from="1571794469026" duration="16041000" />
+      <workItem from="1571888476746" duration="450000" />
     </task>
+    <task id="LOCAL-00001" summary="once commit">
+      <created>1571711509113</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571711509113</updated>
+    </task>
+    <task id="LOCAL-00002" summary="twice commit">
+      <created>1571712492931</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571712492931</updated>
+    </task>
+    <task id="LOCAL-00003" summary="thd commit">
+      <created>1571818566084</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571818566085</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Yfpdm_yfpdm3 - 2019.10.24 at 17h 23m 20s.xml">
-      <configuration name="Yfpdm.yfpdm3" configurationId="TestNG" />
+    <history-entry file="Spbm_spbm - 2019.10.23 at 15h 36m 50s.xml">
+      <configuration name="Spbm.spbm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Yfpdm_yfpdm2 - 2019.10.24 at 17h 28m 27s.xml">
-      <configuration name="Yfpdm.yfpdm2" configurationId="TestNG" />
+    <history-entry file="Zxbm_zxbm - 2019.10.23 at 15h 42m 12s.xml">
+      <configuration name="Zxbm.zxbm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Sprsjh_sprsjh - 2019.10.24 at 17h 31m 19s.xml">
-      <configuration name="Sprsjh.sprsjh" configurationId="TestNG" />
+    <history-entry file="Zxbm_zxbm1 - 2019.10.23 at 15h 44m 01s.xml">
+      <configuration name="Zxbm.zxbm1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Sprsjh_sprsjh1 - 2019.10.24 at 17h 33m 48s.xml">
-      <configuration name="Sprsjh.sprsjh1" configurationId="TestNG" />
+    <history-entry file="Yhzcbs_yhzcbs - 2019.10.23 at 15h 51m 12s.xml">
+      <configuration name="Yhzcbs.yhzcbs" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Sprsjh_sprsjh2 - 2019.10.24 at 17h 35m 14s.xml">
-      <configuration name="Sprsjh.sprsjh2" configurationId="TestNG" />
+    <history-entry file="Yhzcbs_yhzcbs2 - 2019.10.23 at 15h 54m 09s.xml">
+      <configuration name="Yhzcbs.yhzcbs2" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Yhlx_yhlx3 - 2019.10.25 at 10h 48m 14s.xml">
-      <configuration name="Yhlx.yhlx3" configurationId="TestNG" />
+    <history-entry file="Yhzcbs_yhzcbs2 - 2019.10.23 at 15h 57m 44s.xml">
+      <configuration name="Yhzcbs.yhzcbs2" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Ghdwmc_ghdwmc1 - 2019.10.25 at 10h 51m 49s.xml">
-      <configuration name="Ghdwmc.ghdwmc1" configurationId="TestNG" />
+    <history-entry file="Yhzcbs_yhzcbs3 - 2019.10.23 at 16h 01m 21s.xml">
+      <configuration name="Yhzcbs.yhzcbs3" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Ghdwmc_ghdwmc3 - 2019.10.25 at 10h 54m 05s.xml">
-      <configuration name="Ghdwmc.ghdwmc3" configurationId="TestNG" />
+    <history-entry file="Bz_bz2 - 2019.10.23 at 16h 08m 15s.xml">
+      <configuration name="Bz.bz2" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Ghdwdzdh_ghdwdzdh1 - 2019.10.25 at 10h 56m 17s.xml">
-      <configuration name="Ghdwdzdh.ghdwdzdh1" configurationId="TestNG" />
+    <history-entry file="Skr_skr - 2019.10.23 at 16h 37m 38s.xml">
+      <configuration name="Skr.skr" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Ghdwdzdh_ghdwdzdh - 2019.10.25 at 10h 58m 20s.xml">
-      <configuration name="Ghdwdzdh.ghdwdzdh" configurationId="TestNG" />
+    <history-entry file="Skr_skr1 - 2019.10.23 at 16h 39m 17s.xml">
+      <configuration name="Skr.skr1" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12455000" />
+<<<<<<<<< Temporary merge branch 1
+    <option name="totallyTimeSpent" value="93052000" />
+=========
+    <option name="totallyTimeSpent" value="121673000" />
+>>>>>>>>> Temporary merge branch 2
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="720" extended-state="0" />
+<<<<<<<<< Temporary merge branch 1
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25788197" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.288874" />
+=========
+    <frame x="633" y="0" width="653" height="687" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.56302524" />
+>>>>>>>>> Temporary merge branch 2
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -387,275 +754,531 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.52006423" />
+<<<<<<<<< Temporary merge branch 1
+      <window_info anchor="bottom" id="Find" order="1" weight="0.5744681" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7069272" />
+=========
+      <window_info anchor="bottom" id="Find" order="1" weight="0.33504274" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.678508" />
+>>>>>>>>> Temporary merge branch 2
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32868218" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+<<<<<<<<< Temporary merge branch 1
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2822695" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+=========
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33153152" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.31623933" />
+>>>>>>>>> Temporary merge branch 2
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3285968" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" weight="0.32983023" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Maven" order="9" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2600536" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3371105" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="once commit" />
+    <MESSAGE value="twice commit" />
+    <MESSAGE value="thd commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="thd commit" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FPKJ/src/main/java/Model/AcquireSubstr.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/dianzifapiao.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dianzifapiao.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/GetTokenUrl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/UpdateToken.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7152" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FPKJ/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="35" column="12" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+        <state relative-caret-position="130">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/String.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/GetSaveAddr.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        <state relative-caret-position="399">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FPKJ/src/main/java/Case/Fpqqlsh.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FPKJ/src/main/java/Case/Kplx.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/DataBaseUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <element signature="method#kplx#0;class#Kplx#0" />
-            <element signature="method#kplx2#0;class#Kplx#0" />
-            <element signature="method#kplx3#0;class#Kplx#0" />
-            <element signature="method#kplx4#0;class#Kplx#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FPKJ/src/main/java/Case/Fphxz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FPKJ/src/main/java/Case/Skr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="method#skr#0;class#Skr#0" />
-            <element signature="method#skr1#0;class#Skr#0" />
-            <element signature="method#skr2#0;class#Skr#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/AcquireSubstr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fhr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="method#fhr#0;class#Fhr#0" />
-            <element signature="method#fhr1#0;class#Fhr#0" />
-            <element signature="method#fhr2#0;class#Fhr#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Sprsjh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="method#sprsjh#0;class#Sprsjh#0" />
-            <element signature="method#sprsjh1#0;class#Sprsjh#0" />
-            <element signature="e#1663#2267#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Skr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="284">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Yfpdm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/ExtentTestNGIReporterListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+        <state relative-caret-position="266">
+          <caret line="161" column="44" lean-forward="true" selection-start-line="161" selection-start-column="44" selection-end-line="161" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/AddFpInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding>
-            <element signature="method#yfpdm#0;class#Yfpdm#0" />
-            <element signature="method#yfpdm1#0;class#Yfpdm#0" />
-            <element signature="method#yfpdm2#0;class#Yfpdm#0" />
-            <element signature="method#yfpdm3#0;class#Yfpdm#0" />
-            <element signature="method#yfpdm4#0;class#Yfpdm#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Kpr.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/GetAccessToken.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="-114">
+          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/databaseconfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="58" lean-forward="true" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/AppInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" selection-start-line="7" selection-end-line="15" selection-end-column="1" />
           <folding>
-            <element signature="method#kpr#0;class#Kpr#0" />
-            <element signature="method#kpr1#0;class#Kpr#0" />
-            <element signature="method#kpr2#0;class#Kpr#0" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/SaveAddr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/SaveFpInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/PostRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/GetAppInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="28" column="56" lean-forward="true" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/shnsrsbh.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SQLMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="250" column="23" selection-start-line="250" selection-start-column="23" selection-end-line="250" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Case/Yhlx.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="58" column="68" selection-start-line="58" selection-start-column="68" selection-end-line="58" selection-end-column="68" />
+        <state relative-caret-position="209">
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
           <folding>
             <element signature="method#yhlx#0;class#Yhlx#0" />
             <element signature="method#yhlx1#0;class#Yhlx#0" />
             <element signature="method#yhlx2#0;class#Yhlx#0" />
-            <element signature="method#yhlx3#0;class#Yhlx#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Kplx.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ghdwsbh.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="76" column="5" lean-forward="true" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+        <state relative-caret-position="437">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
           <folding>
-            <element signature="method#kplx#0;class#Kplx#0" />
-            <element signature="method#kplx2#0;class#Kplx#0" />
-            <element signature="method#kplx3#0;class#Kplx#0" />
-            <element signature="method#kplx4#0;class#Kplx#0" />
-            <element signature="method#kplx5#0;class#Kplx#0" />
-            <element signature="method#kplx5#1;class#Kplx#0" />
-            <element signature="method#kplx6#1;class#Kplx#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fplxdm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="method#fplxdm#0;class#Fplxdm#0" />
-            <element signature="method#fplxdm1#0;class#Fplxdm#0" />
-            <element signature="method#fplxdm2#0;class#Fplxdm#0" />
-            <element signature="method#fplxdm3#0;class#Fplxdm#0" />
-            <element signature="method#fplxdm4#0;class#Fplxdm#0" />
-            <element signature="method#fplxdm5#0;class#Fplxdm#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Jsbh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
-          <folding>
-            <element signature="method#jsbh#0;class#Jsbh#0" />
-            <element signature="method#jsbh1#0;class#Jsbh#0" />
-            <element signature="method#jsbh2#0;class#Jsbh#0" />
-            <element signature="method#jsbh3#0;class#Jsbh#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ghdwdzdh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
-          <folding>
-            <element signature="method#ghdwdzdh#0;class#Ghdwdzdh#0" />
-            <element signature="method#ghdwdzdh1#0;class#Ghdwdzdh#0" />
-            <element signature="method#ghdwdzdh2#0;class#Ghdwdzdh#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/ActualResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-          <folding>
-            <element signature="method#parametersError#0;class#ActualResult#0" />
-            <element signature="method#resultCorrect#0;class#ActualResult#0" />
-            <element signature="method#resultCorrect1#0;class#ActualResult#0" />
-            <element signature="method#resultCorrect2#0;class#ActualResult#0" />
-            <element signature="method#resultCorrect3#0;class#ActualResult#0" />
-            <element signature="method#re#0;class#ActualResult#0" />
+            <element signature="method#ghdwsbh#0;class#Ghdwsbh#0" />
+            <element signature="method#ghdwsbh1#0;class#Ghdwsbh#0" />
+            <element signature="method#ghdwsbh2#0;class#Ghdwsbh#0" />
+            <element signature="method#ghdwsbh3#0;class#Ghdwsbh#0" />
+            <element signature="method#ghdwsbh4#0;class#Ghdwsbh#0" />
+            <element signature="method#ghdwsbh5#0;class#Ghdwsbh#0" />
+            <element signature="method#ghdwsbh6#0;class#Ghdwsbh#0" />
+            <element signature="method#ghdwsbh7#0;class#Ghdwsbh#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ghdwmc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="627">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
           <folding>
             <element signature="method#ghdwmc#0;class#Ghdwmc#0" />
             <element signature="method#ghdwmc1#0;class#Ghdwmc#0" />
-            <element signature="method#ghdwmc2#0;class#Ghdwmc#0" />
-            <element signature="method#ghdwmc3#0;class#Ghdwmc#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Spbm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ghdwdzdh.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="228">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
           <folding>
-            <element signature="method#spbm#0;class#Spbm#0" />
-            <element signature="method#spbm1#0;class#Spbm#0" />
-            <element signature="method#spbm2#0;class#Spbm#0" />
+            <element signature="method#ghdwdzdh#0;class#Ghdwdzdh#0" />
+            <element signature="method#ghdwdzdh1#0;class#Ghdwdzdh#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ghdwyhzh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding>
+            <element signature="method#ghdwyhzh#0;class#Ghdwyhzh#0" />
+            <element signature="method#ghdwyhzh1#0;class#Ghdwyhzh#0" />
+            <element signature="method#ghdwyhzh2#0;class#Ghdwyhzh#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fphxz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+          <folding>
+            <element signature="method#fphxz#0;class#Fphxz#0" />
+            <element signature="method#fphxz2#0;class#Fphxz#0" />
+            <element signature="method#fphxz3#0;class#Fphxz#0" />
+            <element signature="method#fphxz4#0;class#Fphxz#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Case/Spmc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="171">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
           <folding>
             <element signature="method#spmc#0;class#Spmc#0" />
             <element signature="method#spmc1#0;class#Spmc#0" />
             <element signature="method#spmc2#0;class#Spmc#0" />
             <element signature="method#spmc3#0;class#Spmc#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/AcquireSubstr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<<<< Temporary merge branch 1
+=========
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1104">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/De.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+          <folding>
+            <element signature="method#de#0;class#De#0" />
+            <element signature="method#de1#0;class#De#0" />
+            <element signature="method#de2#0;class#De#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Spbm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="method#spbm#0;class#Spbm#0" />
+            <element signature="method#spbm#0;class#Spbm#0" />
+            <element signature="method#spbm#0;class#Spbm#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Zxbm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="method#zxbm#0;class#Zxbm#0" />
+            <element signature="method#zxbm1#0;class#Zxbm#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Yhzcbs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="64" column="1" lean-forward="true" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+          <folding>
+            <element signature="method#yhzcbs#0;class#Yhzcbs#0" />
+            <element signature="method#yhzcbs1#0;class#Yhzcbs#0" />
+            <element signature="method#yhzcbs2#0;class#Yhzcbs#0" />
+            <element signature="method#yhzcbs3#0;class#Yhzcbs#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ggxh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="24" selection-end-column="52" />
+          <folding>
+            <element signature="method#ggxh1#0;class#Ggxh#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="97" column="72" selection-start-line="97" selection-start-column="72" selection-end-line="97" selection-end-column="72" />
+          <folding>
+            <element signature="method#fpqqlsh1#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh2#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh3#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh4#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh5#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh6#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh7#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh8#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh9#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh10#0;class#Fpqqlsh#0" />
+            <element signature="method#fpqqlsh11#0;class#Fpqqlsh#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>>>> Temporary merge branch 2
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/TestEnv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/EnvNum.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<<<< Temporary merge branch 1
+        <state relative-caret-position="57">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="21" />
+=========
+        <state relative-caret-position="19">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+>>>>>>>>> Temporary merge branch 2
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/ActualResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<<<< Temporary merge branch 1
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Java2XML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4047">
+          <caret line="222" column="30" selection-start-line="222" selection-start-column="24" selection-end-line="222" selection-end-column="30" />
+=========
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Bz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+>>>>>>>>> Temporary merge branch 2
+          <folding>
+            <element signature="method#bz#0;class#Bz#0" />
+            <element signature="method#bz1#0;class#Bz#0" />
+            <element signature="method#bz2#0;class#Bz#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<<<< Temporary merge branch 1
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/UpdateFpqqlsh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+=========
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Skr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+>>>>>>>>> Temporary merge branch 2
+          <folding>
+            <element signature="method#skr#0;class#Skr#0" />
+            <element signature="method#skr1#0;class#Skr#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<<<< Temporary merge branch 1
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/ActualResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/jsbh.java">
+=========
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Jsbh.java">
+>>>>>>>>> Temporary merge branch 2
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Java2XML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1520">
+          <caret line="89" column="58" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<<<< Temporary merge branch 1
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/shnsrsbh.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="141" column="52" lean-forward="true" selection-start-line="141" selection-start-column="52" selection-end-line="141" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/Md5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+=========
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Kplx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="method#kplx#0;class#Kplx#0" />
+            <element signature="method#kplx2#0;class#Kplx#0" />
+            <element signature="method#kplx3#0;class#Kplx#0" />
+            <element signature="method#kplx4#0;class#Kplx#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/UpdateFpqqlsh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>>>> Temporary merge branch 2
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fplxdm.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<<<< Temporary merge branch 1
+        <state relative-caret-position="323">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+=========
+        <state relative-caret-position="65">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+>>>>>>>>> Temporary merge branch 2
+          <folding>
+            <element signature="method#fplxdm#0;class#Fplxdm#0" />
+            <element signature="method#fplxdm1#0;class#Fplxdm#0" />
+            <element signature="method#fplxdm2#0;class#Fplxdm#0" />
+            <element signature="method#fplxdm3#0;class#Fplxdm#0" />
           </folding>
         </state>
       </provider>
@@ -677,6 +1300,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -699,6 +1323,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -721,9 +1346,20 @@
           </splitter-proportions>
         </settings>
       </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: bouncycastle:bcmail-jdk16:140</last-edited>
+          <last-edited>Maven: jdom:jdom:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
