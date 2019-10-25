@@ -31,7 +31,7 @@ public class Yhlx {
         JSONObject arrayObject = AcquireSubstr.analyzeString(result);
         Assert.assertEquals(jsonObject,arrayObject);
     }
-    @Test(groups = {"正常开票"},description = "用户类型为0")
+    @Test(groups = {"正常开票"},description = "用户类型为0:接口开票")
     public void  yhlx1() throws IOException,NoSuchAlgorithmException{
         map.put("yhlx","0");
         map.put("fpqqlsh",UpdateFpqqlsh.numbersLetters());
@@ -55,4 +55,18 @@ public class Yhlx {
         JSONObject arrayObject = AcquireSubstr.analyzeString(result);
         Assert.assertEquals(jsonObject,arrayObject);
     }
+    @Test(groups = {"正常开票"},description = "用户类型为1,自助开电子票")
+    public void  yhlx3() throws IOException,NoSuchAlgorithmException{
+        map.put("yhlx","1");
+        map.put("fpqqlsh",UpdateFpqqlsh.numbersLetters());
+        String file = Java2XML.BuildXMLDoc(map);
+        System.out.println("本次请求的报文为:"+file);
+        jsonObject = ActualResult.resultCorrect();
+        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
+        System.out.println(result);
+        JSONObject arrayObject = AcquireSubstr.analyzeString(result);
+        Assert.assertEquals(jsonObject,arrayObject);
+    }
 }
+
+
