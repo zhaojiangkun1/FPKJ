@@ -1,5 +1,6 @@
 package Model;
 
+import Config.UpdateFpqqlsh;
 import org.jdom.Document;
 import org.jdom.Element;
 import org.jdom.output.XMLOutputter;
@@ -23,13 +24,13 @@ public class Java2XML {
         body.addContent(input);
 
         Element fppqqlsh = new Element("fpqqlsh");
-        input.addContent(fppqqlsh.setText("11111111111111"));
+        input.addContent(fppqqlsh.setText(UpdateFpqqlsh.numbersLetters()));
 
         Element shnsrsbh = new Element("shnsrsbh");
-        input.addContent(shnsrsbh.setText("110101201707010057"));
+        input.addContent(shnsrsbh.setText("110101201707010043"));
 
         Element jsbh = new Element("jsbh");
-        input.addContent(jsbh.setText("110101201707010057~~499000152456"));
+        input.addContent(jsbh.setText("110101201707010043~~499000152157"));
 
         Element fplxdm = new Element("fplxdm");
         input.addContent(fplxdm.setText("026"));
@@ -41,16 +42,19 @@ public class Java2XML {
         input.addContent(yhlx.setText("0"));
 
         Element ghdwsbh = new Element("ghdwsbh");
-        input.addContent(ghdwsbh.setText(""));
+        input.addContent(ghdwsbh.setText("91310114MA1GU3NU72"));
 
         Element ghdwmc = new Element("ghdwmc");
-        input.addContent(ghdwmc.setText("个人"));
+        input.addContent(ghdwmc.setText("上海融族网络科技有限公司"));
 
         Element ghdwdzdh = new Element("ghdwdzdh");
-        input.addContent(ghdwdzdh.setText(""));
+        input.addContent(ghdwdzdh.setText("上海市浦东新区康威路1500号3幢1层103室02158958286"));
 
         Element ghdwyhzh = new Element("ghdwyhzh");
-        input.addContent(ghdwyhzh.setText(""));
+        input.addContent(ghdwyhzh.setText("中国建设银行股份有限公司上海张江支行31050161393600001918"));
+
+        Element qdbz = new Element("qdbz");
+        input.addContent(qdbz.setText("0"));
 
         Element fyxm = new Element("fyxm");
         fyxm.setAttribute("count","1");
@@ -77,8 +81,14 @@ public class Java2XML {
         Element dj = new Element("dj");
         group.addContent(dj.setText("32.6"));
 
+        Element hsdj = new Element("hsdj");
+        group.addContent(hsdj.setText("34.56"));
+
         Element je = new Element("je");
         group.addContent(je.setText("32.6"));
+
+        Element hsje = new Element("hsje");
+        group.addContent(hsje.setText("34.56"));
 
         Element sl = new Element("sl");
         group.addContent(sl.setText("0.06"));
@@ -115,6 +125,10 @@ public class Java2XML {
         //开票人
         Element kpr = new Element("kpr");
         input.addContent(kpr.setText("管理员"));
+
+        Element tzdbh = new Element("tzdbh");
+        input.addContent(tzdbh.setText(""));
+
         //原发票代码
         Element yfpdm = new Element("yfpdm");
         input.addContent(yfpdm.setText(""));
@@ -141,6 +155,28 @@ public class Java2XML {
             }
             if (key == "fplxdm"){
                 fplxdm.setText(values);
+                if (values == "025"){
+                    group.removeChild("je");
+                    group.removeChild("dj");
+                    input.removeChild("qdbz");
+                    input.removeChild("tzdbh");
+                    input.removeChild("ghdwdzdh");
+                    input.removeChild("ghdwyhzh");
+                }
+                if (values == "026"){
+                    group.removeChild("hsje");
+                    group.removeChild("hsdj");
+                    input.removeChild("qdbz");
+                    input.removeChild("tzdbh");
+                }if (values == "007"){
+                    group.removeChild("hsje");
+                    group.removeChild("hsdj");
+                    input.removeChild("tzdbh");
+                }
+                if (values == "004"){
+                    group.removeChild("hsje");
+                    group.removeChild("hsdj");
+                }
             }
             if (key == "kplx"){
                 kplx.setText(values);
@@ -160,6 +196,9 @@ public class Java2XML {
             if (key == "ghdwyhzh"){
                 ghdwyhzh.setText(values);
             }
+            if (key == "qdbz"){
+                qdbz.setText(values);
+            }
             if (key == "fphxz"){
                 fphxz.setText(values);
             }
@@ -175,8 +214,14 @@ public class Java2XML {
             if (key == "spsl"){
                 spsl.setText(values);
             }
+            if (key == "hsdj"){
+                hsdj.setText(values);
+            }
             if (key == "dj"){
                 dj.setText(values);
+            }
+            if (key == "hsje"){
+                hsje.setText(values);
             }
             if (key == "je"){
                 je.setText(values);
@@ -213,6 +258,9 @@ public class Java2XML {
             }
             if (key == "kpr"){
                 kpr.setText(values);
+            }
+            if (key == "tzdbh"){
+                tzdbh.setText(values);
             }
             if (key == "yfpdm"){
                 yfpdm.setText(values);

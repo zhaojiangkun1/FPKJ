@@ -47,5 +47,12 @@ public class ActualResult {
         return jsonObject;
     }
 
+    public static JSONObject merchantIsNotExist(){
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("returncode","1000009");
+        jsonObject.put("returnmsg","纳税人识别号对应商户不存在");
+        return jsonObject;
+    }
+
          
 }
