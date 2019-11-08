@@ -21,10 +21,11 @@ public class GetAccessToken {
         String appSecret = appInfo.getAppSecret();
         String addr = appInfo.getAddress();
         Date old_time = appInfo.getUpdateTime();
+        System.out.println("上次获取Token的时间:"+old_time);
         Date current_time = new Date();
+        System.out.println("当前时间:"+current_time);
         String accessToken;
         String url = addr + "?appId=" + appId + "&appSecret=" + appSecret;
-        System.out.println("获取token的url："+url);
         long diffsec = (current_time.getTime()-old_time.getTime())/1000;
 
         System.out.println("两次请求的时间差："+diffsec);

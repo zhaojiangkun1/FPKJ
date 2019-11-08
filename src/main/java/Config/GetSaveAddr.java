@@ -20,7 +20,7 @@ public class GetSaveAddr {
         if (num == EnvNum.PRO || num == EnvNum.PRO1){
             saveAddr = session.selectOne("getSaveAddr","PRO");
         }
-        if (num == EnvNum.DEV){
+        if (num == EnvNum.DEV || num == EnvNum.DEV1){
             saveAddr = session.selectOne("getSaveAddr","DEV");
         }
         if (num == EnvNum.TEST || num == EnvNum.TEST1){

@@ -30,6 +30,10 @@ public class UpdateToken {
             appInfo.setEnv("PRO1");
             session.update("updateToken",appInfo);
         }
+        if (num == EnvNum.DEV1){
+            appInfo.setEnv("DEV1");
+            session.update("updateToken",appInfo);
+        }
         session.commit();
     }
 }

@@ -14,6 +14,7 @@ import java.util.Map;
 
 public class Java2XML {
 
+
     @Test
     public static String BuildXMLDoc(HashMap<String,String> map) throws IOException {
         Element business = new Element("business");
@@ -27,10 +28,10 @@ public class Java2XML {
         input.addContent(fppqqlsh.setText(UpdateFpqqlsh.numbersLetters()));
 
         Element shnsrsbh = new Element("shnsrsbh");
-        input.addContent(shnsrsbh.setText("110101201707010043"));
+        input.addContent(shnsrsbh.setText("110101201707010057"));
 
         Element jsbh = new Element("jsbh");
-        input.addContent(jsbh.setText("110101201707010043~~499000152157"));
+        input.addContent(jsbh.setText("110101201707010057~~499000152456"));
 
         Element fplxdm = new Element("fplxdm");
         input.addContent(fplxdm.setText("026"));
@@ -111,8 +112,14 @@ public class Java2XML {
         Element zzstsgl = new Element("zzstsgl");
         group.addContent(zzstsgl.setText(""));
 
+        Element title_type = new Element("title_type");
+        group.addContent(title_type.setText("3"));
+
         Element extParam = new Element("extParam");
         input.addContent(extParam.setText(""));
+
+        Element readonly = new Element("readonly");
+        input.addContent(readonly.setText(""));
 
         Element bz = new Element("bz");
         input.addContent(bz.setText(""));
@@ -247,8 +254,14 @@ public class Java2XML {
             if (key == "zzstsgl"){
                 zzstsgl.setText(values);
             }
+            if (key == "tytle_type"){
+                title_type.setText(values);
+            }
             if (key == "bz"){
                 bz.setText(values);
+            }
+            if (key == "readonly"){
+                readonly.setText(values);
             }
             if (key == "skr"){
                 skr.setText(values);

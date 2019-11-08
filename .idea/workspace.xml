@@ -2,17 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba056997-4758-4234-b359-af71891b088f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Case/JuanPiao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Case/PuPiao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Case/ZhuanPiao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Case/DianPiao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/MultiLineGroup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bean/TestEnv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bean/TestEnv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/ActualResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/ActualResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/JuanPiao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/JuanPiao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/PuPiao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/PuPiao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Config/GetAppInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Config/GetAppInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Config/GetSaveAddr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Config/GetSaveAddr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Config/UpdateToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Config/UpdateToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/GetAccessToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/GetAccessToken.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Java2XML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Java2XML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Bean/TestEnv.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Bean/TestEnv.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/Ghdwdzdh.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Ghdwdzdh.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/Shnsrsbh.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Shnsrsbh.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/ActualResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/ActualResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Case/JuanPiao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/JuanPiao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Case/PuPiao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/PuPiao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Case/ZhuanPiao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/ZhuanPiao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Config/GetAppInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Config/GetAppInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Config/GetSaveAddr.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Config/GetSaveAddr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Config/UpdateToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Config/UpdateToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/GetAccessToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/GetAccessToken.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Model/Java2XML.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Java2XML.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,52 +31,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-171">
-              <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Model/Java2XML.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-57">
-              <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Case/PuPiao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="28" column="54" lean-forward="true" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="817">
+              <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Case/ZhuanPiao.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Case/DianPiao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+            <state relative-caret-position="87">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fplxdm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-418">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -79,7 +55,37 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Bean/TestEnv.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
-              <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Model/GetAccessToken.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Config/GetAppInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Model/Java2XML.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,11 +107,17 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/ActualResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/JuanPiao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Bean/TestEnv.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/PuPiao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/Java2XML.java" />
         <option value="$PROJECT_DIR$/src/main/java/Case/ZhuanPiao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/MultiLineGroup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/JuanPiao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/Java2XML.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Config/GetAppInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Config/GetSaveAddr.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Config/UpdateToken.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Model/GetAccessToken.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/PuPiao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Case/DianPiao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/TestEnv.java" />
       </list>
     </option>
   </component>
@@ -127,7 +139,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,51 +167,20 @@
             <path>
               <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Case" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
               <item name="test-output" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572256588436" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573180082801" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../InvoiceOperter" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -214,8 +194,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ZhuanPiao.zhuanPiao">
-    <configuration name="Fpqqlsh.fpqqlsh6" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.PuPiao.puPiao">
+    <configuration name="DianPiao.dianPiao" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -224,8 +204,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.Fpqqlsh" />
-      <option name="METHOD_NAME" value="fpqqlsh6" />
+      <option name="MAIN_CLASS_NAME" value="Case.DianPiao" />
+      <option name="METHOD_NAME" value="dianPiao" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DianPiao.ziZhuKaiPiao" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FPKJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Case.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Case" />
+      <option name="MAIN_CLASS_NAME" value="Case.DianPiao" />
+      <option name="METHOD_NAME" value="ziZhuKaiPiao" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -287,37 +285,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZhuanPiao.zhuanPiao" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FPKJ" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Case.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.ZhuanPiao" />
-      <option name="METHOD_NAME" value="zhuanPiao" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="TestNG.JuanPiao.juanPiao" />
+      <item itemvalue="TestNG.DianPiao.ziZhuKaiPiao" />
       <item itemvalue="TestNG.PuPiao.puPiao" />
-      <item itemvalue="TestNG.Fpqqlsh.fpqqlsh6" />
       <item itemvalue="TestNG.PuPiao.puPiaoChongHong" />
-      <item itemvalue="TestNG.ZhuanPiao.zhuanPiao" />
+      <item itemvalue="TestNG.DianPiao.dianPiao" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ZhuanPiao.zhuanPiao" />
-        <item itemvalue="TestNG.PuPiao.puPiaoChongHong" />
         <item itemvalue="TestNG.PuPiao.puPiao" />
-        <item itemvalue="TestNG.Fpqqlsh.fpqqlsh6" />
+        <item itemvalue="TestNG.DianPiao.ziZhuKaiPiao" />
+        <item itemvalue="TestNG.DianPiao.dianPiao" />
+        <item itemvalue="TestNG.PuPiao.puPiaoChongHong" />
         <item itemvalue="TestNG.JuanPiao.juanPiao" />
       </list>
     </recent_temporary>
@@ -349,43 +329,51 @@
       <workItem from="1572225808485" duration="1438000" />
       <workItem from="1572235358673" duration="2105000" />
       <workItem from="1572244700643" duration="11274000" />
+      <workItem from="1572312500759" duration="14674000" />
+      <workItem from="1572399204362" duration="19160000" />
+      <workItem from="1572488323035" duration="6965000" />
+      <workItem from="1572571366310" duration="5123000" />
+      <workItem from="1572658651076" duration="41000" />
+      <workItem from="1572834716994" duration="6876000" />
+      <workItem from="1573021264053" duration="3029000" />
+      <workItem from="1573110611208" duration="2931000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JuanPiao_juanPiao - 2019.10.28 at 16h 25m 38s.xml">
-      <configuration name="JuanPiao.juanPiao" configurationId="TestNG" />
+    <history-entry file="PuPiao_puPiaoChongHong - 2019.11.04 at 14h 45m 11s.xml">
+      <configuration name="PuPiao.puPiaoChongHong" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Fpqqlsh_fpqqlsh6 - 2019.10.28 at 16h 43m 22s.xml">
-      <configuration name="Fpqqlsh.fpqqlsh6" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PuPiao_puPiao - 2019.10.28 at 16h 48m 44s.xml">
+    <history-entry file="PuPiao_puPiao - 2019.11.06 at 14h 21m 32s.xml">
       <configuration name="PuPiao.puPiao" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PuPiao_puPiaoChongHong - 2019.10.28 at 17h 02m 42s.xml">
-      <configuration name="PuPiao.puPiaoChongHong" configurationId="TestNG" />
+    <history-entry file="DianPiao_dianPiao - 2019.11.06 at 14h 23m 47s.xml">
+      <configuration name="DianPiao.dianPiao" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PuPiao_puPiaoChongHong - 2019.10.28 at 17h 03m 13s.xml">
-      <configuration name="PuPiao.puPiaoChongHong" configurationId="TestNG" />
+    <history-entry file="DianPiao_dianPiao - 2019.11.06 at 14h 25m 49s.xml">
+      <configuration name="DianPiao.dianPiao" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PuPiao_puPiaoChongHong - 2019.10.28 at 17h 04m 31s.xml">
-      <configuration name="PuPiao.puPiaoChongHong" configurationId="TestNG" />
+    <history-entry file="PuPiao_puPiao - 2019.11.06 at 14h 26m 20s.xml">
+      <configuration name="PuPiao.puPiao" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PuPiao_puPiaoChongHong - 2019.10.28 at 17h 07m 48s.xml">
-      <configuration name="PuPiao.puPiaoChongHong" configurationId="TestNG" />
+    <history-entry file="DianPiao_dianPiao - 2019.11.06 at 14h 30m 33s.xml">
+      <configuration name="DianPiao.dianPiao" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ZhuanPiao_zhuanPiao - 2019.10.28 at 17h 25m 47s.xml">
-      <configuration name="ZhuanPiao.zhuanPiao" configurationId="TestNG" />
+    <history-entry file="DianPiao_dianPiao - 2019.11.06 at 14h 38m 25s.xml">
+      <configuration name="DianPiao.dianPiao" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ZhuanPiao_zhuanPiao - 2019.10.28 at 17h 29m 39s.xml">
-      <configuration name="ZhuanPiao.zhuanPiao" configurationId="TestNG" />
+    <history-entry file="DianPiao_ziZhuKaiPiao - 2019.11.06 at 18h 36m 55s.xml">
+      <configuration name="DianPiao.ziZhuKaiPiao" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ZhuanPiao_zhuanPiao - 2019.10.28 at 17h 48m 18s.xml">
-      <configuration name="ZhuanPiao.zhuanPiao" configurationId="TestNG" />
+    <history-entry file="DianPiao_ziZhuKaiPiao - 2019.11.06 at 18h 51m 02s.xml">
+      <configuration name="DianPiao.ziZhuKaiPiao" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PuPiao_puPiao - 2019.11.07 at 16h 45m 56s.xml">
+      <configuration name="PuPiao.puPiao" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13394000" />
+    <option name="totallyTimeSpent" value="73371000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -398,9 +386,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33981234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.37868634" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -409,14 +396,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3371105" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2851064" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24539007" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.23262411" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.12907802" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.075177304" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -474,73 +461,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Config/ExtentTestNGIReporterListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Config/UpdateFpqqlsh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Config/Md5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Config/DataBaseUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/SaveAddr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/AppInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/EnvNum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/SaveFpInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fhr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -565,20 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/JuanPiao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="25" column="58" lean-forward="true" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Model/AcquireSubstr.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -586,41 +496,230 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/TestEnv.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ghdwyhzh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Yhzcbs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/De.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/MultiLineGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1072">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/JuanPiao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Zxbm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="31" column="45" lean-forward="true" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/ZhuanPiao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Yhlx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Skr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Jsbh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ggxh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2812">
+          <caret line="161" column="1" selection-start-line="161" selection-start-column="1" selection-end-line="161" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fphxz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/EnvNum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fhr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fplxdm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-418">
+        <state relative-caret-position="95">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/SaveFpInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/SaveAddr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/DataBaseUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/UpdateToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/UpdateFpqqlsh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/Md5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/GetSaveAddr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/AddFpInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/ExtentTestNGIReporterListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/AppInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/GetAccessToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Config/GetAppInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Model/Java2XML.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/PuPiao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="28" column="54" lean-forward="true" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+        <state relative-caret-position="152">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/ZhuanPiao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/TestEnv.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+        <state relative-caret-position="57">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/PuPiao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Case/DianPiao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
