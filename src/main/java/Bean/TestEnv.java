@@ -1,5 +1,5 @@
 package Bean;
 
 public class TestEnv {
-    public static EnvNum testEnv = EnvNum.PRO;
+    public static EnvNum testEnv = EnvNum.DEV;
 }

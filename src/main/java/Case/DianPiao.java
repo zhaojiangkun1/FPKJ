@@ -21,9 +21,9 @@ public class DianPiao {
         System.out.println("本次请求的报文:"+file);
         String result = PostRequest.zhenPiaoYunRequest(file, TestEnv.testEnv);
         System.out.println(result);
-        JSONObject expectedResult= ActualResult.resultCorrect();
+        JSONObject expectedResult= ExpectedResult.resultCorrect();
         JSONObject runResult = AcquireSubstr.analyzeString(result);
-        Assert.assertEquals(expectedResult,runResult);
+        Assert.assertEquals(runResult,expectedResult);
     }
 
     @Test(groups = {"自助开票"},description = "所有参数都正常，自助开票")
@@ -36,9 +36,9 @@ public class DianPiao {
         System.out.println("本次请求的报文:"+file);
         String result = PostRequest.zhenPiaoYunRequest(file, TestEnv.testEnv);
         System.out.println(result);
-        JSONObject expectedResult= ActualResult.resultCorrect();
+        JSONObject expectedResult= ExpectedResult.resultCorrect();
         JSONObject runResult = AcquireSubstr.analyzeString(result);
-        Assert.assertEquals(expectedResult,runResult);
+        Assert.assertEquals(runResult,expectedResult);
     }
 
     @Test(groups = {"开具电票"},description = "所有参数均正常，开具一张负数发票")
@@ -58,9 +58,9 @@ public class DianPiao {
         System.out.println("本次请求的报文:"+file);
         String result = PostRequest.zhenPiaoYunRequest(file, TestEnv.testEnv);
         System.out.println(result);
-        JSONObject expectedResult= ActualResult.resultCorrect();
+        JSONObject expectedResult= ExpectedResult.resultCorrect();
         JSONObject runResult = AcquireSubstr.analyzeString(result);
-        Assert.assertEquals(expectedResult,runResult);
+        Assert.assertEquals(runResult,expectedResult);
     }
 
     @Test(groups = {"多行电票开具"},description = "所有参数均正常,开具一张6行商品的电票")
@@ -69,7 +69,7 @@ public class DianPiao {
         System.out.println("本次请求的报文:"+file);
         String result = PostRequest.zhenPiaoYunRequest(file, TestEnv.testEnv);
         System.out.println(result);
-        JSONObject expectedResult= ActualResult.resultCorrect();
+        JSONObject expectedResult= ExpectedResult.resultCorrect();
         JSONObject runResult = AcquireSubstr.analyzeString(result);
         Assert.assertEquals(expectedResult,runResult);
     }
@@ -80,7 +80,7 @@ public class DianPiao {
         System.out.println("本次请求的报文:"+file);
         String result = PostRequest.zhenPiaoYunRequest(file, TestEnv.testEnv);
         System.out.println(result);
-        JSONObject expectedResult= ActualResult.resultCorrect();
+        JSONObject expectedResult= ExpectedResult.resultCorrect();
         JSONObject runResult = AcquireSubstr.analyzeString(result);
         Assert.assertEquals(expectedResult,runResult);
     }
@@ -91,7 +91,7 @@ public class DianPiao {
         System.out.println("本次请求的报文:"+file);
         String result = PostRequest.zhenPiaoYunRequest(file, TestEnv.testEnv);
         System.out.println(result);
-        JSONObject expectedResult= ActualResult.resultCorrect();
+        JSONObject expectedResult= ExpectedResult.resultCorrect();
         JSONObject runResult = AcquireSubstr.analyzeString(result);
         Assert.assertEquals(expectedResult,runResult);
     }

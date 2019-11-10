@@ -9,70 +9,49 @@ import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 
+
 public class Kplx {
-    JSONObject jsonObject = new JSONObject();
+    JSONObject expectedResult = new JSONObject();
     HashMap<String,String> map = new HashMap();
 
-    @Test(groups = {"正常开票"},description = "开票类型为空")
+
+    @Test(groups = {"异常开票"},description = "开票其它参数均正常，开票类型为空")
     public void  kplx() throws IOException,NoSuchAlgorithmException{
         map.put("kplx","");
-        map.put("fpqqlsh",UpdateFpqqlsh.numbersLetters());
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println("本次请求的报文为:"+file);
-        jsonObject = ActualResult.resultCorrect();
+        expectedResult.put("returncode","10001");
+        expectedResult.put("returnmsg","缺少节点或内容kplx");
         String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
         System.out.println(result);
-        JSONObject arrayObject = AcquireSubstr.analyzeString(result);
-        Assert.assertEquals(jsonObject,arrayObject);
+        JSONObject actualResult = AcquireSubstr.analyzeString(result);
+        Assert.assertEquals(actualResult,expectedResult);
     }
-    @Test(groups = {"正常开票"},description = "开票类型为0，正数发票")
+
+    @Test(groups = {"异常开票"},description = "开票其它参数均正常，开票类型为null")
     public void  kplx2() throws IOException,NoSuchAlgorithmException{
-        //正数发票开具
-        map.put("kplx","0");
-        map.put("fpqqlsh",UpdateFpqqlsh.numbersLetters());
-        String file = Java2XML.BuildXMLDoc(map);
-        System.out.println("本次请求的报文为:"+file);
-        jsonObject = ActualResult.resultCorrect();
-        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
-        System.out.println(result);
-        JSONObject arrayObject = AcquireSubstr.analyzeString(result);
-        Assert.assertEquals(jsonObject,arrayObject);
-    }
-    @Test(groups = {"正常开票"},description = "开票类型为1，开负数电子发票")
-    public void  kplx3() throws IOException,NoSuchAlgorithmException{
-        //负数开票：需要原发票代码,发票号码
-        map.put("kplx","1");
-        map.put("fpqqlsh",UpdateFpqqlsh.numbersLetters());
-        String file = Java2XML.BuildXMLDoc(map);
-        System.out.println("本次请求的报文为:"+file);
-        jsonObject = ActualResult.resultCorrect();
-        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
-        System.out.println(result);
-        JSONObject arrayObject = AcquireSubstr.analyzeString(result);
-        Assert.assertEquals(jsonObject,arrayObject);
-    }
-    @Test(groups = {"异常开票"},description = "开票类型为null")
-    public void  kplx4() throws IOException,NoSuchAlgorithmException{
         map.put("kplx",null);
-        map.put("fpqqlsh",UpdateFpqqlsh.numbersLetters());
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println("本次请求的报文为:"+file);
-        jsonObject = ActualResult.resultCorrect();
+        expectedResult.put("returncode","10001");
+        expectedResult.put("returnmsg","缺少节点或内容kplx");
         String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
         System.out.println(result);
-        JSONObject arrayObject = AcquireSubstr.analyzeString(result);
-        Assert.assertEquals(jsonObject,arrayObject);
+        JSONObject actualResult = AcquireSubstr.analyzeString(result);
+        Assert.assertEquals(actualResult,expectedResult);
     }
-    @Test(groups = {"正常开票"},description = "开票类型为1，开增值税普通发票")
-    public void  kplx5() throws IOException,NoSuchAlgorithmException{
-    
-    }
-    @Test(groups = {"正常开票"},description = "开票类型为1，开增值税卷式发票")
-    public void  kplx6() throws IOException,NoSuchAlgorithmException{
+    @Test(groups = {"异常开票"},description = "开票其它参数均正常，开票类型为2")
+    public void  kplx3() throws IOException,NoSuchAlgorithmException{
+        map.put("kplx","2");
+        String file = Java2XML.BuildXMLDoc(map);
+        System.out.println("本次请求的报文为:"+file);
+        expectedResult.put("returncode","300000");
+        expectedResult.put("returnmsg","开票类型有误");
+        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
+        System.out.println(result);
+        JSONObject actualResult = AcquireSubstr.analyzeString(result);
+        Assert.assertEquals(actualResult,expectedResult);
 
     }
-    @Test(groups = {"正常开票"},description = "开票类型为1，冲红增值专票")
-    public void  kplx7() throws IOException,NoSuchAlgorithmException{
 
-    }
 }

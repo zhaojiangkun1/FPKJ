@@ -2,7 +2,7 @@ package Model;
 
 import com.alibaba.fastjson.JSONObject;
 
-public class ActualResult {
+public class ExpectedResult {
 
     public static JSONObject parametersError(String param){
         JSONObject jsonObject = new JSONObject();

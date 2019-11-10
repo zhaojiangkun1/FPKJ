@@ -2,7 +2,7 @@ package Case;
 
 import Bean.TestEnv;
 import Model.AcquireSubstr;
-import Model.ActualResult;
+import Model.ExpectedResult;
 import Model.Java2XML;
 import Model.PostRequest;
 import com.alibaba.fastjson.JSONObject;
@@ -21,11 +21,11 @@ public class ZhuanPiao {
         map.put("sprsjh","");
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println(file);
-        JSONObject expectedResult = ActualResult.resultCorrect();
+        JSONObject expectedResult = ExpectedResult.resultCorrect();
         String result = PostRequest.zhenPiaoYunRequest(file, TestEnv.testEnv);
         System.out.println(result);
         JSONObject runResult = AcquireSubstr.analyzeString(result);
-        Assert.assertEquals(expectedResult,runResult);
+        Assert.assertEquals(runResult,expectedResult);
     }
 
     /**
@@ -46,11 +46,11 @@ public class ZhuanPiao {
 
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println(file);
-        JSONObject expectedResult = ActualResult.resultCorrect();
+        JSONObject expectedResult = ExpectedResult.resultCorrect();
         String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
         JSONObject runResult = AcquireSubstr.analyzeString(result);
         System.out.println(result);
-        Assert.assertEquals(expectedResult,runResult);
+        Assert.assertEquals(runResult,expectedResult);
     }
 
 }

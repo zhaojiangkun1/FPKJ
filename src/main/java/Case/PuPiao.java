@@ -22,11 +22,11 @@ public class PuPiao {
         map.put("readonly","0");
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println(file);
-        JSONObject expectedResult = ActualResult.resultCorrect();
+        JSONObject expectedResult = ExpectedResult.resultCorrect();
         String result = PostRequest.zhenPiaoYunRequest(file, TestEnv.testEnv);
         JSONObject runResult = AcquireSubstr.analyzeString(result);
         System.out.println(result);
-        Assert.assertEquals(expectedResult,runResult);
+        Assert.assertEquals(runResult,expectedResult);
     }
 
     @Test(groups = {"普票冲红"},description = "所有参数均正常，冲红一张增值税普通发票")
@@ -44,10 +44,10 @@ public class PuPiao {
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println(file);
         String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
-        JSONObject expectedResult = ActualResult.resultCorrect();
+        JSONObject expectedResult = ExpectedResult.resultCorrect();
         JSONObject actualResult = AcquireSubstr.analyzeString(result);
         System.out.println(result);
-        Assert.assertEquals(expectedResult,actualResult);
+        Assert.assertEquals(actualResult,expectedResult);
     }
 
     @Test(groups = {"多行普票开具"},description = "所有参数均正常，开具一张6行商品的普票")
@@ -55,10 +55,10 @@ public class PuPiao {
         String file = MultiLineGroup.multiLineGroup("007",6);
         System.out.println("本次请求的报文:"+file);
         String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
-        JSONObject expectedResult = ActualResult.resultCorrect();
+        JSONObject expectedResult = ExpectedResult.resultCorrect();
         JSONObject runResult = AcquireSubstr.analyzeString(result);
         System.out.println(result);
-        Assert.assertEquals(expectedResult,runResult);
+        Assert.assertEquals(runResult,expectedResult);
     }
 
     @Test(groups = {"多行普票开具"},description = "所有参数均正常,开具一张8行商品的普票")
@@ -67,9 +67,9 @@ public class PuPiao {
         System.out.println("本次请求的报文:" + file);
         String result = PostRequest.zhenPiaoYunRequest(file, TestEnv.testEnv);
         System.out.println(result);
-        JSONObject expectedResult = ActualResult.resultCorrect();
+        JSONObject expectedResult = ExpectedResult.resultCorrect();
         JSONObject runResult = AcquireSubstr.analyzeString(result);
-        Assert.assertEquals(expectedResult, runResult);
+        Assert.assertEquals(runResult, expectedResult);
     }
 
     @Test(groups = {"多行普票开具"},description = "所有参数均正常，开具一张9行商品的普票")
@@ -78,8 +78,8 @@ public class PuPiao {
         System.out.println("本次请求的报文:"+file);
         String result = PostRequest.zhenPiaoYunRequest(file, TestEnv.testEnv);
         System.out.println(result);
-        JSONObject expectedResult = ActualResult.resultCorrect();
+        JSONObject expectedResult = ExpectedResult.resultCorrect();
         JSONObject runResult = AcquireSubstr.analyzeString(result);
-        Assert.assertEquals(expectedResult, runResult);
+        Assert.assertEquals(runResult, expectedResult);
     }
 }

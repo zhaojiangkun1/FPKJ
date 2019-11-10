@@ -6,10 +6,15 @@
             <run>
                 <include name="开具电子票"/>
                 <include name="异常开票"/>
+                <include name="开具普票"/>
+                <include name="开具专票"/>
+                <include name="普票红冲"/>
             </run>
         </groups>
         <classes>
             <class name="Case.Fpqqlsh"/>
+            <class name="Case.Bz"/>
+            <class name="Case.De"/>
         </classes>
     </test>
 
