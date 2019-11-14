@@ -22,12 +22,13 @@ public class Kpr {
         JSONObject actualResult = AcquireSubstr.analyzeString(result);
         Assert.assertEquals(actualResult,expectedResult);
     }
-    @Test(groups = {"正常开票"},description = "开票人为null")
+    @Test(groups = {"异常开票"},description = "开票人为null")
     public void  kpr1() throws IOException,NoSuchAlgorithmException{
         map.put("kpr",null);
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println("本次请求的报文为:"+file);
-        expectedResult = ExpectedResult.resultCorrect();
+        expectedResult.put("returncode","1000024");
+        expectedResult.put("returnmsg","商户开票人、复核人等信息未正确配置");
         String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
         System.out.println(result);
         JSONObject actualResult = AcquireSubstr.analyzeString(result);
@@ -38,7 +39,8 @@ public class Kpr {
         map.put("kpr2","#%$%%#$%😄");
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println("本次请求的报文为:"+file);
-        expectedResult = ExpectedResult.resultCorrect();
+        expectedResult.put("returncode","1000024");
+        expectedResult.put("returnmsg","商户开票人、复核人等信息未正确配置");
         String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
         System.out.println(result);
         JSONObject actualResult = AcquireSubstr.analyzeString(result);

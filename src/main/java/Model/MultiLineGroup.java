@@ -20,9 +20,9 @@ public class MultiLineGroup {
         Element fppqqlsh = new Element("fpqqlsh");
         input.addContent(fppqqlsh.setText(UpdateFpqqlsh.numbersLetters()));
         Element shnsrsbh = new Element("shnsrsbh");
-        input.addContent(shnsrsbh.setText("110101201707010057"));
+        input.addContent(shnsrsbh.setText("110101201601010075"));
         Element jsbh = new Element("jsbh");
-        input.addContent(jsbh.setText("110101201707010057~~499000152456"));
+        input.addContent(jsbh.setText("110101201601010075~~499000153838"));
 
         Element kplx = new Element("kplx");
         input.addContent(kplx.setText("0"));

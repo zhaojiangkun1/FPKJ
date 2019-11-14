@@ -4,10 +4,15 @@
     <test name="臻票云接口自动化测试">
         <groups>
             <run>
-                <include name="开具电子票"/>
+                <include name="正常开票"/>
                 <include name="异常开票"/>
+                <include name="多行电票开具"/>
+                <include name="自助开票"/>
+                <include name="电票冲红"/>
                 <include name="开具普票"/>
+                <include name="多行普票开具"/>
                 <include name="开具专票"/>
+                <include name="多行专票开具"/>
                 <include name="普票红冲"/>
             </run>
         </groups>
@@ -15,6 +20,28 @@
             <class name="Case.Fpqqlsh"/>
             <class name="Case.Bz"/>
             <class name="Case.De"/>
+            <class name="Case.DianPiao"/>
+            <class name="Case.Jsbh"/>
+            <class name="Case.Kplx"/>
+            <class name="Case.PuPiao"/>
+            <class name="Case.JuanPiao"/>
+            <class name="Case.Skr"/>
+            <class name="Case.Kpr"/>
+            <class name="Case.Fhr"/>
+            <class name="Case.Yhlx"/>
+            <class name="Case.Zxbm"/>
+            <class name="Case.ZhuanPiao"/>
+            <class name="Case.Fphxz"/>
+            <class name="Case.Fplxdm"/>
+            <class name="Case.Yfpdm"/>
+            <class name="Case.Ggxh"/>
+            <class name="Case.Yhzcbs"/>
+            <class name="Case.Spbm"/>
+            <class name="Case.Shnsrsbh"/>
+            <class name="Case.Ghdwdzdh"/>
+            <class name="Case.Ghdwsbh"/>
+            <class name="Case.Ghdwmc"/>
+            <class name="Case.Ghdwyhzh"/>
         </classes>
     </test>
 

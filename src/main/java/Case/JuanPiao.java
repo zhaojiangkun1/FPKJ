@@ -15,8 +15,6 @@ public class JuanPiao {
     HashMap<String,String> map = new HashMap<>();
     @Test(groups = {"开具卷票"},description = "所有参数均正常，开具一张卷票")
     public void juanPiao() throws IOException, NoSuchAlgorithmException {
-        map.put("shnsrsbh","500102010001459");
-        map.put("jsbh","500102010001459~~499000115698");
         map.put("fplxdm","025");
         map.put("sprsjh","");
         map.put("readonly","0");

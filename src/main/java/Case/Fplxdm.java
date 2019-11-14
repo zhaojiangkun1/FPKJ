@@ -19,6 +19,10 @@ public class Fplxdm {
      * 发票类型代码为空，分两种情况
      * 1）如果在老板通——扫码台配置的界面，配置了默认开票的发票类型，则取这个默认值
      * 2）如果未配置默认的开票类型，则发票类型代码必须为空
+     *
+     * 商户扫码台开票企业信息未正确配置
+     * 1000025
+     *
      * @throws IOException
      * @throws NoSuchAlgorithmException
      */

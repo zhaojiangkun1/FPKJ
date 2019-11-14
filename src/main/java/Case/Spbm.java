@@ -35,7 +35,7 @@ public class Spbm {
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println("本次请求的报文为:"+file);
         expectedResult.put("returncode","300091");
-        expectedResult.put("returnmsg","传入商品编码在局端不存在");
+        expectedResult.put("returnmsg","传入商品编码在局端不存在，请检查");
         String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
         System.out.println(result);
         JSONObject actualResult = AcquireSubstr.analyzeString(result);

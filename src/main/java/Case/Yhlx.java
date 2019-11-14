@@ -29,7 +29,7 @@ public class Yhlx {
     }
 
     /**
-     * 用户类型为3，也默认开票成功（电子发票）
+     * 用户类型为3，也默认开票成功（电子发票）,也就是当用户类型不存在，则怀疑是取了扫码台的发票配置
      * @throws IOException
      * @throws NoSuchAlgorithmException
      */

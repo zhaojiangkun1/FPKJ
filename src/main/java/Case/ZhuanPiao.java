@@ -1,10 +1,7 @@
 package Case;
 
 import Bean.TestEnv;
-import Model.AcquireSubstr;
-import Model.ExpectedResult;
-import Model.Java2XML;
-import Model.PostRequest;
+import Model.*;
 import com.alibaba.fastjson.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -45,6 +42,39 @@ public class ZhuanPiao {
         map.put("tzdbh","");
 
         String file = Java2XML.BuildXMLDoc(map);
+        System.out.println(file);
+        JSONObject expectedResult = ExpectedResult.resultCorrect();
+        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
+        JSONObject runResult = AcquireSubstr.analyzeString(result);
+        System.out.println(result);
+        Assert.assertEquals(runResult,expectedResult);
+    }
+
+    @Test(groups = {"多行专票开具"},description = "6行商品的专票开具")
+    public void multiGroupZhuanPiao() throws IOException, NoSuchAlgorithmException {
+        String file = MultiLineGroup.multiLineGroup("004",6);
+        System.out.println(file);
+        JSONObject expectedResult = ExpectedResult.resultCorrect();
+        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
+        JSONObject runResult = AcquireSubstr.analyzeString(result);
+        System.out.println(result);
+        Assert.assertEquals(runResult,expectedResult);
+    }
+
+    @Test(groups = {"多行专票开具"},description = "8行商品的专票开具")
+    public void multiGroupZhuanPiao1() throws IOException, NoSuchAlgorithmException {
+        String file = MultiLineGroup.multiLineGroup("004",8);
+        System.out.println(file);
+        JSONObject expectedResult = ExpectedResult.resultCorrect();
+        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
+        JSONObject runResult = AcquireSubstr.analyzeString(result);
+        System.out.println(result);
+        Assert.assertEquals(runResult,expectedResult);
+    }
+
+    @Test(groups = {"多行专票开具"},description = "9行商品的专票开具")
+    public void multiGroupZhuanPiao2() throws IOException, NoSuchAlgorithmException {
+        String file = MultiLineGroup.multiLineGroup("004",9);
         System.out.println(file);
         JSONObject expectedResult = ExpectedResult.resultCorrect();
         String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);

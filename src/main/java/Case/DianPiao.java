@@ -15,7 +15,9 @@ public class DianPiao {
 
     @Test(groups = {"开具电票"},description = "所有参数都正常，开具一张电票")
     public void dianPiao() throws IOException, NoSuchAlgorithmException {
-        map.put("readonly","0");
+        map.put("readonly","1");
+        map.put("shnsrsbh","110101201601010075");
+        map.put("jsbh","110101201601010075~~499000153838");
         map.put("sprsjh","zhaokun@shuzutech.com");
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println("本次请求的报文:"+file);
@@ -29,9 +31,6 @@ public class DianPiao {
     @Test(groups = {"自助开票"},description = "所有参数都正常，自助开票")
     public void ziZhuKaiPiao() throws IOException, NoSuchAlgorithmException {
         map.put("yhlx","1");
-        map.put("shnsrsbh","110101201707010057");
-        map.put("jsbh","110101201707010057~~499000152456");
-        map.put("title_type","1");
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println("本次请求的报文:"+file);
         String result = PostRequest.zhenPiaoYunRequest(file, TestEnv.testEnv);
@@ -41,19 +40,17 @@ public class DianPiao {
         Assert.assertEquals(runResult,expectedResult);
     }
 
-    @Test(groups = {"开具电票"},description = "所有参数均正常，开具一张负数发票")
+    @Test(groups = {"电票冲红"},description = "所有参数均正常，开具一张负数发票")
     public void dianPiaoChongHong() throws IOException, NoSuchAlgorithmException {
-        map.put("shnsrsbh","110101201707010043");
-        map.put("jsbh","110101201707010043~~A20016420000265");
         map.put("kplx","1");
-        map.put("spsl","");
-        map.put("dj","");
-        map.put("je","");
-        map.put("sl","");
-        map.put("se","");
+        map.put("spsl","-1");
+        map.put("dj","32.6");
+        map.put("je","-32.6");
+        map.put("sl","0.06");
+        map.put("se","-1.96");
         map.put("readonly","0");
-        map.put("yfpdm","");
-        map.put("yfphm","");
+        map.put("yfpdm","150000456123");
+        map.put("yfphm","36873823");
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println("本次请求的报文:"+file);
         String result = PostRequest.zhenPiaoYunRequest(file, TestEnv.testEnv);

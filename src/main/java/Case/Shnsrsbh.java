@@ -37,9 +37,14 @@ public class Shnsrsbh {
         Assert.assertEquals(actualResult,expectedResult);
     }
 
+    /**
+     *
+     * @throws IOException
+     * @throws NoSuchAlgorithmException
+     */
     @Test(groups = {"异常开票"},description = "销方纳税人识别号与机身编号中税号不一致")
     public void shnsrsbh2() throws IOException, NoSuchAlgorithmException {
-        map.put("shnsrsbh","12312312312312");
+        map.put("shnsrsbh","000012312312312");
         String file = Java2XML.BuildXMLDoc(map);
         System.out.println("本次请求的报文:"+file);
         JSONObject expectedResult = new JSONObject();

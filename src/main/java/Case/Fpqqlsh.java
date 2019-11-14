@@ -32,7 +32,7 @@ public class Fpqqlsh {
         Assert.assertEquals(actualResult,expectedResult);
     }
 
-    @Test(groups = {"开具电子票"},description = "发票请求流水号为1个数字",priority = 4)
+    @Test(groups = {"正常开票"},description = "发票请求流水号为1个数字",priority = 4)
     public void fpqqlsh2() throws IOException, NoSuchAlgorithmException {
         map.put("fpqqlsh","0");
         String file = Java2XML.BuildXMLDoc(map);
@@ -45,7 +45,7 @@ public class Fpqqlsh {
 
     }
 
-    @Test(groups = {"开具电子票"},description = "发票请求流水号为1个字母")
+    @Test(groups = {"正常开票"},description = "发票请求流水号为1个字母")
     public void fpqqlsh3() throws IOException, NoSuchAlgorithmException {
         map.put("fpqqlsh",String.valueOf(UpdateFpqqlsh.randGenerated()));
         String file = Java2XML.BuildXMLDoc(map);
@@ -58,7 +58,7 @@ public class Fpqqlsh {
 
     }
 
-    @Test(groups = {"开具电子票"},description = "发票请求流水号为64位数字")
+    @Test(groups = {"正常开票"},description = "发票请求流水号为64位数字")
     public void fpqqlsh4() throws IOException, NoSuchAlgorithmException {
         map.put("fpqqlsh", UpdateFpqqlsh.numbers64());
         String file = Java2XML.BuildXMLDoc(map);
@@ -70,7 +70,7 @@ public class Fpqqlsh {
         Assert.assertEquals(actualResult,expectedResult);
     }
 
-    @Test(groups = {"开具电子票"},description = "发票请求流水号为64位字母")
+    @Test(groups = {"正常开票"},description = "发票请求流水号为64位字母")
     public void fpqqlsh5() throws IOException, NoSuchAlgorithmException {
         map.put("fpqqlsh", UpdateFpqqlsh.letters64());
         String file = Java2XML.BuildXMLDoc(map);
@@ -82,7 +82,7 @@ public class Fpqqlsh {
         Assert.assertEquals(actualResult,expectedResult);
     }
 
-    @Test(groups = {"开具电子票"},description = "发票请求流水号为字母和数字的组合")
+    @Test(groups = {"正常开票"},description = "发票请求流水号为字母和数字的组合")
     public void fpqqlsh6() throws IOException, NoSuchAlgorithmException {
         map.put("fpqqlsh", UpdateFpqqlsh.numbersLetters());
         String file = Java2XML.BuildXMLDoc(map);
@@ -142,7 +142,7 @@ public class Fpqqlsh {
         Assert.assertEquals(actualResult,expectedResult);
     }
 
-    @Test(groups = {"开具电子票"},description = "不同应用，发票请求流水号相同")
+    @Test(groups = {"正常开票"},description = "不同应用，发票请求流水号相同")
     public void fpqqlsh11() throws IOException, NoSuchAlgorithmException {
         map.put("fpqqlsh","0");
         System.out.println("本次请求的报文:"+Java2XML.BuildXMLDoc(map));

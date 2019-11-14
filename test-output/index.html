@@ -49,7 +49,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Oct 18, 2019 01:27:25 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Nov 14, 2019 04:16:29 PM</span>
 				</a>
 			</li>
 			<li>
@@ -88,8 +88,15 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>正常开票</a></li>
 					<li><a href='#'>异常开票</a></li>
-					<li><a href='#'>开具电子票</a></li>
+					<li><a href='#'>电票冲红</a></li>
+					<li><a href='#'>多行电票开具</a></li>
+					<li><a href='#'>自助开票</a></li>
+					<li><a href='#'>多行专票开具</a></li>
+					<li><a href='#'>开具专票</a></li>
+					<li><a href='#'>多行普票开具</a></li>
+					<li><a href='#'>开具普票</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -137,10 +144,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='81.818%'><span class='strong'>9</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='86.076%'><span class='strong'>68</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='18.182%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='13.924%'>11</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -152,10 +159,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='81.818%'><span class='strong'>9</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='86.076%'><span class='strong'>68</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='18.182%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='13.924%'>11</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -172,19 +179,19 @@
 				
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>同一应用开票，发票请求流水号相同</span>
-						<span class='test-time'>Oct 18, 2019 01:27:26 AM</span>
+						<span class='test-name'>不同应用，发票请求流水号相同</span>
+						<span class='test-time'>Nov 14, 2019 04:16:31 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 18, 2019 01:27:26 AM</span>
-	<span class='label end-time'>Oct 18, 2019 01:27:29 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+776ms</span>
+	<span class='label start-time'>Nov 14, 2019 04:16:31 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:16:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+652ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>异常开票</span>
+				<span class='category label white-text'>正常开票</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -199,14 +206,14 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>1:27:46 AM</td>
+					<td class='timestamp'>4:19:06 PM</td>
 					<td class='step-details'><pre>java.lang.AssertionError: expected [{"returnmsg":"提交成功，请稍后查询","returncode":"0"}] but found [{"returnmsg":"当前发票处于:开具成功后打印成功状态,不支持重新开具","returncode":"1000012"}]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:442)
-	at Case.Fpqqlsh.fpqqlsh10(Fpqqlsh.java:142)
+	at Case.Fpqqlsh.fpqqlsh11(Fpqqlsh.java:153)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -242,19 +249,19 @@
 				
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>发票请求流水号为1个数字</span>
-						<span class='test-time'>Oct 18, 2019 01:27:32 AM</span>
+						<span class='test-name'>开票人为null</span>
+						<span class='test-time'>Nov 14, 2019 04:17:03 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 18, 2019 01:27:32 AM</span>
-	<span class='label end-time'>Oct 18, 2019 01:27:33 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+385ms</span>
+	<span class='label start-time'>Nov 14, 2019 04:17:03 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+645ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>开具电子票</span>
+				<span class='category label white-text'>正常开票</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -269,8 +276,638 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>1:27:46 AM</td>
-					<td class='step-details'><pre>java.lang.AssertionError: expected [{"returnmsg":"当前发票处于:开具成功后打印成功状态,不支持重新开具","returncode":"1000012"}] but found [{"returnmsg":"提交成功，请稍后查询","returncode":"0"}]
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: expected [{"returnmsg":"提交成功，请稍后查询","returncode":"0"}] but found [{"returnmsg":"商户开票人、复核人等信息未正确配置","returncode":"1000024"}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at Case.Kpr.kpr1(Kpr.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>开票人含特殊字符</span>
+						<span class='test-time'>Nov 14, 2019 04:17:03 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:03 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:04 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+416ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: expected [{"returnmsg":"提交成功，请稍后查询","returncode":"0"}] but found [{"returnmsg":"商户开票人、复核人等信息未正确配置","returncode":"1000024"}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at Case.Kpr.kpr2(Kpr.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>用户类型3</span>
+						<span class='test-time'>Nov 14, 2019 04:17:30 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:30 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:33 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+664ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: expected [{"returnmsg":"yhlx:参数错误","returncode":"10001"}] but found [{"returnmsg":"提交成功，请稍后查询","returncode":"0"}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at Case.Yhlx.yhlx3(Yhlx.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>开票其它参数正常，发票类型代码为空</span>
+						<span class='test-time'>Nov 14, 2019 04:18:26 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:26 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+255ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: expected [{"returnmsg":"提交成功，请稍后查询","returncode":"0"}] but found [{"returnmsg":"商户扫码台开票企业信息未正确配置","returncode":"1000025"}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at Case.Fplxdm.fplxdm(Fplxdm.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>当开票类型为1时,只有原发票号码</span>
+						<span class='test-time'>Nov 14, 2019 04:18:27 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:27 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:28 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+226ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: expected [{"returnmsg":"红冲必须传原发票号码和原发票代码","returncode":"10001"}] but found [{"returnmsg":"原发票记录不存在","returncode":"10001"}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at Case.Yfpdm.yfpdm1(Yfpdm.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>传入商品编码在局端不存在</span>
+						<span class='test-time'>Nov 14, 2019 04:18:45 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:45 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:46 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+505ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: expected [{"returnmsg":"传入商品编码在局端不存在","returncode":"300091"}] but found [{"returnmsg":"传入商品编码在局端不存在，请检查","returncode":"300091"}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at Case.Spbm.spbm2(Spbm.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>销方纳税人识别号与机身编号中税号不一致</span>
+						<span class='test-time'>Nov 14, 2019 04:18:49 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:49 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:50 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+941ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: expected [{"returnmsg":"机身编号中的税号与传入的纳税人识别号不一致","returncode":"1000052"}] but found [{"returnmsg":"您的应用没有该商户的授权，请联系商户完成授权","returncode":"10001"}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at Case.Shnsrsbh.shnsrsbh2(Shnsrsbh.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>机身编号存在，但是销方纳税人识别号为空</span>
+						<span class='test-time'>Nov 14, 2019 04:18:50 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:50 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:50 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+189ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: expected [{"returnmsg":"提交成功，请稍后查询","returncode":"0"}] but found [{"returnmsg":"纳税人识别号对应商户不存在","returncode":"1000009"}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at Case.Shnsrsbh.shnsrsbh3(Shnsrsbh.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>购货单位识别号大于20位</span>
+						<span class='test-time'>Nov 14, 2019 04:18:50 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:50 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+242ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: expected [{"returnmsg":"提交成功，请稍后查询","returncode":"0"}] but found [{"returnmsg":"ghdwsbh:参数错误","returncode":"10001"}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at Case.Ghdwsbh.ghdwsbh6(Ghdwsbh.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>发票请求流水号为1个数字</span>
+						<span class='test-time'>Nov 14, 2019 04:19:04 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:19:04 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:19:06 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+861ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: expected [{"returnmsg":"提交成功，请稍后查询","returncode":"0"}] but found [{"returnmsg":"当前发票处于:开具成功后打印成功状态,不支持重新开具","returncode":"1000012"}]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -310,17 +947,17 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
 					<div class='test-heading'>
 						<span class='test-name'>发票请求流水号为空</span>
-						<span class='test-time'>Oct 18, 2019 01:27:25 AM</span>
+						<span class='test-time'>Nov 14, 2019 04:16:29 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 18, 2019 01:27:25 AM</span>
-	<span class='label end-time'>Oct 18, 2019 01:27:26 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+483ms</span>
+	<span class='label start-time'>Nov 14, 2019 04:16:29 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:16:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+156ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -339,7 +976,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:27:46 AM</td>
+					<td class='timestamp'>4:19:06 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -349,21 +986,21 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
 					<div class='test-heading'>
-						<span class='test-name'>不同应用，发票请求流水号相同</span>
-						<span class='test-time'>Oct 18, 2019 01:27:29 AM</span>
+						<span class='test-name'>同一应用开票，发票请求流水号相同</span>
+						<span class='test-time'>Nov 14, 2019 04:16:31 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 18, 2019 01:27:29 AM</span>
-	<span class='label end-time'>Oct 18, 2019 01:27:32 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+875ms</span>
+	<span class='label start-time'>Nov 14, 2019 04:16:31 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:16:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+244ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>开具电子票</span>
+				<span class='category label white-text'>异常开票</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -378,7 +1015,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:27:46 AM</td>
+					<td class='timestamp'>4:19:06 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -388,21 +1025,21 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
 					<div class='test-heading'>
 						<span class='test-name'>发票请求流水号为1个字母</span>
-						<span class='test-time'>Oct 18, 2019 01:27:33 AM</span>
+						<span class='test-time'>Nov 14, 2019 04:16:32 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 18, 2019 01:27:33 AM</span>
-	<span class='label end-time'>Oct 18, 2019 01:27:36 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+122ms</span>
+	<span class='label start-time'>Nov 14, 2019 04:16:32 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:16:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+943ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>开具电子票</span>
+				<span class='category label white-text'>正常开票</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -417,7 +1054,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:27:46 AM</td>
+					<td class='timestamp'>4:19:06 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -427,21 +1064,21 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
 					<div class='test-heading'>
 						<span class='test-name'>发票请求流水号为64位数字</span>
-						<span class='test-time'>Oct 18, 2019 01:27:36 AM</span>
+						<span class='test-time'>Nov 14, 2019 04:16:35 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 18, 2019 01:27:36 AM</span>
-	<span class='label end-time'>Oct 18, 2019 01:27:38 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+745ms</span>
+	<span class='label start-time'>Nov 14, 2019 04:16:35 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:16:38 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+51ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>开具电子票</span>
+				<span class='category label white-text'>正常开票</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -456,7 +1093,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:27:46 AM</td>
+					<td class='timestamp'>4:19:06 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -466,21 +1103,21 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
 					<div class='test-heading'>
 						<span class='test-name'>发票请求流水号为64位字母</span>
-						<span class='test-time'>Oct 18, 2019 01:27:38 AM</span>
+						<span class='test-time'>Nov 14, 2019 04:16:38 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 18, 2019 01:27:38 AM</span>
-	<span class='label end-time'>Oct 18, 2019 01:27:41 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+971ms</span>
+	<span class='label start-time'>Nov 14, 2019 04:16:38 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:16:41 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+688ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>开具电子票</span>
+				<span class='category label white-text'>正常开票</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -495,7 +1132,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:27:46 AM</td>
+					<td class='timestamp'>4:19:06 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -505,21 +1142,21 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
 					<div class='test-heading'>
 						<span class='test-name'>发票请求流水号为字母和数字的组合</span>
-						<span class='test-time'>Oct 18, 2019 01:27:41 AM</span>
+						<span class='test-time'>Nov 14, 2019 04:16:41 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 18, 2019 01:27:41 AM</span>
-	<span class='label end-time'>Oct 18, 2019 01:27:45 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+960ms</span>
+	<span class='label start-time'>Nov 14, 2019 04:16:41 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:16:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+56ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>开具电子票</span>
+				<span class='category label white-text'>正常开票</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -534,7 +1171,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:27:46 AM</td>
+					<td class='timestamp'>4:19:06 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -544,17 +1181,17 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
 					<div class='test-heading'>
 						<span class='test-name'>发票请求流水号为65位</span>
-						<span class='test-time'>Oct 18, 2019 01:27:45 AM</span>
+						<span class='test-time'>Nov 14, 2019 04:16:44 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 18, 2019 01:27:45 AM</span>
-	<span class='label end-time'>Oct 18, 2019 01:27:46 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+191ms</span>
+	<span class='label start-time'>Nov 14, 2019 04:16:44 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:16:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+253ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -573,7 +1210,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:27:46 AM</td>
+					<td class='timestamp'>4:19:06 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -583,17 +1220,17 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
 					<div class='test-heading'>
 						<span class='test-name'>发票请求流水号含有特殊字符</span>
-						<span class='test-time'>Oct 18, 2019 01:27:46 AM</span>
+						<span class='test-time'>Nov 14, 2019 04:16:44 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 18, 2019 01:27:46 AM</span>
-	<span class='label end-time'>Oct 18, 2019 01:27:46 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+189ms</span>
+	<span class='label start-time'>Nov 14, 2019 04:16:44 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:16:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+253ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -612,7 +1249,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:27:46 AM</td>
+					<td class='timestamp'>4:19:06 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -622,17 +1259,17 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
 					<div class='test-heading'>
 						<span class='test-name'>发票请求流水号为null</span>
-						<span class='test-time'>Oct 18, 2019 01:27:46 AM</span>
+						<span class='test-time'>Nov 14, 2019 04:16:44 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 18, 2019 01:27:46 AM</span>
-	<span class='label end-time'>Oct 18, 2019 01:27:46 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+203ms</span>
+	<span class='label start-time'>Nov 14, 2019 04:16:44 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:16:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+257ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -651,7 +1288,2308 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:27:46 AM</td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>收款人为空</span>
+						<span class='test-time'>Nov 14, 2019 04:16:44 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:16:44 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:16:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+16ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>收款人为null</span>
+						<span class='test-time'>Nov 14, 2019 04:16:47 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:16:47 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:16:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+860ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>备注长度为空</span>
+						<span class='test-time'>Nov 14, 2019 04:16:51 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:16:51 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:16:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+814ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>备注长度为null</span>
+						<span class='test-time'>Nov 14, 2019 04:16:55 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:16:55 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:16:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+999ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='25'>
+					<div class='test-heading'>
+						<span class='test-name'>备注长度超过142</span>
+						<span class='test-time'>Nov 14, 2019 04:16:58 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:16:58 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:16:59 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+640ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='26'>
+					<div class='test-heading'>
+						<span class='test-name'>开票人为管理员</span>
+						<span class='test-time'>Nov 14, 2019 04:16:59 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:16:59 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+5ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='27'>
+					<div class='test-heading'>
+						<span class='test-name'>单位商品数量单价税率税额均合理</span>
+						<span class='test-time'>Nov 14, 2019 04:17:04 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:04 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+134ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='28'>
+					<div class='test-heading'>
+						<span class='test-name'>不含税金额*税率与税额误差大于 0.06</span>
+						<span class='test-time'>Nov 14, 2019 04:17:07 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:07 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+268ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='29'>
+					<div class='test-heading'>
+						<span class='test-name'>数量*单价与金额误差大于 0.01</span>
+						<span class='test-time'>Nov 14, 2019 04:17:07 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:07 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+234ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='30'>
+					<div class='test-heading'>
+						<span class='test-name'>复核人为空</span>
+						<span class='test-time'>Nov 14, 2019 04:17:07 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:07 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+716ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='31'>
+					<div class='test-heading'>
+						<span class='test-name'>复核人为Null</span>
+						<span class='test-time'>Nov 14, 2019 04:17:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:10 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+747ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='32'>
+					<div class='test-heading'>
+						<span class='test-name'>复核人含特殊字符</span>
+						<span class='test-time'>Nov 14, 2019 04:17:13 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:13 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+387ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='33'>
+					<div class='test-heading'>
+						<span class='test-name'>所有参数均正常，开具一张负数发票</span>
+						<span class='test-time'>Nov 14, 2019 04:17:13 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:13 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+475ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>电票冲红</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='34'>
+					<div class='test-heading'>
+						<span class='test-name'>所有参数均正常,开具一张6行商品的电票</span>
+						<span class='test-time'>Nov 14, 2019 04:17:17 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:17 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:21 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+165ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>多行电票开具</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='35'>
+					<div class='test-heading'>
+						<span class='test-name'>所有参数均正常，开具一张8行商品的电票</span>
+						<span class='test-time'>Nov 14, 2019 04:17:21 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:21 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+145ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>多行电票开具</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='36'>
+					<div class='test-heading'>
+						<span class='test-name'>所有参数均正常,开具一张9行商品的电票</span>
+						<span class='test-time'>Nov 14, 2019 04:17:25 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:25 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:29 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+776ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>多行电票开具</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='37'>
+					<div class='test-heading'>
+						<span class='test-name'>所有参数都正常，自助开票</span>
+						<span class='test-time'>Nov 14, 2019 04:17:29 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:29 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+815ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>自助开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='38'>
+					<div class='test-heading'>
+						<span class='test-name'>yhlx用户类型为空</span>
+						<span class='test-time'>Nov 14, 2019 04:17:30 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:30 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+220ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='39'>
+					<div class='test-heading'>
+						<span class='test-name'>机身编号为空</span>
+						<span class='test-time'>Nov 14, 2019 04:17:33 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:33 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+648ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='40'>
+					<div class='test-heading'>
+						<span class='test-name'>机身编号为null</span>
+						<span class='test-time'>Nov 14, 2019 04:17:35 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:35 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:38 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+986ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='41'>
+					<div class='test-heading'>
+						<span class='test-name'>开票终端标识~~纳税人标号</span>
+						<span class='test-time'>Nov 14, 2019 04:17:38 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:38 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:38 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+182ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='42'>
+					<div class='test-heading'>
+						<span class='test-name'>自行编码为00</span>
+						<span class='test-time'>Nov 14, 2019 04:17:38 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:38 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:42 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+966ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='43'>
+					<div class='test-heading'>
+						<span class='test-name'>自行编码为null</span>
+						<span class='test-time'>Nov 14, 2019 04:17:42 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:42 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+971ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='44'>
+					<div class='test-heading'>
+						<span class='test-name'>开票其它参数均正常，开票类型为空</span>
+						<span class='test-time'>Nov 14, 2019 04:17:47 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:47 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:48 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+249ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='45'>
+					<div class='test-heading'>
+						<span class='test-name'>开票其它参数均正常，开票类型为null</span>
+						<span class='test-time'>Nov 14, 2019 04:17:48 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:48 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:48 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+290ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='46'>
+					<div class='test-heading'>
+						<span class='test-name'>开票其它参数均正常，开票类型为2</span>
+						<span class='test-time'>Nov 14, 2019 04:17:48 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:48 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:48 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+470ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='47'>
+					<div class='test-heading'>
+						<span class='test-name'>6行商品的专票开具</span>
+						<span class='test-time'>Nov 14, 2019 04:17:48 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:48 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+841ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>多行专票开具</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='48'>
+					<div class='test-heading'>
+						<span class='test-name'>8行商品的专票开具</span>
+						<span class='test-time'>Nov 14, 2019 04:17:51 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:51 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+838ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>多行专票开具</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='49'>
+					<div class='test-heading'>
+						<span class='test-name'>9行商品的专票开具</span>
+						<span class='test-time'>Nov 14, 2019 04:17:54 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:54 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:17:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+181ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>多行专票开具</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='50'>
+					<div class='test-heading'>
+						<span class='test-name'>所有参数均正常，开具一张专票</span>
+						<span class='test-time'>Nov 14, 2019 04:17:58 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:17:58 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:02 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+114ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>开具专票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='51'>
+					<div class='test-heading'>
+						<span class='test-name'>所有参数均正常，开具一张6行商品的普票</span>
+						<span class='test-time'>Nov 14, 2019 04:18:02 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:02 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+121ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>多行普票开具</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='52'>
+					<div class='test-heading'>
+						<span class='test-name'>所有参数均正常,开具一张8行商品的普票</span>
+						<span class='test-time'>Nov 14, 2019 04:18:07 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:07 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+107ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>多行普票开具</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='53'>
+					<div class='test-heading'>
+						<span class='test-name'>所有参数均正常，开具一张9行商品的普票</span>
+						<span class='test-time'>Nov 14, 2019 04:18:12 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:12 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+783ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>多行普票开具</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='54'>
+					<div class='test-heading'>
+						<span class='test-name'>所有参数均正常，开具一张增值税普通发票</span>
+						<span class='test-time'>Nov 14, 2019 04:18:16 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:16 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:21 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+942ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>开具普票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='55'>
+					<div class='test-heading'>
+						<span class='test-name'>非折扣行商品，单个商品的发票行性质为空</span>
+						<span class='test-time'>Nov 14, 2019 04:18:21 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:21 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+285ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='56'>
+					<div class='test-heading'>
+						<span class='test-name'>非折扣行商品，单个商品的发票行性质为0</span>
+						<span class='test-time'>Nov 14, 2019 04:18:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:22 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+648ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='57'>
+					<div class='test-heading'>
+						<span class='test-name'>非折扣行商品，单个商品发票行性质为1</span>
+						<span class='test-time'>Nov 14, 2019 04:18:25 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:25 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+308ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='58'>
+					<div class='test-heading'>
+						<span class='test-name'>非折扣行商品，单个商品的发票行性质为2</span>
+						<span class='test-time'>Nov 14, 2019 04:18:26 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:26 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+326ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='59'>
+					<div class='test-heading'>
+						<span class='test-name'>单个商品的发票行性质为null</span>
+						<span class='test-time'>Nov 14, 2019 04:18:26 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:26 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+301ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='60'>
+					<div class='test-heading'>
+						<span class='test-name'>单个商品的发票行性质为3</span>
+						<span class='test-time'>Nov 14, 2019 04:18:26 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:26 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+230ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='61'>
+					<div class='test-heading'>
+						<span class='test-name'>开票其它参数正常，发票类型代码为027</span>
+						<span class='test-time'>Nov 14, 2019 04:18:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:27 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+284ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='62'>
+					<div class='test-heading'>
+						<span class='test-name'>当开票类型为1时,只有原发票代码</span>
+						<span class='test-time'>Nov 14, 2019 04:18:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:27 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+284ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='63'>
+					<div class='test-heading'>
+						<span class='test-name'>负数发票，原发票不存在</span>
+						<span class='test-time'>Nov 14, 2019 04:18:28 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:28 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+328ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='64'>
+					<div class='test-heading'>
+						<span class='test-name'>开票的规格型号不为空</span>
+						<span class='test-time'>Nov 14, 2019 04:18:30 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:30 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:33 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+94ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='65'>
+					<div class='test-heading'>
+						<span class='test-name'>规格型号为空</span>
+						<span class='test-time'>Nov 14, 2019 04:18:33 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:33 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:37 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+19ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='66'>
+					<div class='test-heading'>
+						<span class='test-name'>优惠政策标识为0,不使用优惠政策</span>
+						<span class='test-time'>Nov 14, 2019 04:18:37 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:37 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:40 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+327ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='67'>
+					<div class='test-heading'>
+						<span class='test-name'>优惠政策标识为1,增值税特殊管理为免税</span>
+						<span class='test-time'>Nov 14, 2019 04:18:40 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:40 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+691ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='68'>
+					<div class='test-heading'>
+						<span class='test-name'>优惠政策标识含特殊字符</span>
+						<span class='test-time'>Nov 14, 2019 04:18:44 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:44 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+537ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='69'>
+					<div class='test-heading'>
+						<span class='test-name'>存在商品信息，但是商品编码为空</span>
+						<span class='test-time'>Nov 14, 2019 04:18:44 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:44 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:45 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+632ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='70'>
+					<div class='test-heading'>
+						<span class='test-name'>该商户在老板通上存在默认商品，只传商品金额等信息，不传商品名称及商品编码</span>
+						<span class='test-time'>Nov 14, 2019 04:18:46 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:46 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:48 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+876ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='71'>
+					<div class='test-heading'>
+						<span class='test-name'>销方纳税人识别号与机身编号同时为空</span>
+						<span class='test-time'>Nov 14, 2019 04:18:48 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:48 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:49 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+229ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='72'>
+					<div class='test-heading'>
+						<span class='test-name'>专票开具，其购货单位地址电话为空</span>
+						<span class='test-time'>Nov 14, 2019 04:18:50 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:50 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:50 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+242ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='73'>
+					<div class='test-heading'>
+						<span class='test-name'>专票开具，购货单位识别号为空</span>
+						<span class='test-time'>Nov 14, 2019 04:18:50 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:50 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:50 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+253ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='74'>
+					<div class='test-heading'>
+						<span class='test-name'>购货单位名称正常</span>
+						<span class='test-time'>Nov 14, 2019 04:18:51 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:51 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:53 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+755ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='75'>
+					<div class='test-heading'>
+						<span class='test-name'>购货单位名称为空</span>
+						<span class='test-time'>Nov 14, 2019 04:18:53 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:53 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+231ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='76'>
+					<div class='test-heading'>
+						<span class='test-name'>购货单位名称为null</span>
+						<span class='test-time'>Nov 14, 2019 04:18:54 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:54 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+243ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='77'>
+					<div class='test-heading'>
+						<span class='test-name'>购货单位银行账号为空</span>
+						<span class='test-time'>Nov 14, 2019 04:18:54 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:54 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:18:57 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+792ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='78'>
+					<div class='test-heading'>
+						<span class='test-name'>购货单位银行账号为正常账号</span>
+						<span class='test-time'>Nov 14, 2019 04:18:57 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:18:57 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:19:00 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+10ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>正常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='79'>
+					<div class='test-heading'>
+						<span class='test-name'>购货单位银行账号为null</span>
+						<span class='test-time'>Nov 14, 2019 04:19:00 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 14, 2019 04:19:00 PM</span>
+	<span class='label end-time'>Nov 14, 2019 04:19:04 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+562ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>异常开票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>4:19:06 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -711,16 +3649,16 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>异常开票</span>
+						<span class='category-name'>正常开票</span>
 						<span class='category-status right'>
-							<span class='label pass'>4</span>
-							<span class='label fail'>1</span>
+							<span class='label pass'>26</span>
+							<span class='label fail'>5</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 4</span>
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 26</span>
+							<span class='label red lighten-1 white-text'>Failed: 5</span>
 							
 						</div>
 					
@@ -735,28 +3673,158 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 18, 2019 01:27:26 AM</td>
-										<td class='linked' test-id='1'>同一应用开票，发票请求流水号相同</td>
+										<td>Nov 14, 2019 04:16:31 PM</td>
+										<td class='linked' test-id='1'>不同应用，发票请求流水号相同</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Oct 18, 2019 01:27:25 AM</td>
-										<td class='linked' test-id='3'>发票请求流水号为空</td>
+										<td>Nov 14, 2019 04:17:03 PM</td>
+										<td class='linked' test-id='2'>开票人为null</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:03 PM</td>
+										<td class='linked' test-id='3'>开票人含特殊字符</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:50 PM</td>
+										<td class='linked' test-id='9'>机身编号存在，但是销方纳税人识别号为空</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:19:04 PM</td>
+										<td class='linked' test-id='11'>发票请求流水号为1个数字</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:16:32 PM</td>
+										<td class='linked' test-id='14'>发票请求流水号为1个字母</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 18, 2019 01:27:45 AM</td>
-										<td class='linked' test-id='9'>发票请求流水号为65位</td>
+										<td>Nov 14, 2019 04:16:35 PM</td>
+										<td class='linked' test-id='15'>发票请求流水号为64位数字</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 18, 2019 01:27:46 AM</td>
-										<td class='linked' test-id='10'>发票请求流水号含有特殊字符</td>
+										<td>Nov 14, 2019 04:16:38 PM</td>
+										<td class='linked' test-id='16'>发票请求流水号为64位字母</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 18, 2019 01:27:46 AM</td>
-										<td class='linked' test-id='11'>发票请求流水号为null</td>
+										<td>Nov 14, 2019 04:16:41 PM</td>
+										<td class='linked' test-id='17'>发票请求流水号为字母和数字的组合</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:16:44 PM</td>
+										<td class='linked' test-id='21'>收款人为空</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:16:47 PM</td>
+										<td class='linked' test-id='22'>收款人为null</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:16:51 PM</td>
+										<td class='linked' test-id='23'>备注长度为空</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:16:55 PM</td>
+										<td class='linked' test-id='24'>备注长度为null</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:16:59 PM</td>
+										<td class='linked' test-id='26'>开票人为管理员</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:04 PM</td>
+										<td class='linked' test-id='27'>单位商品数量单价税率税额均合理</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:07 PM</td>
+										<td class='linked' test-id='30'>复核人为空</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:10 PM</td>
+										<td class='linked' test-id='31'>复核人为Null</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:30 PM</td>
+										<td class='linked' test-id='38'>yhlx用户类型为空</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:33 PM</td>
+										<td class='linked' test-id='39'>机身编号为空</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:38 PM</td>
+										<td class='linked' test-id='42'>自行编码为00</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:42 PM</td>
+										<td class='linked' test-id='43'>自行编码为null</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:22 PM</td>
+										<td class='linked' test-id='56'>非折扣行商品，单个商品的发票行性质为0</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:30 PM</td>
+										<td class='linked' test-id='64'>开票的规格型号不为空</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:33 PM</td>
+										<td class='linked' test-id='65'>规格型号为空</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:37 PM</td>
+										<td class='linked' test-id='66'>优惠政策标识为0,不使用优惠政策</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:40 PM</td>
+										<td class='linked' test-id='67'>优惠政策标识为1,增值税特殊管理为免税</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:46 PM</td>
+										<td class='linked' test-id='70'>该商户在老板通上存在默认商品，只传商品金额等信息，不传商品名称及商品编码</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:50 PM</td>
+										<td class='linked' test-id='73'>专票开具，购货单位识别号为空</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:51 PM</td>
+										<td class='linked' test-id='74'>购货单位名称正常</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:54 PM</td>
+										<td class='linked' test-id='77'>购货单位银行账号为空</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:57 PM</td>
+										<td class='linked' test-id='78'>购货单位银行账号为正常账号</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -766,16 +3834,16 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>开具电子票</span>
+						<span class='category-name'>异常开票</span>
 						<span class='category-status right'>
-							<span class='label pass'>5</span>
-							<span class='label fail'>1</span>
+							<span class='label pass'>29</span>
+							<span class='label fail'>6</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 5</span>
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 29</span>
+							<span class='label red lighten-1 white-text'>Failed: 6</span>
 							
 						</div>
 					
@@ -790,33 +3858,446 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 18, 2019 01:27:32 AM</td>
-										<td class='linked' test-id='2'>发票请求流水号为1个数字</td>
+										<td>Nov 14, 2019 04:17:30 PM</td>
+										<td class='linked' test-id='4'>用户类型3</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Oct 18, 2019 01:27:29 AM</td>
-										<td class='linked' test-id='4'>不同应用，发票请求流水号相同</td>
+										<td>Nov 14, 2019 04:18:26 PM</td>
+										<td class='linked' test-id='5'>开票其它参数正常，发票类型代码为空</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:27 PM</td>
+										<td class='linked' test-id='6'>当开票类型为1时,只有原发票号码</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:45 PM</td>
+										<td class='linked' test-id='7'>传入商品编码在局端不存在</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:49 PM</td>
+										<td class='linked' test-id='8'>销方纳税人识别号与机身编号中税号不一致</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:50 PM</td>
+										<td class='linked' test-id='10'>购货单位识别号大于20位</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:16:29 PM</td>
+										<td class='linked' test-id='12'>发票请求流水号为空</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 18, 2019 01:27:33 AM</td>
-										<td class='linked' test-id='5'>发票请求流水号为1个字母</td>
+										<td>Nov 14, 2019 04:16:31 PM</td>
+										<td class='linked' test-id='13'>同一应用开票，发票请求流水号相同</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 18, 2019 01:27:36 AM</td>
-										<td class='linked' test-id='6'>发票请求流水号为64位数字</td>
+										<td>Nov 14, 2019 04:16:44 PM</td>
+										<td class='linked' test-id='18'>发票请求流水号为65位</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 18, 2019 01:27:38 AM</td>
-										<td class='linked' test-id='7'>发票请求流水号为64位字母</td>
+										<td>Nov 14, 2019 04:16:44 PM</td>
+										<td class='linked' test-id='19'>发票请求流水号含有特殊字符</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 18, 2019 01:27:41 AM</td>
-										<td class='linked' test-id='8'>发票请求流水号为字母和数字的组合</td>
+										<td>Nov 14, 2019 04:16:44 PM</td>
+										<td class='linked' test-id='20'>发票请求流水号为null</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:16:58 PM</td>
+										<td class='linked' test-id='25'>备注长度超过142</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:07 PM</td>
+										<td class='linked' test-id='28'>不含税金额*税率与税额误差大于 0.06</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:07 PM</td>
+										<td class='linked' test-id='29'>数量*单价与金额误差大于 0.01</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:13 PM</td>
+										<td class='linked' test-id='32'>复核人含特殊字符</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:35 PM</td>
+										<td class='linked' test-id='40'>机身编号为null</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:38 PM</td>
+										<td class='linked' test-id='41'>开票终端标识~~纳税人标号</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:47 PM</td>
+										<td class='linked' test-id='44'>开票其它参数均正常，开票类型为空</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:48 PM</td>
+										<td class='linked' test-id='45'>开票其它参数均正常，开票类型为null</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:48 PM</td>
+										<td class='linked' test-id='46'>开票其它参数均正常，开票类型为2</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:21 PM</td>
+										<td class='linked' test-id='55'>非折扣行商品，单个商品的发票行性质为空</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:25 PM</td>
+										<td class='linked' test-id='57'>非折扣行商品，单个商品发票行性质为1</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:26 PM</td>
+										<td class='linked' test-id='58'>非折扣行商品，单个商品的发票行性质为2</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:26 PM</td>
+										<td class='linked' test-id='59'>单个商品的发票行性质为null</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:26 PM</td>
+										<td class='linked' test-id='60'>单个商品的发票行性质为3</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:27 PM</td>
+										<td class='linked' test-id='61'>开票其它参数正常，发票类型代码为027</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:27 PM</td>
+										<td class='linked' test-id='62'>当开票类型为1时,只有原发票代码</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:28 PM</td>
+										<td class='linked' test-id='63'>负数发票，原发票不存在</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:44 PM</td>
+										<td class='linked' test-id='68'>优惠政策标识含特殊字符</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:44 PM</td>
+										<td class='linked' test-id='69'>存在商品信息，但是商品编码为空</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:48 PM</td>
+										<td class='linked' test-id='71'>销方纳税人识别号与机身编号同时为空</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:50 PM</td>
+										<td class='linked' test-id='72'>专票开具，其购货单位地址电话为空</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:53 PM</td>
+										<td class='linked' test-id='75'>购货单位名称为空</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:54 PM</td>
+										<td class='linked' test-id='76'>购货单位名称为null</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:19:00 PM</td>
+										<td class='linked' test-id='79'>购货单位银行账号为null</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>电票冲红</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 14, 2019 04:17:13 PM</td>
+										<td class='linked' test-id='33'>所有参数均正常，开具一张负数发票</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>多行电票开具</span>
+						<span class='category-status right'>
+							<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 14, 2019 04:17:17 PM</td>
+										<td class='linked' test-id='34'>所有参数均正常,开具一张6行商品的电票</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:21 PM</td>
+										<td class='linked' test-id='35'>所有参数均正常，开具一张8行商品的电票</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:25 PM</td>
+										<td class='linked' test-id='36'>所有参数均正常,开具一张9行商品的电票</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>自助开票</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 14, 2019 04:17:29 PM</td>
+										<td class='linked' test-id='37'>所有参数都正常，自助开票</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>多行专票开具</span>
+						<span class='category-status right'>
+							<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 14, 2019 04:17:48 PM</td>
+										<td class='linked' test-id='47'>6行商品的专票开具</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:51 PM</td>
+										<td class='linked' test-id='48'>8行商品的专票开具</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:17:54 PM</td>
+										<td class='linked' test-id='49'>9行商品的专票开具</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>开具专票</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 14, 2019 04:17:58 PM</td>
+										<td class='linked' test-id='50'>所有参数均正常，开具一张专票</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>多行普票开具</span>
+						<span class='category-status right'>
+							<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 14, 2019 04:18:02 PM</td>
+										<td class='linked' test-id='51'>所有参数均正常，开具一张6行商品的普票</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:07 PM</td>
+										<td class='linked' test-id='52'>所有参数均正常,开具一张8行商品的普票</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Nov 14, 2019 04:18:12 PM</td>
+										<td class='linked' test-id='53'>所有参数均正常，开具一张9行商品的普票</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>开具普票</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 14, 2019 04:18:16 PM</td>
+										<td class='linked' test-id='54'>所有参数均正常，开具一张增值税普通发票</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -864,7 +4345,7 @@
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
                                 <span class='exception-name'>java.lang.AssertionError</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>11</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -878,15 +4359,15 @@
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Oct 18, 2019 01:27:26 AM</td>
-                                                        <td class='linked' test-id='1'>同一应用开票，发票请求流水号相同</td>
+                                                        <td>Nov 14, 2019 04:16:31 PM</td>
+                                                        <td class='linked' test-id='1'>不同应用，发票请求流水号相同</td>
                                                         <td><pre><pre>java.lang.AssertionError: expected [{"returnmsg":"提交成功，请稍后查询","returncode":"0"}] but found [{"returnmsg":"当前发票处于:开具成功后打印成功状态,不支持重新开具","returncode":"1000012"}]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:442)
-	at Case.Fpqqlsh.fpqqlsh10(Fpqqlsh.java:142)
+	at Case.Fpqqlsh.fpqqlsh11(Fpqqlsh.java:153)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -914,9 +4395,333 @@
 </pre></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Oct 18, 2019 01:27:32 AM</td>
-                                                        <td class='linked' test-id='2'>发票请求流水号为1个数字</td>
-                                                        <td><pre><pre>java.lang.AssertionError: expected [{"returnmsg":"当前发票处于:开具成功后打印成功状态,不支持重新开具","returncode":"1000012"}] but found [{"returnmsg":"提交成功，请稍后查询","returncode":"0"}]
+                                                        <td>Nov 14, 2019 04:17:03 PM</td>
+                                                        <td class='linked' test-id='2'>开票人为null</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [{"returnmsg":"提交成功，请稍后查询","returncode":"0"}] but found [{"returnmsg":"商户开票人、复核人等信息未正确配置","returncode":"1000024"}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at Case.Kpr.kpr1(Kpr.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 14, 2019 04:17:03 PM</td>
+                                                        <td class='linked' test-id='3'>开票人含特殊字符</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [{"returnmsg":"提交成功，请稍后查询","returncode":"0"}] but found [{"returnmsg":"商户开票人、复核人等信息未正确配置","returncode":"1000024"}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at Case.Kpr.kpr2(Kpr.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 14, 2019 04:17:30 PM</td>
+                                                        <td class='linked' test-id='4'>用户类型3</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [{"returnmsg":"yhlx:参数错误","returncode":"10001"}] but found [{"returnmsg":"提交成功，请稍后查询","returncode":"0"}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at Case.Yhlx.yhlx3(Yhlx.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 14, 2019 04:18:26 PM</td>
+                                                        <td class='linked' test-id='5'>开票其它参数正常，发票类型代码为空</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [{"returnmsg":"提交成功，请稍后查询","returncode":"0"}] but found [{"returnmsg":"商户扫码台开票企业信息未正确配置","returncode":"1000025"}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at Case.Fplxdm.fplxdm(Fplxdm.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 14, 2019 04:18:27 PM</td>
+                                                        <td class='linked' test-id='6'>当开票类型为1时,只有原发票号码</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [{"returnmsg":"红冲必须传原发票号码和原发票代码","returncode":"10001"}] but found [{"returnmsg":"原发票记录不存在","returncode":"10001"}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at Case.Yfpdm.yfpdm1(Yfpdm.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 14, 2019 04:18:45 PM</td>
+                                                        <td class='linked' test-id='7'>传入商品编码在局端不存在</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [{"returnmsg":"传入商品编码在局端不存在","returncode":"300091"}] but found [{"returnmsg":"传入商品编码在局端不存在，请检查","returncode":"300091"}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at Case.Spbm.spbm2(Spbm.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 14, 2019 04:18:49 PM</td>
+                                                        <td class='linked' test-id='8'>销方纳税人识别号与机身编号中税号不一致</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [{"returnmsg":"机身编号中的税号与传入的纳税人识别号不一致","returncode":"1000052"}] but found [{"returnmsg":"您的应用没有该商户的授权，请联系商户完成授权","returncode":"10001"}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at Case.Shnsrsbh.shnsrsbh2(Shnsrsbh.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 14, 2019 04:18:50 PM</td>
+                                                        <td class='linked' test-id='9'>机身编号存在，但是销方纳税人识别号为空</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [{"returnmsg":"提交成功，请稍后查询","returncode":"0"}] but found [{"returnmsg":"纳税人识别号对应商户不存在","returncode":"1000009"}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at Case.Shnsrsbh.shnsrsbh3(Shnsrsbh.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 14, 2019 04:18:50 PM</td>
+                                                        <td class='linked' test-id='10'>购货单位识别号大于20位</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [{"returnmsg":"提交成功，请稍后查询","returncode":"0"}] but found [{"returnmsg":"ghdwsbh:参数错误","returncode":"10001"}]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:442)
+	at Case.Ghdwsbh.ghdwsbh6(Ghdwsbh.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 14, 2019 04:19:04 PM</td>
+                                                        <td class='linked' test-id='11'>发票请求流水号为1个数字</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [{"returnmsg":"提交成功，请稍后查询","returncode":"0"}] but found [{"returnmsg":"当前发票处于:开具成功后打印成功状态,不支持重新开具","returncode":"1000012"}]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
@@ -973,31 +4778,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>11</div>
+					<div class='panel-lead'>79</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>11</div>
+					<div class='panel-lead'>79</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 18, 2019 01:27:25 AM</div>
+					<div class='panel-lead'>Nov 14, 2019 04:16:29 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 18, 2019 01:27:26 AM</div>
+			 		<div class='panel-lead'>Nov 14, 2019 04:16:31 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>1,483ms</div>
+					<div class='panel-lead'>2,156ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1012,15 +4817,57 @@
 							<th>Others</th>
 						</tr>
 						<tr>
-							<td>异常开票</td>
-							<td>4</td>
-							<td>1</td>
+							<td>正常开票</td>
+							<td>26</td>
+							<td>5</td>
 							<td>0</td>
 						</tr>
 						<tr>
-							<td>开具电子票</td>
-							<td>5</td>
+							<td>异常开票</td>
+							<td>29</td>
+							<td>6</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>电票冲红</td>
 							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>多行电票开具</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>自助开票</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>多行专票开具</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>开具专票</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>多行普票开具</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>开具普票</td>
+							<td>1</td>
+							<td>0</td>
 							<td>0</td>
 						</tr>
 					</table>
@@ -1036,22 +4883,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 9,
-				failParent: 2,
+				passParent: 68,
+				failParent: 11,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 2,
+				exceptionsParent: 11,
 				
-				passChild: 9,
-				failChild: 2,
+				passChild: 68,
+				failChild: 11,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 2,
+				exceptionsChild: 11,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,
