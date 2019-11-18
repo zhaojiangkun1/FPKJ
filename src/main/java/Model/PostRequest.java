@@ -18,6 +18,7 @@ import java.util.Date;
 public class PostRequest {
 
     public static String  zhenPiaoYunRequest(String body,EnvNum num) throws IOException, NoSuchAlgorithmException {
+        System.out.println("本次请求的报文:"+body);
         String url = GetSaveAddr.getSaveAddr(num);
         System.out.println("本次请求的url:"+url);
         HttpClient client = HttpClientBuilder.create().build();

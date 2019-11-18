@@ -1,9 +1,10 @@
 package Case;
 
-import Bean.*;
-import Model.*;
-import com.alibaba.fastjson.JSONObject;
-import org.testng.Assert;
+
+import Bean.InvoiceCase;
+import Config.GetInvoiceCase;
+import Model.GongYouFangFa;
+import Model.Java2XML;
 import org.testng.annotations.Test;
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
@@ -11,7 +12,7 @@ import java.util.HashMap;
 
 
 public class Fplxdm {
-    JSONObject expectedResult = new JSONObject();
+    InvoiceCase invoiceCase = new InvoiceCase();
     HashMap<String,String> map = new HashMap();
 
     /**
@@ -28,15 +29,10 @@ public class Fplxdm {
      */
 
     @Test(groups = {"异常开票"},description = "开票其它参数正常，发票类型代码为空")
-    public void fplxdm() throws IOException,NoSuchAlgorithmException{
+    public void fplxdm_0001() throws IOException,NoSuchAlgorithmException{
         map.put("fplxdm","");
-        String file = Java2XML.BuildXMLDoc(map);
-        System.out.println("本次请求的报文为:"+file);
-        expectedResult = ExpectedResult.resultCorrect();
-        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
-        System.out.println(result);
-        JSONObject actualResult = AcquireSubstr.analyzeString(result);
-        Assert.assertEquals(actualResult,expectedResult);
+        invoiceCase = GetInvoiceCase.getInvoiceCase("fplxdm_0001");
+        GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
     }
 
     /**
@@ -47,14 +43,8 @@ public class Fplxdm {
     @Test(groups = {"异常开票"},description = "开票其它参数正常，发票类型代码为027")
     public void  fplxdm2() throws IOException,NoSuchAlgorithmException{
         map.put("fplxdm","027");
-        String file = Java2XML.BuildXMLDoc(map);
-        System.out.println("本次请求的报文为:"+file);
-        expectedResult.put("returncode","10001");
-        expectedResult.put("returnmsg","发票类型代码有误");
-        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
-        System.out.println(result);
-        JSONObject actualResult = AcquireSubstr.analyzeString(result);
-        Assert.assertEquals(actualResult,expectedResult);
+        invoiceCase = GetInvoiceCase.getInvoiceCase("fplxdm_0002");
+        GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
     }
 
 

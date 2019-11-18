@@ -21,6 +21,10 @@
     <insert id="insertfpinfo" parameterType="Bean.SaveFpInfo">
         insert into savefpinfo(id,fpqqlsh,fplxdm,nsrsbh,updatetime) values (#{id},#{fpqqlsh},#{fplxdm},#{nsrsbh},#{updatetime})
     </insert>
-
-
+    <select id="queryInvoiceCase" resultType="Bean.InvoiceCase" parameterType="String">
+        select * from invoicecase where id = #{id};
+    </select>
+    <update id="updateResult" parameterType="Bean.InvoiceCase">
+        update invoicecase set runResult = #{runResult},runStatus = #{runStatus} where id=#{id};
+    </update>
 </mapper>

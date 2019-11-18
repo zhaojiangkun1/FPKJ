@@ -1,31 +1,19 @@
 package Case;
-import Bean.TestEnv;
-import Config.UpdateFpqqlsh;
-import Model.AcquireSubstr;
-import Model.ExpectedResult;
-import Model.Java2XML;
-import Model.PostRequest;
-import com.alibaba.fastjson.JSONObject;
-import org.testng.Assert;
+import Bean.InvoiceCase;
+import Config.GetInvoiceCase;
+import Model.*;
 import org.testng.annotations.Test;
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 public class Yhlx {
-    JSONObject expectedResult = new JSONObject();
     HashMap<String,String> map = new HashMap();
 
     @Test(groups = {"正常开票"},description = "yhlx用户类型为空")
-    public void  yhlx() throws IOException,NoSuchAlgorithmException{
+    public void  yhlx_0001() throws IOException,NoSuchAlgorithmException{
         map.put("yhlx","");
-        String file = Java2XML.BuildXMLDoc(map);
-        System.out.println("本次请求的报文为:"+file);
-        expectedResult.put("returncode","10001");
-        expectedResult.put("returnmsg","yhlx:参数错误");
-        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
-        System.out.println(result);
-        JSONObject actualResult = AcquireSubstr.analyzeString(result);
-        Assert.assertEquals(actualResult,expectedResult);
+        InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("yhlx_0001");
+        GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
     }
 
     /**
@@ -34,16 +22,10 @@ public class Yhlx {
      * @throws NoSuchAlgorithmException
      */
     @Test(groups = {"异常开票"},description = "用户类型3")
-    public void  yhlx3() throws IOException,NoSuchAlgorithmException{
+    public void  yhlx_0002() throws IOException,NoSuchAlgorithmException{
         map.put("yhlx","3");
-        String file = Java2XML.BuildXMLDoc(map);
-        System.out.println("本次请求的报文为:"+file);
-        expectedResult.put("returncode","10001");
-        expectedResult.put("returnmsg","yhlx:参数错误");
-        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
-        System.out.println(result);
-        JSONObject actualResult = AcquireSubstr.analyzeString(result);
-        Assert.assertEquals(actualResult,expectedResult);
+        InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("yhlx_0002");
+        GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
     }
 }
 

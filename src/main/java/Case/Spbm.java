@@ -1,5 +1,6 @@
 package Case;
 import Bean.*;
+import Config.GetInvoiceCase;
 import Model.*;
 import com.alibaba.fastjson.JSONObject;
 import org.testng.Assert;
@@ -18,32 +19,22 @@ public class Spbm {
      * @throws NoSuchAlgorithmException
      */
     @Test(groups = {"异常开票"},description = "存在商品信息，但是商品编码为空")
-    public void  spbm1() throws IOException,NoSuchAlgorithmException{
+    public void  spbm_0001() throws IOException,NoSuchAlgorithmException{
         map.put("spbm","");
-        String file = Java2XML.BuildXMLDoc(map);
-        System.out.println("本次请求的报文为:"+file);
-        expectedResult.put("returncode","300089");
-        expectedResult.put("returnmsg","商品编码相关节点应该全部存在或不存在");
-        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
-        System.out.println(result);
-        JSONObject actualResult = AcquireSubstr.analyzeString(result);
-        Assert.assertEquals(actualResult,expectedResult);
+        InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("spbm_0001");
+        GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
     }
+
+
     @Test(groups = {"异常开票"},description = "传入商品编码在局端不存在")
-    public void  spbm2() throws IOException,NoSuchAlgorithmException{
+    public void  spbm_0002() throws IOException,NoSuchAlgorithmException{
         map.put("spbm","84796000");
-        String file = Java2XML.BuildXMLDoc(map);
-        System.out.println("本次请求的报文为:"+file);
-        expectedResult.put("returncode","300091");
-        expectedResult.put("returnmsg","传入商品编码在局端不存在，请检查");
-        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
-        System.out.println(result);
-        JSONObject actualResult = AcquireSubstr.analyzeString(result);
-        Assert.assertEquals(actualResult,expectedResult);
+        InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("spbm_0002");
+        GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
     }
 
     @Test(groups = {"正常开票"},description = "该商户在老板通上存在默认商品，只传商品金额等信息，不传商品名称及商品编码")
-    public void spbm3() throws IOException, NoSuchAlgorithmException {
+    public void spbm_0003() throws IOException, NoSuchAlgorithmException {
       map.put("spmc","");
       map.put("spsl","1");
       map.put("dj","6.3");
@@ -51,13 +42,8 @@ public class Spbm {
       map.put("sl","0");
       map.put("se","0");
       map.put("spbm","");
-      String file = Java2XML.BuildXMLDoc(map);
-      System.out.println("本次请求的报文:"+file);
-      expectedResult = ExpectedResult.resultCorrect();
-      String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
-      System.out.println(result);
-      JSONObject actualResult = AcquireSubstr.analyzeString(result);
-      Assert.assertEquals(actualResult,expectedResult);
+      InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("spbm_0003");
+      GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
     }
 
 }

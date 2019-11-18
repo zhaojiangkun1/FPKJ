@@ -1,9 +1,8 @@
 package Case;
 
-import Bean.TestEnv;
+import Bean.InvoiceCase;
+import Config.GetInvoiceCase;
 import Model.*;
-import com.alibaba.fastjson.JSONObject;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -13,16 +12,11 @@ import java.util.HashMap;
 public class ZhuanPiao {
     HashMap<String,String> map = new HashMap<>();
     @Test(groups = {"开具专票"},description = "所有参数均正常，开具一张专票")
-    public void zhuanPiao() throws IOException, NoSuchAlgorithmException {
+    public void zhuanPiao_0001() throws IOException, NoSuchAlgorithmException {
         map.put("fplxdm","004");
         map.put("sprsjh","");
-        String file = Java2XML.BuildXMLDoc(map);
-        System.out.println(file);
-        JSONObject expectedResult = ExpectedResult.resultCorrect();
-        String result = PostRequest.zhenPiaoYunRequest(file, TestEnv.testEnv);
-        System.out.println(result);
-        JSONObject runResult = AcquireSubstr.analyzeString(result);
-        Assert.assertEquals(runResult,expectedResult);
+        InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("zhuanPiao_0001");
+        GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
     }
 
     /**
@@ -31,7 +25,7 @@ public class ZhuanPiao {
      * @throws NoSuchAlgorithmException
      */
     @Test(groups = {"专票冲红"},description = "所有参数均正常，冲红一张增值税专票")
-    public void zhuanPiaoHongChong() throws IOException, NoSuchAlgorithmException {
+    public void zhuanPiaoHongChong_0002() throws IOException, NoSuchAlgorithmException {
         map.put("fplxdm","004");
         map.put("sprsjh","");
         map.put("spsl","");
@@ -40,47 +34,29 @@ public class ZhuanPiao {
         map.put("sl","");
         map.put("se","");
         map.put("tzdbh","");
-
-        String file = Java2XML.BuildXMLDoc(map);
-        System.out.println(file);
-        JSONObject expectedResult = ExpectedResult.resultCorrect();
-        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
-        JSONObject runResult = AcquireSubstr.analyzeString(result);
-        System.out.println(result);
-        Assert.assertEquals(runResult,expectedResult);
+        InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("zhuanPiao_0002");
+        GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
     }
 
     @Test(groups = {"多行专票开具"},description = "6行商品的专票开具")
-    public void multiGroupZhuanPiao() throws IOException, NoSuchAlgorithmException {
+    public void multiGroupZhuanPiao_0003() throws IOException, NoSuchAlgorithmException {
         String file = MultiLineGroup.multiLineGroup("004",6);
-        System.out.println(file);
-        JSONObject expectedResult = ExpectedResult.resultCorrect();
-        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
-        JSONObject runResult = AcquireSubstr.analyzeString(result);
-        System.out.println(result);
-        Assert.assertEquals(runResult,expectedResult);
+        InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("zhuanPiao_0003");
+        GongYouFangFa.gongYouFangFa(file,invoiceCase);
     }
 
     @Test(groups = {"多行专票开具"},description = "8行商品的专票开具")
-    public void multiGroupZhuanPiao1() throws IOException, NoSuchAlgorithmException {
+    public void multiGroupZhuanPiao_0004() throws IOException, NoSuchAlgorithmException {
         String file = MultiLineGroup.multiLineGroup("004",8);
-        System.out.println(file);
-        JSONObject expectedResult = ExpectedResult.resultCorrect();
-        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
-        JSONObject runResult = AcquireSubstr.analyzeString(result);
-        System.out.println(result);
-        Assert.assertEquals(runResult,expectedResult);
+        InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("zhuanPiao_0004");
+        GongYouFangFa.gongYouFangFa(file,invoiceCase);
     }
 
     @Test(groups = {"多行专票开具"},description = "9行商品的专票开具")
-    public void multiGroupZhuanPiao2() throws IOException, NoSuchAlgorithmException {
+    public void multiGroupZhuanPiao_0005() throws IOException, NoSuchAlgorithmException {
         String file = MultiLineGroup.multiLineGroup("004",9);
-        System.out.println(file);
-        JSONObject expectedResult = ExpectedResult.resultCorrect();
-        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
-        JSONObject runResult = AcquireSubstr.analyzeString(result);
-        System.out.println(result);
-        Assert.assertEquals(runResult,expectedResult);
+        InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("zhuanPiao_0005");
+        GongYouFangFa.gongYouFangFa(file,invoiceCase);
     }
 
 }

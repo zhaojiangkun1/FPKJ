@@ -1,5 +1,6 @@
 package Case;
 import Bean.*;
+import Config.GetInvoiceCase;
 import Config.UpdateFpqqlsh;
 import Model.*;
 import com.alibaba.fastjson.JSONObject;
@@ -13,26 +14,17 @@ public class Zxbm {
     HashMap<String,String> map = new HashMap();
 
     @Test(groups = {"正常开票"},description = "自行编码为00")
-    public void  zxbm() throws IOException,NoSuchAlgorithmException{
+    public void  zxbm_0001() throws IOException,NoSuchAlgorithmException{
         map.put("zxbm","00");
-        String file = Java2XML.BuildXMLDoc(map);
-        System.out.println("本次请求的报文为:"+file);
-        expectedResult = ExpectedResult.resultCorrect();
-        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
-        System.out.println(result);
-        JSONObject actualResult = AcquireSubstr.analyzeString(result);
-        Assert.assertEquals(actualResult,expectedResult);
+        InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("zxbm_0001");
+        GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
+
     }
     @Test(groups = {"正常开票"},description = "自行编码为null")
-    public void  zxbm1() throws IOException,NoSuchAlgorithmException{
+    public void  zxbm_0002() throws IOException,NoSuchAlgorithmException{
         map.put("zxbm",null);
-        String file = Java2XML.BuildXMLDoc(map);
-        System.out.println("本次请求的报文为:"+file);
-        expectedResult = ExpectedResult.resultCorrect();
-        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
-        System.out.println(result);
-        JSONObject actualResult = AcquireSubstr.analyzeString(result);
-        Assert.assertEquals(actualResult,expectedResult);
+        InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("zxbm_0002");
+        GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
     }
 
 }

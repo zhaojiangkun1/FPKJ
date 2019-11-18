@@ -1,23 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba056997-4758-4234-b359-af71891b088f" name="Default Changelist" comment="">
+    <list default="true" id="d23cbd32-5388-4b95-87fd-d89d55170af8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dfs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Bean/InvoiceCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Config/GetInvoiceCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/GongYouFangFa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Bz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Bz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/De.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/De.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Case/DianPiao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/DianPiao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Fhr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Fhr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Fphxz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Fphxz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Case/Fplxdm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Fplxdm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Ggxh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Ggxh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Ghdwdzdh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Ghdwdzdh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Ghdwmc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Ghdwmc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Ghdwsbh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Ghdwsbh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Ghdwyhzh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Ghdwyhzh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Jsbh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Jsbh.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Case/JuanPiao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/JuanPiao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Kplx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Kplx.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Case/Kpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Kpr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Case/PuPiao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/PuPiao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Case/Shnsrsbh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Shnsrsbh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Skr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Skr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Case/Spbm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Spbm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Yfpdm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Yfpdm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Case/Yhlx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Yhlx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Yhzcbs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Yhzcbs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Case/ZhuanPiao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/ZhuanPiao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Config/ExtentTestNGIReporterListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Config/ExtentTestNGIReporterListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Java2XML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Java2XML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MultiLineGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MultiLineGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Bean/TestEnv.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Bean/TestEnv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Zxbm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Zxbm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/AcquireSubstr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/AcquireSubstr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/ExpectedResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/ExpectedResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/PostRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/PostRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SQLMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SQLMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Case/Bz.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Bz.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Case/De.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/De.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Case/DianPiao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/DianPiao.class" afterDir="false" />
@@ -29,118 +48,19 @@
       <change beforePath="$PROJECT_DIR$/target/classes/Case/Ghdwmc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Ghdwmc.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Case/Ghdwsbh.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Ghdwsbh.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Case/Ghdwyhzh.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Ghdwyhzh.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/JuanPiao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/JuanPiao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/Kplx.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Kplx.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/Kpr.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Kpr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/PuPiao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/PuPiao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/Spmc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/ZhuanPiao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/ZhuanPiao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/Zxbm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Zxbm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Case/fplxdm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/fplxdm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/jsbh.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/jsbh.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Java2XML.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Java2XML.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Config/ExtentTestNGIReporterListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Config/ExtentTestNGIReporterListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/FPKJ.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/FPKJ.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/AcquireSubstr.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/AcquireSubstr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/ExpectedResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/ExpectedResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/PostRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/PostRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SQLMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/SQLMapper.xml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Case/Yhlx.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Model/Java2XML.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="161" column="13" lean-forward="true" selection-start-line="161" selection-start-column="13" selection-end-line="161" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="149" column="93" selection-start-line="149" selection-start-column="93" selection-end-line="149" selection-end-column="93" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fplxdm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-19">
-              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Case/Yfpdm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Case/Spbm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Case/Shnsrsbh.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Config/ExtentTestNGIReporterListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="160" column="71" selection-start-line="160" selection-start-column="71" selection-end-line="160" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Case/Kpr.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -152,124 +72,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/Model/ActualResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Config/GetAppInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Config/GetSaveAddr.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Config/UpdateToken.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/GetAccessToken.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/De.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Fhr.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Bz.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Fphxz.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Ggxh.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Ghdwdzdh.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Ghdwmc.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Ghdwsbh.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Ghdwyhzh.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Jsbh.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Kplx.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Skr.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/ExpectedResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Sprsjh.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Yfpdm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Yhzcbs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/Java2XML.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Bean/TestEnv.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/DianPiao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/PuPiao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/testng.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/ZhuanPiao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Model/MultiLineGroup.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/JuanPiao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Kpr.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Yhlx.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Fplxdm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Spbm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Case/Shnsrsbh.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Config/ExtentTestNGIReporterListener.java" />
-      </list>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="35" />
-    <option name="width" value="1750" />
-    <option name="height" value="970" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FPKJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FPKJ" type="462c0819:PsiDirectoryNode" />
-              <item name="test-output" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1TbMCk8eksHaujwtCprXsyHqayi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573721380729" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../AutoTest" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -283,18 +106,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.Shnsrsbh.shnsrsbh3">
-    <configuration name="D:/IdeaProjects/FPKJ/src/main/resources/testng.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FPKJ" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DianPiao.dianPiao" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Kplx.kplx_0001">
+    <configuration name="Ghdwmc.ghdwmc1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -303,8 +116,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.DianPiao" />
-      <option name="METHOD_NAME" value="dianPiao" />
+      <option name="MAIN_CLASS_NAME" value="Case.Ghdwmc" />
+      <option name="METHOD_NAME" value="ghdwmc1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -312,7 +125,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DianPiao.ziZhuKaiPiao" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Ghdwmc.ghdwmc2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -321,8 +134,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.DianPiao" />
-      <option name="METHOD_NAME" value="ziZhuKaiPiao" />
+      <option name="MAIN_CLASS_NAME" value="Case.Ghdwmc" />
+      <option name="METHOD_NAME" value="ghdwmc2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -330,7 +143,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PuPiao.puPiao" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Ghdwmc.ghdwmc_0003" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -339,8 +152,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.PuPiao" />
-      <option name="METHOD_NAME" value="puPiao" />
+      <option name="MAIN_CLASS_NAME" value="Case.Ghdwmc" />
+      <option name="METHOD_NAME" value="ghdwmc_0003" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -348,7 +161,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Shnsrsbh.shnsrsbh3" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Ghdwyhzh.ghdwyhzh_0001" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -357,8 +170,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.Shnsrsbh" />
-      <option name="METHOD_NAME" value="shnsrsbh3" />
+      <option name="MAIN_CLASS_NAME" value="Case.Ghdwyhzh" />
+      <option name="METHOD_NAME" value="ghdwyhzh_0001" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Kplx.kplx_0001" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FPKJ" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Case.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Case" />
+      <option name="MAIN_CLASS_NAME" value="Case.Kplx" />
+      <option name="METHOD_NAME" value="kplx_0001" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -367,28 +198,38 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.PuPiao.puPiao" />
-      <item itemvalue="TestNG.DianPiao.dianPiao" />
-      <item itemvalue="TestNG.DianPiao.ziZhuKaiPiao" />
-      <item itemvalue="TestNG.D:/IdeaProjects/FPKJ/src/main/resources/testng.xml" />
-      <item itemvalue="TestNG.Shnsrsbh.shnsrsbh3" />
+      <item itemvalue="TestNG.Ghdwmc.ghdwmc2" />
+      <item itemvalue="TestNG.Ghdwmc.ghdwmc1" />
+      <item itemvalue="TestNG.Ghdwmc.ghdwmc_0003" />
+      <item itemvalue="TestNG.Ghdwyhzh.ghdwyhzh_0001" />
+      <item itemvalue="TestNG.Kplx.kplx_0001" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Shnsrsbh.shnsrsbh3" />
-        <item itemvalue="TestNG.D:/IdeaProjects/FPKJ/src/main/resources/testng.xml" />
-        <item itemvalue="TestNG.DianPiao.ziZhuKaiPiao" />
-        <item itemvalue="TestNG.DianPiao.dianPiao" />
-        <item itemvalue="TestNG.PuPiao.puPiao" />
+        <item itemvalue="TestNG.Kplx.kplx_0001" />
+        <item itemvalue="TestNG.Ghdwyhzh.ghdwyhzh_0001" />
+        <item itemvalue="TestNG.Ghdwmc.ghdwmc_0003" />
+        <item itemvalue="TestNG.Ghdwmc.ghdwmc1" />
+        <item itemvalue="TestNG.Ghdwmc.ghdwmc2" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ba056997-4758-4234-b359-af71891b088f" name="Default Changelist" comment="" />
+      <changelist id="d23cbd32-5388-4b95-87fd-d89d55170af8" name="Default Changelist" comment="" />
       <created>1570671734857</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -424,43 +265,13 @@
       <workItem from="1573547000853" duration="1357000" />
       <workItem from="1573612453801" duration="4281000" />
       <workItem from="1573696522592" duration="7343000" />
+      <workItem from="1573724223385" duration="1315000" />
+      <workItem from="1573725574924" duration="1540000" />
+      <workItem from="1573781647415" duration="708000" />
+      <workItem from="1573784537299" duration="8483000" />
+      <workItem from="1574040775266" duration="5267000" />
     </task>
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="Yhlx_yhlx3 - 2019.11.10 at 11h 25m 08s.xml">
-      <configuration name="Yhlx.yhlx3" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PuPiao_puPiao - 2019.11.11 at 14h 34m 46s.xml">
-      <configuration name="PuPiao.puPiao" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DianPiao_dianPiao - 2019.11.11 at 14h 39m 31s.xml">
-      <configuration name="DianPiao.dianPiao" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DianPiao_dianPiao - 2019.11.13 at 14h 00m 06s.xml">
-      <configuration name="DianPiao.dianPiao" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DianPiao_dianPiao - 2019.11.13 at 14h 00m 49s.xml">
-      <configuration name="DianPiao.dianPiao" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DianPiao_ziZhuKaiPiao - 2019.11.14 at 10h 13m 06s.xml">
-      <configuration name="DianPiao.ziZhuKaiPiao" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DianPiao_ziZhuKaiPiao - 2019.11.14 at 10h 18m 32s.xml">
-      <configuration name="DianPiao.ziZhuKaiPiao" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DianPiao_ziZhuKaiPiao - 2019.11.14 at 10h 56m 31s.xml">
-      <configuration name="DianPiao.ziZhuKaiPiao" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="D__IdeaProjects_FPKJ_src_main_resources_testng_xml - 2019.11.14 at 16h 19m 07s.xml">
-      <configuration name="D:/IdeaProjects/FPKJ/src/main/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Shnsrsbh_shnsrsbh3 - 2019.11.14 at 16h 39m 27s.xml">
-      <configuration name="Shnsrsbh.shnsrsbh3" configurationId="TestNG" />
-    </history-entry>
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107651000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -471,395 +282,23 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20911528" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3371105" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3177305" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4028369" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3929078" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32765958" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2600536" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3371105" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/AcquireSubstr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/EnvNum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/SaveFpInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/SaveAddr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Config/DataBaseUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Config/UpdateToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Config/UpdateFpqqlsh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Config/Md5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Config/GetSaveAddr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Config/AddFpInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/AppInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/GetAccessToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Config/GetAppInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ghdwdzdh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ghdwmc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ghdwsbh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ghdwyhzh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/ExpectedResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Sprsjh.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Skr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Kplx.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Jsbh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/TestEnv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Bz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-157">
-          <caret line="25" column="54" lean-forward="true" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/De.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="37" column="29" lean-forward="true" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/DianPiao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="51" column="40" lean-forward="true" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fhr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fphxz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1501">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Ggxh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/PuPiao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Zxbm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Yhzcbs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/ZhuanPiao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="76" column="45" lean-forward="true" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/MultiLineGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/JuanPiao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-879">
-          <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Yhlx.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Kpr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="149" column="93" selection-start-line="149" selection-start-column="93" selection-end-line="149" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Fplxdm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Yfpdm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Spbm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/Java2XML.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="161" column="13" lean-forward="true" selection-start-line="161" selection-start-column="13" selection-end-line="161" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Case/Shnsrsbh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Config/ExtentTestNGIReporterListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="160" column="71" selection-start-line="160" selection-start-column="71" selection-end-line="160" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
