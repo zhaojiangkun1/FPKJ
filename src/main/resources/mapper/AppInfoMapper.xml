@@ -16,7 +16,7 @@
         id,appid,appSecret,accessToken,updateTime,env,address
     </sql>
 
-    <select id="getAppInfo" resultMap="AppInfoMap" parameterType="String">
+    <select id="getAppInfo" resultType="Bean.AppInfo" parameterType="String">
         select
         <include refid="Base_Column_List"/>
         from appinfo

@@ -16,16 +16,11 @@
         id,appid,appSecret,accessToken,updateTime,env,address
     </sql>
 
-    <select id="getAppInfo" resultMap="AppInfoMap" parameterType="String">
+    <select id="getAppInfo" resultType="Bean.AppInfo" parameterType="String">
         select
         <include refid="Base_Column_List"/>
-         from appinfo
-         <where>
-             <if test="env != null">
-                 env=#{env,jdbcType=VARCHAR}
-             </if>
-         </where>
-
+        from appinfo
+        where env=#{env};
     </select>
 
 
