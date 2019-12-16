@@ -10,7 +10,6 @@ import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 public class Yhzcbs {
-    JSONObject expectedResult = new JSONObject();
     HashMap<String,String> map = new HashMap();
 
 
@@ -24,7 +23,7 @@ public class Yhzcbs {
     @Test(groups = {"异常开票"},description = "优惠政策标识含特殊字符")
     public void  yhzcbs_0002() throws IOException,NoSuchAlgorithmException{
         //入库失败(业务单据明细表)
-        map.put("yhzcbs","$%$%$$%%$$%");
+        map.put("yhzcbs","*&&&&&");
         InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("yhzcbs_0002");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
     }

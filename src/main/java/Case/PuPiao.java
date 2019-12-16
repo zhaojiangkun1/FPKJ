@@ -18,8 +18,8 @@ public class PuPiao {
     @Test(groups = {"开具普票"},description = "所有参数均正常，开具一张增值税普通发票")
     public void puPiao_0001() throws IOException, NoSuchAlgorithmException {
         map.put("fplxdm","007");
-        map.put("sprsjh","");
-        map.put("readonly","1");
+        map.put("jsbh","110101201707010043~~A20016420000265");
+        map.put("shnsrsbh","");
         InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("puPiao_0001");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
     }

@@ -36,7 +36,7 @@ public class Fplxdm {
     }
 
     /**
-     * 发票类型代码不存在
+     * 发票类型代码不存在  若商户扫码台开票企业信息未正确配置，则开票失败，否则开票成功
      * @throws IOException
      * @throws NoSuchAlgorithmException
      */

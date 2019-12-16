@@ -14,7 +14,10 @@ public class ZhuanPiao {
     @Test(groups = {"开具专票"},description = "所有参数均正常，开具一张专票")
     public void zhuanPiao_0001() throws IOException, NoSuchAlgorithmException {
         map.put("fplxdm","004");
+        map.put("jsbh","91320191MA1ML4CL25~~661826092245");
         map.put("sprsjh","");
+        // 规格型号过长
+//        map.put("ggxh","285.6g(1.02g*80片*1瓶+1.02g*100片*2瓶)");
         InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("zhuanPiao_0001");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
     }

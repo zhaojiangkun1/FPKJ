@@ -2,61 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d23cbd32-5388-4b95-87fd-d89d55170af8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dfs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Bean/InvoiceCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Config/GetInvoiceCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/GongYouFangFa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/InvoiceCaseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SaveAddrMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SaveFpInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Bz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Bz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/De.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/De.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Case/DianPiao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/DianPiao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Fhr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Fhr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Fphxz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Fphxz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Case/Fplxdm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Fplxdm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Fpqqlsh.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Case/Ggxh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Ggxh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Ghdwdzdh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Ghdwdzdh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Ghdwmc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Ghdwmc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Ghdwsbh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Ghdwsbh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Ghdwyhzh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Ghdwyhzh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Jsbh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Jsbh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/JuanPiao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/JuanPiao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Kplx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Kplx.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Case/Kpr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Kpr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Case/PuPiao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/PuPiao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Shnsrsbh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Shnsrsbh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Skr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Skr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Spbm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Spbm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Yfpdm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Yfpdm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Yhlx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Yhlx.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Case/Yhzcbs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Yhzcbs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Case/ZhuanPiao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/ZhuanPiao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Case/Zxbm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Case/Zxbm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/AcquireSubstr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/AcquireSubstr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/ExpectedResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/ExpectedResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/PostRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/PostRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SQLMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SQLMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/Bz.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Bz.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/De.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/De.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Config/AddFpInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Config/AddFpInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/GongYouFangFa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/GongYouFangFa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Java2XML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Java2XML.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/MultiLineGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/MultiLineGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/databaseconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/databaseconfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SQLMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/AppInfoMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Case/DianPiao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/DianPiao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/Fhr.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Fhr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/Fphxz.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Fphxz.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/Fpqqlsh.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Fpqqlsh.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Case/Ggxh.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Ggxh.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/Ghdwdzdh.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Ghdwdzdh.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/Ghdwmc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Ghdwmc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/Ghdwsbh.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Ghdwsbh.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/Ghdwyhzh.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Ghdwyhzh.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Case/fplxdm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/fplxdm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Config/ExtentTestNGIReporterListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Config/ExtentTestNGIReporterListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/FPKJ.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/FPKJ.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/AcquireSubstr.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/AcquireSubstr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/ExpectedResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/ExpectedResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/PostRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/PostRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SQLMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/SQLMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Case/Kpr.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Kpr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Case/PuPiao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/PuPiao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Case/Yhzcbs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/Yhzcbs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Case/ZhuanPiao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Case/ZhuanPiao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Config/AddFpInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Config/AddFpInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/FPKJ.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/GongYouFangFa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/GongYouFangFa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Java2XML.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Java2XML.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/MultiLineGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/MultiLineGroup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/databaseconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/databaseconfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SQLMapper.xml" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,31 +61,24 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573721380729" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AutoTest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="TestNG.Kplx.kplx_0001">
-    <configuration name="Ghdwmc.ghdwmc1" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.DianPiao.dianPiao_0001">
+    <configuration name="DianPiao.dianPiao_0001" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -116,8 +87,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.Ghdwmc" />
-      <option name="METHOD_NAME" value="ghdwmc1" />
+      <option name="MAIN_CLASS_NAME" value="Case.DianPiao" />
+      <option name="METHOD_NAME" value="dianPiao_0001" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -125,7 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ghdwmc.ghdwmc2" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DianPiao.multiGroupDianPiao_0004" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -134,8 +105,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.Ghdwmc" />
-      <option name="METHOD_NAME" value="ghdwmc2" />
+      <option name="MAIN_CLASS_NAME" value="Case.DianPiao" />
+      <option name="METHOD_NAME" value="multiGroupDianPiao_0004" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -143,7 +114,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ghdwmc.ghdwmc_0003" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DianPiao.ziZhuKaiPiao_0002" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -152,8 +123,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.Ghdwmc" />
-      <option name="METHOD_NAME" value="ghdwmc_0003" />
+      <option name="MAIN_CLASS_NAME" value="Case.DianPiao" />
+      <option name="METHOD_NAME" value="ziZhuKaiPiao_0002" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -161,7 +132,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ghdwyhzh.ghdwyhzh_0001" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Yhlx.yhlx_0002" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -170,8 +141,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.Ghdwyhzh" />
-      <option name="METHOD_NAME" value="ghdwyhzh_0001" />
+      <option name="MAIN_CLASS_NAME" value="Case.Yhlx" />
+      <option name="METHOD_NAME" value="yhlx_0002" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -179,7 +150,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Kplx.kplx_0001" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Yhzcbs.yhzcbs_0002" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FPKJ" />
       <extension name="coverage">
         <pattern>
@@ -188,8 +159,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Case" />
-      <option name="MAIN_CLASS_NAME" value="Case.Kplx" />
-      <option name="METHOD_NAME" value="kplx_0001" />
+      <option name="MAIN_CLASS_NAME" value="Case.Yhzcbs" />
+      <option name="METHOD_NAME" value="yhzcbs_0002" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -198,30 +169,32 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.Ghdwmc.ghdwmc2" />
-      <item itemvalue="TestNG.Ghdwmc.ghdwmc1" />
-      <item itemvalue="TestNG.Ghdwmc.ghdwmc_0003" />
-      <item itemvalue="TestNG.Ghdwyhzh.ghdwyhzh_0001" />
-      <item itemvalue="TestNG.Kplx.kplx_0001" />
+      <item itemvalue="TestNG.Yhlx.yhlx_0002" />
+      <item itemvalue="TestNG.Yhzcbs.yhzcbs_0002" />
+      <item itemvalue="TestNG.DianPiao.dianPiao_0001" />
+      <item itemvalue="TestNG.DianPiao.multiGroupDianPiao_0004" />
+      <item itemvalue="TestNG.DianPiao.ziZhuKaiPiao_0002" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Kplx.kplx_0001" />
-        <item itemvalue="TestNG.Ghdwyhzh.ghdwyhzh_0001" />
-        <item itemvalue="TestNG.Ghdwmc.ghdwmc_0003" />
-        <item itemvalue="TestNG.Ghdwmc.ghdwmc1" />
-        <item itemvalue="TestNG.Ghdwmc.ghdwmc2" />
+        <item itemvalue="TestNG.DianPiao.dianPiao_0001" />
+        <item itemvalue="TestNG.DianPiao.ziZhuKaiPiao_0002" />
+        <item itemvalue="TestNG.DianPiao.multiGroupDianPiao_0004" />
+        <item itemvalue="TestNG.Yhzcbs.yhzcbs_0002" />
+        <item itemvalue="TestNG.Yhlx.yhlx_0002" />
       </list>
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand />
-          <select />
-        </treeState>
-      </serviceView>
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -269,7 +242,31 @@
       <workItem from="1573725574924" duration="1540000" />
       <workItem from="1573781647415" duration="708000" />
       <workItem from="1573784537299" duration="8483000" />
-      <workItem from="1574040775266" duration="5267000" />
+      <workItem from="1574040775266" duration="18955000" />
+      <workItem from="1574126872967" duration="14710000" />
+      <workItem from="1574169943988" duration="124000" />
+      <workItem from="1574213250404" duration="1201000" />
+      <workItem from="1574215639115" duration="12312000" />
+      <workItem from="1574303389843" duration="1594000" />
+      <workItem from="1574647632714" duration="5265000" />
+      <workItem from="1574732230428" duration="2294000" />
+      <workItem from="1574820852471" duration="2012000" />
+      <workItem from="1574991153940" duration="5204000" />
+      <workItem from="1575006009924" duration="1644000" />
+      <workItem from="1575010983776" duration="735000" />
+      <workItem from="1575340207794" duration="181000" />
+      <workItem from="1575345238800" duration="748000" />
+      <workItem from="1575515279232" duration="3412000" />
+      <workItem from="1575539370337" duration="723000" />
+      <workItem from="1575597406758" duration="2565000" />
+      <workItem from="1575689312178" duration="93000" />
+      <workItem from="1575959048700" duration="2278000" />
+      <workItem from="1575966362966" duration="1799000" />
+      <workItem from="1576035902702" duration="573000" />
+      <workItem from="1576134391710" duration="6959000" />
+      <workItem from="1576204184590" duration="5754000" />
+      <workItem from="1576292678474" duration="5210000" />
+      <workItem from="1576468560687" duration="12832000" />
     </task>
     <servers />
   </component>
@@ -300,5 +297,43 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="499" y="106" key="FileChooserDialogImpl" timestamp="1576229917593">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="106" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1576229917593" />
+    <state width="1483" height="117" key="GridCell.Tab.0.bottom" timestamp="1576491809769">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="117" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576491809769" />
+    <state width="1483" height="117" key="GridCell.Tab.0.center" timestamp="1576491809768">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="117" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1576491809768" />
+    <state width="1483" height="117" key="GridCell.Tab.0.left" timestamp="1576491809768">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="117" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1576491809768" />
+    <state width="1483" height="117" key="GridCell.Tab.0.right" timestamp="1576491809769">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1483" height="117" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1576491809769" />
+    <state x="186" y="0" key="Maven.ArtifactSearchDialog" timestamp="1576295617952">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="186" y="0" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1576295617952" />
+    <state x="391" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1575689311938">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="391" y="190" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1575689311938" />
+    <state x="341" y="183" key="run.anything.popup" timestamp="1576293111472">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="341" y="183" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1576293111472" />
+    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1576296099503">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1576296099503" />
   </component>
 </project>

@@ -2,6 +2,7 @@ package Model;
 
 import Bean.InvoiceCase;
 import Bean.TestEnv;
+import Config.AddFpInfo;
 import Config.DataBaseUtil;
 import Config.GetInvoiceCase;
 import com.alibaba.fastjson.JSONObject;
@@ -31,6 +32,7 @@ public class GongYouFangFa {
         SqlSession sqlSession = DataBaseUtil.getSqlSession();
         sqlSession.update("updateResult",invoiceCase);
         sqlSession.commit();
+        AddFpInfo.addFpInfo(file);
 
         Assert.assertEquals(actualResult,expectedResult);
     }

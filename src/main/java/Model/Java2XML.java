@@ -80,22 +80,22 @@ public class Java2XML {
         group.addContent(spsl.setText("1"));
 
         Element dj = new Element("dj");
-        group.addContent(dj.setText("32.6"));
+        group.addContent(dj.setText("282.075472"));
 
         Element hsdj = new Element("hsdj");
-        group.addContent(hsdj.setText("34.56"));
+        group.addContent(hsdj.setText("299"));
 
         Element je = new Element("je");
-        group.addContent(je.setText("32.6"));
+        group.addContent(je.setText("282.08"));
 
         Element hsje = new Element("hsje");
-        group.addContent(hsje.setText("34.56"));
+        group.addContent(hsje.setText("299"));
 
         Element sl = new Element("sl");
         group.addContent(sl.setText("0.06"));
 
         Element se = new Element("se");
-        group.addContent(se.setText("1.96"));
+        group.addContent(se.setText("16.92"));
 
         Element spbm = new Element("spbm");
         group.addContent(spbm.setText("3040205000000000000"));

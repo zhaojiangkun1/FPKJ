@@ -9,6 +9,10 @@ import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 public class Kpr {
+
+    /**
+     * 开票人 复核人 审核人，如果不填，则读取设置的默认开票人，如果没有默认开票人，则必须要填开票人，否则开票失败
+     */
     HashMap<String,String> map = new HashMap();
 
     @Test(groups = {"正常开票"},description = "开票人为管理员")

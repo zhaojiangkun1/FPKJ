@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Bean.AppInfo">
+
+    <resultMap id="AppInfoMap" type="Bean.AppInfo">
+        <id column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="appid" jdbcType="VARCHAR" property="appId"/>
+        <result column="appsecret" jdbcType="VARCHAR" property="appSecret"/>
+        <result column="accessToken" jdbcType="VARCHAR" property="accessToken"/>
+        <result column="updateTime" jdbcType="DATE" property="updateTime"/>
+        <result column="env" jdbcType="VARCHAR" property="env"/>
+        <result column="address" jdbcType="VARCHAR" property="address"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id,appid,appSecret,accessToken,updateTime,env,address
+    </sql>
+
+    <select id="getAppInfo" resultMap="AppInfoMap" parameterType="String">
+        select
+        <include refid="Base_Column_List"/>
+        from appinfo
+        where env=#{env};
+    </select>
+
+
+    <update id="updateToken" parameterType="Bean.AppInfo">
+        update appinfo set updatetime = #{updateTime},accesstoken = #{accessToken} where env = #{env};
+    </update>
+
+
+</mapper>

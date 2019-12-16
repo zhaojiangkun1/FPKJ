@@ -16,6 +16,9 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="mapper/SQLMapper.xml"/>
+        <mapper resource="mapper/AppInfoMapper.xml"/>
+        <mapper resource="mapper/InvoiceCaseMapper.xml"/>
+        <mapper resource="mapper/SaveAddrMapper.xml"/>
+        <mapper resource="mapper/SaveFpInfoMapper.xml"/>
     </mappers>
 </configuration>

@@ -20,9 +20,9 @@ public class MultiLineGroup {
         Element fppqqlsh = new Element("fpqqlsh");
         input.addContent(fppqqlsh.setText(UpdateFpqqlsh.numbersLetters()));
         Element shnsrsbh = new Element("shnsrsbh");
-        input.addContent(shnsrsbh.setText("110101201601010075"));
+        input.addContent(shnsrsbh.setText("110101201707010043"));
         Element jsbh = new Element("jsbh");
-        input.addContent(jsbh.setText("110101201601010075~~499000153838"));
+        input.addContent(jsbh.setText("110101201707010043~~A20016420000265"));
 
         Element kplx = new Element("kplx");
         input.addContent(kplx.setText("0"));
@@ -156,7 +156,7 @@ public class MultiLineGroup {
         Element yfphm = new Element("yfphm");
         input.addContent(yfphm.setText(""));
         Element sprsjh = new Element("sprsjh");
-        input.addContent(sprsjh.setText("dongfu@shuzutech.com"));
+        input.addContent(sprsjh.setText("zhaokun@shuzutech.com"));
 
         business.addContent(body);
         ByteArrayOutputStream byteRep = new ByteArrayOutputStream();
