@@ -42,7 +42,7 @@ public class AddFpInfo {
 
             SaveFpInfo saveFpInfo = new SaveFpInfo();
             saveFpInfo.setFplxdm(fplxdm);
-            saveFpInfo.setId(getFpInfoId()+1);
+            saveFpInfo.setId(getFpInfoId() + 1);
             saveFpInfo.setFpqqlsh(fpqqlsh);
             saveFpInfo.setNsrsbh(shnsrsbh);
             Date date = new Date();

@@ -21,17 +21,17 @@ public class GetAccessToken {
         String appSecret = appInfo.getAppSecret();
         String addr = appInfo.getAddress();
         Date old_time = appInfo.getUpdateTime();
-        System.out.println("上次获取Token的时间:"+old_time);
+        System.out.println("上次获取Token的时间:" + old_time);
         Date current_time = new Date();
-        System.out.println("当前时间:"+current_time);
+        System.out.println("当前时间:" + current_time);
         String accessToken;
         String url = addr + "?appId=" + appId + "&appSecret=" + appSecret;
-        long diffsec = (current_time.getTime()-old_time.getTime())/1000;
+        long diffsec = (current_time.getTime() - old_time.getTime()) / 1000;
 
-        System.out.println("两次请求的时间差："+diffsec);
-        if (diffsec <= 7200){
+        System.out.println("两次请求的时间差：" + diffsec);
+        if (diffsec <= 7200) {
             accessToken = appInfo.getAccessToken();
-        }else {
+        } else {
 
 
             HttpClient client = HttpClientBuilder.create().build();
@@ -44,7 +44,7 @@ public class GetAccessToken {
 
             appInfo.setAccessToken(accessToken);
             appInfo.setUpdateTime(current_time);
-            UpdateToken.updateToken(appInfo,num);
+            UpdateToken.updateToken(appInfo, num);
 
         }
         return accessToken;

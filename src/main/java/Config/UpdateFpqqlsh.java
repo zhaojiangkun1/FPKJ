@@ -6,34 +6,34 @@ import java.util.Random;
 
 public class UpdateFpqqlsh {
 
-    public static String letters64(){
+    public static String letters64() {
         String fpqqlsh = "";
-        for (int i=0;i<64;i++){
-            fpqqlsh = fpqqlsh+randGenerated();
+        for (int i = 0; i < 64; i++) {
+            fpqqlsh = fpqqlsh + randGenerated();
         }
         return fpqqlsh;
     }
 
-    public static String numbers64(){
+    public static String numbers64() {
         Random r = new Random();
         StringBuilder rs = new StringBuilder();
-        for (int i =0;i<64;i++){
+        for (int i = 0; i < 64; i++) {
             rs.append(r.nextInt(10));
         }
         return rs.toString();
     }
 
-    public static String numbersLetters(){
+    public static String numbersLetters() {
         Random r = new Random();
-        int n = (int) (1+Math.random()*1000);
+        int n = (int) (1 + Math.random() * 1000);
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
         String date = simpleDateFormat.format(new Date());
         String rs = "";
-        for (int i=0;i<2;i++){
+        for (int i = 0; i < 2; i++) {
             rs = rs + randGenerated();
         }
 
-        return rs+n+date;
+        return rs + n + date;
 
     }
 
@@ -45,7 +45,7 @@ public class UpdateFpqqlsh {
         return A_z[sub];
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println(numbersLetters());
         System.out.println(letters64());
         System.out.println(numbers64());

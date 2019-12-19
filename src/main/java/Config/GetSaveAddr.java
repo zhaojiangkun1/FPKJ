@@ -10,6 +10,7 @@ public class GetSaveAddr {
 
     /**
      * 获取开票的链接
+     *
      * @param num
      * @return
      * @throws IOException
@@ -17,22 +18,22 @@ public class GetSaveAddr {
     public static String getSaveAddr(EnvNum num) throws IOException {
         SqlSession session = DataBaseUtil.getSqlSession();
         SaveAddr saveAddr = new SaveAddr();
-        if (num == EnvNum.PRO || num == EnvNum.PRO1){
-            saveAddr = session.selectOne("getSaveAddr","PRO");
+        if (num == EnvNum.PRO || num == EnvNum.PRO1) {
+            saveAddr = session.selectOne("getSaveAddr", "PRO");
         }
-        if (num == EnvNum.DEV || num == EnvNum.DEV1){
-            saveAddr = session.selectOne("getSaveAddr","DEV");
+        if (num == EnvNum.DEV || num == EnvNum.DEV1 || num == EnvNum.DEV2) {
+            saveAddr = session.selectOne("getSaveAddr", "DEV");
         }
-        if (num == EnvNum.TEST || num == EnvNum.TEST1){
-            saveAddr = session.selectOne("getSaveAddr","TEST");
+        if (num == EnvNum.TEST || num == EnvNum.TEST1) {
+            saveAddr = session.selectOne("getSaveAddr", "TEST");
         }
 
         return saveAddr.getAddress();
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         try {
-            System.out.println("本次请求的token："+getSaveAddr(EnvNum.PRO));
+            System.out.println("本次请求的token：" + getSaveAddr(EnvNum.PRO));
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -10,9 +10,9 @@ import java.io.IOException;
 
 public class MultiLineGroup {
 
-    public static String multiLineGroup(String fplx,int a) throws IOException {
+    public static String multiLineGroup(String fplx, int a) throws IOException {
         Element business = new Element("business");
-        business.setAttribute("id","FPKJ");
+        business.setAttribute("id", "FPKJ");
         Document document = new Document(business);
         Element body = new Element("body");
         Element input = new Element("input");
@@ -39,21 +39,21 @@ public class MultiLineGroup {
 
         Element fyxm = new Element("fyxm");
         Element fplxdm = new Element("fplxdm");
-        if (fplx == "026" || fplx == "007" || fplx == "004"){
+        if (fplx == "026" || fplx == "007" || fplx == "004") {
             input.addContent(fplxdm.setText(fplx));
-            if (a > 0){
-                fyxm.setAttribute("count",""+a);
+            if (a > 0) {
+                fyxm.setAttribute("count", "" + a);
                 input.addContent(fyxm);
-                if (fplx == "007" || fplx == "004"){
+                if (fplx == "007" || fplx == "004") {
                     Element qdbz = new Element("qdbz");
-                    if (a > 8){
+                    if (a > 8) {
                         input.addContent(qdbz.setText("1"));
-                    }else
+                    } else
                         input.addContent(qdbz.setText("0"));
                 }
-                for (int i=1;i<=a;i++) {
+                for (int i = 1; i <= a; i++) {
                     Element group = new Element("group");
-                    group.setAttribute("xh", ""+i);
+                    group.setAttribute("xh", "" + i);
                     fyxm.addContent(group);
                     Element fphxz = new Element("fphxz");
                     group.addContent(fphxz.setText("0"));
@@ -86,16 +86,16 @@ public class MultiLineGroup {
                 }
             }
         }
-        if (fplx == "025"){
+        if (fplx == "025") {
             input.addContent(fplxdm.setText(fplx));
             input.removeChild("gwdwdzdh");
             input.removeChild("ghdwyhzh");
-            if (a > 0){
-                fyxm.setAttribute("count",""+a);
+            if (a > 0) {
+                fyxm.setAttribute("count", "" + a);
                 input.addContent(fyxm);
-                for (int i=1;i<=a;i++) {
+                for (int i = 1; i <= a; i++) {
                     Element group = new Element("group");
-                    group.setAttribute("xh", ""+i);
+                    group.setAttribute("xh", "" + i);
                     fyxm.addContent(group);
                     Element fphxz = new Element("fphxz");
                     group.addContent(fphxz.setText("0"));
@@ -145,7 +145,7 @@ public class MultiLineGroup {
         //开票人
         Element kpr = new Element("kpr");
         input.addContent(kpr.setText("管理员"));
-        if (fplx == "004"){
+        if (fplx == "004") {
             Element tzdbh = new Element("tzdbh");
             input.addContent(tzdbh.setText(""));
         }
@@ -161,7 +161,7 @@ public class MultiLineGroup {
         business.addContent(body);
         ByteArrayOutputStream byteRep = new ByteArrayOutputStream();
         XMLOutputter docWriter = new XMLOutputter();
-        docWriter.output(document,byteRep);
+        docWriter.output(document, byteRep);
         String strXml = byteRep.toString();
         return strXml;
     }

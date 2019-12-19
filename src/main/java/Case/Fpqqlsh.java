@@ -21,6 +21,7 @@ public class Fpqqlsh {
 
     @Test(groups = {"异常开票"},description = "发票请求流水号为空")
     public void fpqqlsh_0001() throws IOException, NoSuchAlgorithmException {
+        map.put("fplxdm","026");
         map.put("fpqqlsh", "");
         invoiceCase = GetInvoiceCase.getInvoiceCase("fpqqlsh_0001");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
@@ -28,6 +29,7 @@ public class Fpqqlsh {
 
     @Test(groups = {"正常开票"},description = "发票请求流水号为1个数字",priority = 4)
     public void fpqqlsh_0002() throws IOException, NoSuchAlgorithmException {
+        map.put("fplxdm","026");
         map.put("fpqqlsh","0");
         invoiceCase = GetInvoiceCase.getInvoiceCase("fpqqlsh_0002");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
@@ -35,6 +37,7 @@ public class Fpqqlsh {
 
     @Test(groups = {"正常开票"},description = "发票请求流水号为1个字母")
     public void fpqqlsh_0003() throws IOException, NoSuchAlgorithmException {
+        map.put("fplxdm","026");
         map.put("fpqqlsh",String.valueOf(UpdateFpqqlsh.randGenerated()));
         invoiceCase = GetInvoiceCase.getInvoiceCase("fpqqlsh_0003");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
@@ -42,6 +45,7 @@ public class Fpqqlsh {
 
     @Test(groups = {"正常开票"},description = "发票请求流水号为64位数字")
     public void fpqqlsh_0004() throws IOException, NoSuchAlgorithmException {
+        map.put("fplxdm","026");
         map.put("fpqqlsh", UpdateFpqqlsh.numbers64());
         invoiceCase = GetInvoiceCase.getInvoiceCase("fpqqlsh_0004");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
@@ -49,6 +53,7 @@ public class Fpqqlsh {
 
     @Test(groups = {"正常开票"},description = "发票请求流水号为64位字母")
     public void fpqqlsh_0005() throws IOException, NoSuchAlgorithmException {
+        map.put("fplxdm","026");
         map.put("fpqqlsh", UpdateFpqqlsh.letters64());
         invoiceCase = GetInvoiceCase.getInvoiceCase("fpqqlsh_0005");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
@@ -56,6 +61,7 @@ public class Fpqqlsh {
 
     @Test(groups = {"正常开票"},description = "发票请求流水号为字母和数字的组合")
     public void fpqqlsh_0006() throws IOException, NoSuchAlgorithmException {
+        map.put("fplxdm","026");
         map.put("fpqqlsh", UpdateFpqqlsh.numbersLetters());
         invoiceCase = GetInvoiceCase.getInvoiceCase("fpqqlsh_0006");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
@@ -63,6 +69,7 @@ public class Fpqqlsh {
 
     @Test(groups = {"异常开票"},description = "发票请求流水号为65位")
     public void fpqqlsh_0007() throws IOException, NoSuchAlgorithmException {
+        map.put("fplxdm","026");
         map.put("fpqqlsh",UpdateFpqqlsh.numbers64()+"A");
         invoiceCase = GetInvoiceCase.getInvoiceCase("fpqqlsh_0007");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);

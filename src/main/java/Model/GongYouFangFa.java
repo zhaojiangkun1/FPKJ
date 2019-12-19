@@ -16,24 +16,24 @@ import java.util.HashMap;
 public class GongYouFangFa {
 
     public static void gongYouFangFa(String file, InvoiceCase invoiceCase) throws IOException, NoSuchAlgorithmException {
-        JSONObject expectedResult = GetInvoiceCase.expectedResult(invoiceCase.getStatusCode(),invoiceCase.getReturnMsg());
+        JSONObject expectedResult = GetInvoiceCase.expectedResult(invoiceCase.getStatusCode(), invoiceCase.getReturnMsg());
         String result = PostRequest.zhenPiaoYunRequest(file, TestEnv.testEnv);
         System.out.println(result);
         JSONObject actualResult = AcquireSubstr.analyzeString(result);
         String runStatus = "";
-        if (expectedResult.toString().equals(actualResult.toString())){
+        if (expectedResult.toString().equals(actualResult.toString())) {
             runStatus = "Pass";
-        }else {
+        } else {
             runStatus = "Failed";
         }
 
         invoiceCase.setRunResult(actualResult.toString());
         invoiceCase.setRunStatus(runStatus);
         SqlSession sqlSession = DataBaseUtil.getSqlSession();
-        sqlSession.update("updateResult",invoiceCase);
+        sqlSession.update("updateResult", invoiceCase);
         sqlSession.commit();
         AddFpInfo.addFpInfo(file);
 
-        Assert.assertEquals(actualResult,expectedResult);
+        Assert.assertEquals(actualResult, expectedResult);
     }
 }

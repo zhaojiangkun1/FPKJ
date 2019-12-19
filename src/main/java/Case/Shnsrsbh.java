@@ -23,6 +23,7 @@ public class Shnsrsbh {
      */
     @Test(groups = {"异常开票"},description = "销方纳税人识别号与机身编号同时为空")
     public void shnsrsbh_0001() throws IOException, NoSuchAlgorithmException {
+        map.put("fplxdm","026");
         map.put("shnsrsbh","");
         map.put("jsbh","");
         InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("shnsrsbh_0001");
@@ -36,6 +37,7 @@ public class Shnsrsbh {
      */
     @Test(groups = {"异常开票"},description = "销方纳税人识别号与机身编号中税号不一致")
     public void shnsrsbh_0002() throws IOException, NoSuchAlgorithmException {
+        map.put("fplxdm","026");
         map.put("shnsrsbh","000012312312312");
         InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("shnsrsbh_0002");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
@@ -43,6 +45,7 @@ public class Shnsrsbh {
 
     @Test(groups = {"正常开票"},description = "机身编号存在，但是销方纳税人识别号为空")
     public void shnsrsbh_0003() throws IOException, NoSuchAlgorithmException {
+        map.put("fplxdm","026");
         map.put("shnsrsbh","");
         InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("shnsrsbh_0003");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
