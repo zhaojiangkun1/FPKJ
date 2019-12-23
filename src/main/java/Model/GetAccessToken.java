@@ -24,7 +24,7 @@ public class GetAccessToken {
         System.out.println("上次获取Token的时间:" + old_time);
         Date current_time = new Date();
         System.out.println("当前时间:" + current_time);
-        String accessToken;
+        String accessToken = "";
         String url = addr + "?appId=" + appId + "&appSecret=" + appSecret;
         long diffsec = (current_time.getTime() - old_time.getTime()) / 1000;
 
@@ -32,19 +32,18 @@ public class GetAccessToken {
         if (diffsec <= 7200) {
             accessToken = appInfo.getAccessToken();
         } else {
-
-
             HttpClient client = HttpClientBuilder.create().build();
             HttpGet httpGet = new HttpGet(url);
             HttpResponse response = client.execute(httpGet);
-            String result = EntityUtils.toString(response.getEntity(), "utf-8");
-            String leftTag = "<access_token>";
-            String rightTag = "</access_token>";
-            accessToken = result.substring(result.indexOf(leftTag) + leftTag.length(), result.indexOf(rightTag));
-
-            appInfo.setAccessToken(accessToken);
-            appInfo.setUpdateTime(current_time);
-            UpdateToken.updateToken(appInfo, num);
+            if (response.getStatusLine().getStatusCode() == 200) {
+                String result = EntityUtils.toString(response.getEntity(), "utf-8");
+                String leftTag = "<access_token>";
+                String rightTag = "</access_token>";
+                accessToken = result.substring(result.indexOf(leftTag) + leftTag.length(), result.indexOf(rightTag));
+                appInfo.setAccessToken(accessToken);
+                appInfo.setUpdateTime(current_time);
+                UpdateToken.updateToken(appInfo, num);
+            }
 
         }
         return accessToken;

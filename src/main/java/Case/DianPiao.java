@@ -22,7 +22,7 @@ public class DianPiao {
      * 1.旋极平台：优先读取扫码台默认商品，若无，调接口查询，查默认商品，若无，报错
      * 2.广东、许继等平台，优先读取扫码台默认商品，若无，则读取数据库中默认商品，若无，报错
      *
-     * 默认商品，只传金额即可，税率 商品名称，单价，
+     * 默认商品，只传金额即可，税率 商品名称，单价，(根据商品名称去判断，所以商品名称保留为空即可)
      *
      * 总结：广东、许继  直接开票，把手机号、邮箱传给广东、许继，短信和邮箱是他们发，自助开票，如果同时填了手机号和邮箱，则把手机号传过去，此时邮箱我们来发
      *宁波短信自己发
@@ -34,16 +34,7 @@ public class DianPiao {
 
     @Test(groups = {"开具电票"},description = "所有参数都正常，开具一张电票")
     public void dianPiao_0001() throws IOException, NoSuchAlgorithmException {
-        map.put("sprsjh","zhengping@shuzutech.com");
         map.put("fplxdm","026");
-        map.put("jsbh","");
-        map.put("shnsrsbh","110101201707010057");
-        map.put("je","26.3");
-        map.put("dj","");
-        map.put("spsl","");
-        map.put("sl","");
-        map.put("spmc","");
-        map.put("spbm","");
         InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("dianPiao_0001");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
     }

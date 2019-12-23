@@ -18,6 +18,7 @@ import java.util.Date;
 public class PostRequest {
 
     public static String zhenPiaoYunRequest(String body, EnvNum num) throws IOException, NoSuchAlgorithmException {
+        String result = "";
         System.out.println("本次请求的报文:" + body);
         String url = GetSaveAddr.getSaveAddr(num);
         System.out.println("本次请求的url:" + url);
@@ -41,7 +42,10 @@ public class PostRequest {
         post.setHeader("Content-MD5", contentMd5);
 
         HttpResponse response = client.execute(post);
-        String result = EntityUtils.toString(response.getEntity(), "utf-8");
+        if (response.getStatusLine().getStatusCode() == 200){
+            result = EntityUtils.toString(response.getEntity(), "utf-8");
+        }
+
         return result;
     }
 
