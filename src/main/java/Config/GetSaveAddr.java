@@ -17,14 +17,15 @@ public class GetSaveAddr {
      */
     public static String getSaveAddr(EnvNum num) throws IOException {
         SqlSession session = DataBaseUtil.getSqlSession();
+        String env = num.toString();
         SaveAddr saveAddr = new SaveAddr();
-        if (num == EnvNum.PRO || num == EnvNum.PRO1) {
+        if (env.contains("PRO")) {
             saveAddr = session.selectOne("getSaveAddr", "PRO");
         }
-        if (num == EnvNum.DEV || num == EnvNum.DEV1 || num == EnvNum.DEV2) {
+        if (env.contains("DEV")) {
             saveAddr = session.selectOne("getSaveAddr", "DEV");
         }
-        if (num == EnvNum.TEST || num == EnvNum.TEST1) {
+        if (env.contains("TEST")) {
             saveAddr = session.selectOne("getSaveAddr", "TEST");
         }
 

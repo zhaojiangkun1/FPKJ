@@ -2,10 +2,8 @@ package Case;
 
 import Bean.*;
 import Config.GetInvoiceCase;
-import Config.UpdateFpqqlsh;
 import Model.*;
 import com.alibaba.fastjson.JSONObject;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -19,6 +17,8 @@ public class De {
 
     @Test(groups = {"正常开票"}, description = "单位商品数量单价税率税额均合理")
     public void de_0001() throws IOException, NoSuchAlgorithmException {
+        map.put("jsbh","110101201707010064~~110101201707010064");
+        map.put("shnsrsbh","110101201707010064");
         map.put("fplxdm", "026");
         map.put("dw", "个");
         map.put("spsl", "2.9");

@@ -34,6 +34,7 @@ public class Fphxz {
     @Test(groups = {"异常开票"}, description = "非折扣行商品，单个商品的发票行性质为2")
     public void fphxz_0003() throws IOException, NoSuchAlgorithmException {
         map.put("fplxdm","026");
+        map.put("fpqqlsh","BX81120200326104928");
         map.put("fphxz", "2");
         invoiceCase = GetInvoiceCase.getInvoiceCase("fphxz_0003");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map), invoiceCase);

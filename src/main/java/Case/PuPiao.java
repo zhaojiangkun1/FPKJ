@@ -1,11 +1,8 @@
 package Case;
 
 import Bean.InvoiceCase;
-import Bean.TestEnv;
 import Config.GetInvoiceCase;
 import Model.*;
-import com.alibaba.fastjson.JSONObject;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -17,9 +14,13 @@ public class PuPiao {
 
     @Test(groups = {"开具普票"}, description = "所有参数均正常，开具一张增值税普通发票")
     public void puPiao_0001() throws IOException, NoSuchAlgorithmException {
+//        map.put("fpqqlsh","KA28020200424114443");
         map.put("fplxdm", "007");
-        map.put("jsbh", "110101201707010043~~A20016420000265");
-        map.put("shnsrsbh", "");
+        map.put("spsl","1");
+        map.put("shnsrsbh","110101201707010043");
+        map.put("jsbh", "");
+//        map.put("terminalKey","hl0002");
+//        map.put("kpr","");
         InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("puPiao_0001");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map), invoiceCase);
     }
@@ -30,12 +31,12 @@ public class PuPiao {
         map.put("sprsjh", "");
         map.put("kplx", "1");
         map.put("spsl", "-1");
-        map.put("dj", "7.55");
-        map.put("je", "-7.55");
+        map.put("dj", "282.075472");
+        map.put("je", "-282.08");
         map.put("sl", "0.06");
-        map.put("se", "-0.45");
+        map.put("se", "-16.92");
         map.put("yfpdm", "050000000102");
-        map.put("yfphm", "13315608");
+        map.put("yfphm", "20192204");
         InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("puPiao_0002");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map), invoiceCase);
     }
@@ -54,9 +55,9 @@ public class PuPiao {
         GongYouFangFa.gongYouFangFa(file, invoiceCase);
     }
 
-    @Test(groups = {"多行普票开具"}, description = "所有参数均正常，开具一张9行商品的普票")
+    @Test(groups = {"多行普票开具"}, description = "所有参数均正常，开具一张10行商品的普票")
     public void multiLineGroupPuPiao_0005() throws IOException, NoSuchAlgorithmException {
-        String file = MultiLineGroup.multiLineGroup("007", 9);
+        String file = MultiLineGroup.multiLineGroup("007", 10);
         InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("puPiao_0005");
         GongYouFangFa.gongYouFangFa(file, invoiceCase);
 

@@ -28,10 +28,10 @@ public class Java2XML {
         input.addContent(fppqqlsh.setText(UpdateFpqqlsh.numbersLetters()));
 
         Element shnsrsbh = new Element("shnsrsbh");
-        input.addContent(shnsrsbh.setText("110101201601010075"));
+        input.addContent(shnsrsbh.setText("110101201707010057"));
 
         Element jsbh = new Element("jsbh");
-        input.addContent(jsbh.setText("110101201601010075~~499000153838"));
+        input.addContent(jsbh.setText("110101201707010057~~499000152456"));
 
         Element fplxdm = new Element("fplxdm");
         input.addContent(fplxdm.setText("026"));
@@ -41,7 +41,13 @@ public class Java2XML {
 
         Element yhlx = new Element("yhlx");
         input.addContent(yhlx.setText("0"));
+/**
+ Element xhdwdzdh = new Element("xhdwdzdh");
+ input.addContent(xhdwdzdh.setText("南京市雨花台区软件大道168号润和创智中心3栋309室18061495423"));
 
+ Element xhdwyhzh = new Element("xhdwyhzh");
+ input.addContent(xhdwyhzh.setText("南京市工商银行3201000323459889"));
+ **/
         Element ghdwsbh = new Element("ghdwsbh");
         input.addContent(ghdwsbh.setText("91310114MA1GU3NU72"));
 
@@ -98,7 +104,7 @@ public class Java2XML {
         group.addContent(se.setText("16.92"));
 
         Element spbm = new Element("spbm");
-        group.addContent(spbm.setText("3040205000000000000"));
+        group.addContent(spbm.setText("3040201040000000000"));
 
         Element zxbm = new Element("zxbm");
         group.addContent(zxbm.setText(""));
@@ -117,6 +123,9 @@ public class Java2XML {
 
         Element extParam = new Element("extParam");
         input.addContent(extParam.setText(""));
+
+        Element front_url = new Element("front_url");
+        input.addContent(front_url.setText(""));
 
         Element readonly = new Element("readonly");
         input.addContent(readonly.setText(""));
@@ -186,12 +195,28 @@ public class Java2XML {
                     group.removeChild("hsdj");
                 }
             }
+            if (key == "order_no"){
+                Element order_no = new Element("order_no");
+                input.addContent(order_no.setText(values));
+            }
+            if (key == "order_type"){
+                Element order_type = new Element("order_type");
+                input.addContent(order_type.setText(values));
+            }
             if (key == "kplx") {
                 kplx.setText(values);
             }
             if (key == "yhlx") {
                 yhlx.setText(values);
             }
+            /**
+             if (key == "xhdwdzdh"){
+             xhdwdzdh.setText(values);
+             }
+             if (key == "xhdwyhzh"){
+             xhdwyhzh.setText(values);
+             }
+             **/
             if (key == "ghdwsbh") {
                 ghdwsbh.setText(values);
             }
@@ -261,6 +286,9 @@ public class Java2XML {
             if (key == "bz") {
                 bz.setText(values);
             }
+            if (key == "front_url") {
+                front_url.setText(values);
+            }
             if (key == "readonly") {
                 readonly.setText(values);
             }
@@ -284,6 +312,10 @@ public class Java2XML {
             }
             if (key == "sprsjh") {
                 sprsjh.setText(values);
+            }
+            if (key == "terminalKey"){
+                Element terminalKey = new Element("terminalKey");
+                input.addContent(terminalKey.setText(values));
             }
 
         }

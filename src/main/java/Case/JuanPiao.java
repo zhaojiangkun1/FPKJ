@@ -17,7 +17,8 @@ public class JuanPiao {
     @Test(groups = {"开具卷票"}, description = "所有参数均正常，开具一张卷票")
     public void juanPiao_0001() throws IOException, NoSuchAlgorithmException {
         map.put("fplxdm", "025");
-        map.put("sprsjh", "");
+        map.put("jsbh","110101201707010043~~A20016420000265");
+        map.put("shnsrsbh","110101201707010043");
         map.put("readonly", "0");
         invoiceCase = GetInvoiceCase.getInvoiceCase("juanPiao_0001");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map), invoiceCase);
@@ -29,10 +30,10 @@ public class JuanPiao {
         map.put("kplx", "1");
         map.put("sprsjh", "");
         map.put("spsl", "-1");
-        map.put("hsje", "-34.56");
-        map.put("se", "-1.96");
+        map.put("hsje", "-299");
+        map.put("se", "-18.04");
         map.put("yfpdm", "150001201509");
-        map.put("yfphm", "20191054");
+        map.put("yfphm", "20191099");
         invoiceCase = GetInvoiceCase.getInvoiceCase("juanPiao_0002");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map), invoiceCase);
     }

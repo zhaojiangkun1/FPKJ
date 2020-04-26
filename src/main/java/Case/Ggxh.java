@@ -19,9 +19,9 @@ public class Ggxh {
 
     @Test(groups = {"正常开票"}, description = "开票参数含有规格型号")
     public void ggxh_0001() throws IOException, NoSuchAlgorithmException {
-        map.put("fplxdm", "026");
+        map.put("fplxdm", "025");
 //        map.put("spmc","氨糖软骨素钙片");
-        map.put("ggxh", "285.6g(1.02g*80片*1瓶+1.02g*100片*2瓶)&^$#@");
+        map.put("ggxh", "285.6g(1.02g*80片*1瓶+1.02g*100片*2瓶)");
         invoiceCase = GetInvoiceCase.getInvoiceCase("ggxh_0001");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map), invoiceCase);
     }

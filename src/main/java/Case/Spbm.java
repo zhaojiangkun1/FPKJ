@@ -4,7 +4,6 @@ import Bean.*;
 import Config.GetInvoiceCase;
 import Model.*;
 import com.alibaba.fastjson.JSONObject;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -12,7 +11,6 @@ import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 
 public class Spbm {
-    JSONObject expectedResult = new JSONObject();
     HashMap<String, String> map = new HashMap();
 
     /**
@@ -24,7 +22,7 @@ public class Spbm {
      */
     @Test(groups = {"异常开票"}, description = "存在商品信息，但是商品编码为空")
     public void spbm_0001() throws IOException, NoSuchAlgorithmException {
-        map.put("fplxdm","026");
+        map.put("fplxdm", "026");
         map.put("spbm", "");
         InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("spbm_0001");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map), invoiceCase);

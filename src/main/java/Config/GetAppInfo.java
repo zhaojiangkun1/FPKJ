@@ -17,36 +17,11 @@ public class GetAppInfo {
     public static AppInfo getAppInfo(EnvNum num) throws IOException {
         SqlSession sqlSession = DataBaseUtil.getSqlSession();
         AppInfo appInfo = new AppInfo();
-        String env = getEnv(num);
-        appInfo = sqlSession.selectOne("getAppInfo", env);
+//        String env = getEnv(num);
+//        num.toString();
+        appInfo = sqlSession.selectOne("getAppInfo", num.toString());
 
         return appInfo;
-    }
-
-    public static String getEnv(EnvNum num) {
-        String env = "";
-        if (num == EnvNum.PRO) {
-            env = "PRO";
-        }
-        if (num == EnvNum.DEV) {
-            env = "DEV";
-        }
-        if (num == EnvNum.TEST) {
-            env = "TEST";
-        }
-        if (num == EnvNum.TEST1) {
-            env = "TEST1";
-        }
-        if (num == EnvNum.PRO1) {
-            env = "PRO1";
-        }
-        if (num == EnvNum.DEV1) {
-            env = "DEV1";
-        }
-        if (num == EnvNum.DEV2) {
-            env = "DEV2";
-        }
-        return env;
     }
 
 }

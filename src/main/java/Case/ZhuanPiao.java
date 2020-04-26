@@ -15,8 +15,15 @@ public class ZhuanPiao {
     @Test(groups = {"开具专票"}, description = "所有参数均正常，开具一张专票")
     public void zhuanPiao_0001() throws IOException, NoSuchAlgorithmException {
         map.put("fplxdm", "004");
-        map.put("jsbh", "91320191MA1ML4CL25~~661826092245");
-        map.put("sprsjh", "");
+        map.put("spmc","切枝");
+        map.put("spsl","1");
+        map.put("dj","6");
+        map.put("je","6");
+        map.put("sl","0.06");
+        map.put("se","0.36");
+        map.put("spbm","1010113040000000000");
+        map.put("shnsrsbh","110101201707010043");
+        map.put("jsbh", "");
         // 规格型号过长
 //        map.put("ggxh","285.6g(1.02g*80片*1瓶+1.02g*100片*2瓶)");
         InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("zhuanPiao_0001");
@@ -59,7 +66,7 @@ public class ZhuanPiao {
 
     @Test(groups = {"多行专票开具"}, description = "9行商品的专票开具")
     public void multiGroupZhuanPiao_0005() throws IOException, NoSuchAlgorithmException {
-        String file = MultiLineGroup.multiLineGroup("004", 9);
+        String file = MultiLineGroup.multiLineGroup("004", 10);
         InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("zhuanPiao_0005");
         GongYouFangFa.gongYouFangFa(file, invoiceCase);
     }

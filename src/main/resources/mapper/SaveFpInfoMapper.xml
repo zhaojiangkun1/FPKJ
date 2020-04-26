@@ -6,6 +6,6 @@
     </select>
 
     <insert id="insertfpinfo" parameterType="Bean.SaveFpInfo">
-        insert into savefpinfo(id,fpqqlsh,fplxdm,nsrsbh,updatetime) values (#{id},#{fpqqlsh},#{fplxdm},#{nsrsbh},#{updateTime})
+        insert into savefpinfo(id,fpqqlsh,fplxdm,nsrsbh,updatetime) values (#{id},#{fpqqlsh},#{fplxdm},#{nsrsbh},#{updateTime});
     </insert>
 </mapper>

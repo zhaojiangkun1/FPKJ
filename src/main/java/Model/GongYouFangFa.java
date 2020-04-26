@@ -11,7 +11,6 @@ import org.testng.Assert;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
-import java.util.HashMap;
 
 public class GongYouFangFa {
 

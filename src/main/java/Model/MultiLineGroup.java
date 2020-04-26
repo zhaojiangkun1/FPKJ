@@ -20,14 +20,18 @@ public class MultiLineGroup {
         Element fppqqlsh = new Element("fpqqlsh");
         input.addContent(fppqqlsh.setText(UpdateFpqqlsh.numbersLetters()));
         Element shnsrsbh = new Element("shnsrsbh");
-        input.addContent(shnsrsbh.setText("110101201707010043"));
+        input.addContent(shnsrsbh.setText("110101201707010064"));
         Element jsbh = new Element("jsbh");
-        input.addContent(jsbh.setText("110101201707010043~~A20016420000265"));
+        input.addContent(jsbh.setText(""));
 
         Element kplx = new Element("kplx");
         input.addContent(kplx.setText("0"));
         Element yhlx = new Element("yhlx");
         input.addContent(yhlx.setText("0"));
+        Element xhdwdzdh = new Element("xhdwdzdh");
+        input.addContent(xhdwdzdh.setText("南京市雨花台区软件大道168号润和创智中心3栋309室18061495423"));
+        Element xhdwyhzh = new Element("xhdwyhzh");
+        input.addContent(xhdwyhzh.setText("南京市工商银行3201000323459889"));
         Element ghdwsbh = new Element("ghdwsbh");
         input.addContent(ghdwsbh.setText("91310114MA1GU3NU72"));
         Element ghdwmc = new Element("ghdwmc");

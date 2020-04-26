@@ -33,18 +33,25 @@ public class AddFpInfo {
         try {
             document = DocumentHelper.parseText(file);//将字符串转换成XML
             Element rootElt = document.getRootElement();//获取根节点
-
+            String nsrsbh = "";
             Element bodyEle = rootElt.element("body");//获取body节点
             Element inputEle = bodyEle.element("input");//获取input节点
             String shnsrsbh = inputEle.elementTextTrim("shnsrsbh");
+            if (shnsrsbh.equals("")){
+                String jsbh = inputEle.elementTextTrim("jsbh");
+                System.out.println(jsbh.indexOf('~'));
+                nsrsbh = jsbh.substring(0,jsbh.indexOf('~'));
+            }
+            else {
+                nsrsbh = shnsrsbh;
+            }
             String fplxdm = inputEle.elementTextTrim("fplxdm");
             String fpqqlsh = inputEle.elementTextTrim("fpqqlsh");
-
             SaveFpInfo saveFpInfo = new SaveFpInfo();
-            saveFpInfo.setFplxdm(fplxdm);
             saveFpInfo.setId(getFpInfoId() + 1);
             saveFpInfo.setFpqqlsh(fpqqlsh);
-            saveFpInfo.setNsrsbh(shnsrsbh);
+            saveFpInfo.setNsrsbh(nsrsbh);
+            saveFpInfo.setFplxdm(fplxdm);
             Date date = new Date();
             saveFpInfo.setUpdateTime(date);
             updateFpInfo(saveFpInfo);
