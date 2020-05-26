@@ -37,7 +37,7 @@ public class AddFpInfo {
             Element bodyEle = rootElt.element("body");//获取body节点
             Element inputEle = bodyEle.element("input");//获取input节点
             String shnsrsbh = inputEle.elementTextTrim("shnsrsbh");
-            if (shnsrsbh.equals("")){
+            if (shnsrsbh == null || shnsrsbh.equals("")){
                 String jsbh = inputEle.elementTextTrim("jsbh");
                 System.out.println(jsbh.indexOf('~'));
                 nsrsbh = jsbh.substring(0,jsbh.indexOf('~'));

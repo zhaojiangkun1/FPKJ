@@ -4,7 +4,6 @@ import Config.UpdateFpqqlsh;
 import org.jdom.Document;
 import org.jdom.Element;
 import org.jdom.output.XMLOutputter;
-import org.testng.annotations.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -14,68 +13,45 @@ import java.util.Map;
 
 public class Java2XML {
 
-
-    @Test
-    public static String BuildXMLDoc(HashMap<String, String> map) throws IOException {
+    public static String BuildXMLDoc(HashMap<String, String> map, int... groups) throws IOException {
         Element business = new Element("business");
         business.setAttribute("id", "FPKJ");
         Document doc = new Document(business);
         Element body = new Element("body");
-        Element input = new Element("input");
+        Element input = getInput(map);
         body.addContent(input);
-
-        Element fppqqlsh = new Element("fpqqlsh");
-        input.addContent(fppqqlsh.setText(UpdateFpqqlsh.numbersLetters()));
-
-        Element shnsrsbh = new Element("shnsrsbh");
-        input.addContent(shnsrsbh.setText("110101201707010057"));
-
-        Element jsbh = new Element("jsbh");
-        input.addContent(jsbh.setText("110101201707010057~~499000152456"));
-
-        Element fplxdm = new Element("fplxdm");
-        input.addContent(fplxdm.setText("026"));
-
-        Element kplx = new Element("kplx");
-        input.addContent(kplx.setText("0"));
-
-        Element yhlx = new Element("yhlx");
-        input.addContent(yhlx.setText("0"));
-/**
- Element xhdwdzdh = new Element("xhdwdzdh");
- input.addContent(xhdwdzdh.setText("南京市雨花台区软件大道168号润和创智中心3栋309室18061495423"));
-
- Element xhdwyhzh = new Element("xhdwyhzh");
- input.addContent(xhdwyhzh.setText("南京市工商银行3201000323459889"));
- **/
-        Element ghdwsbh = new Element("ghdwsbh");
-        input.addContent(ghdwsbh.setText("91310114MA1GU3NU72"));
-
-        Element ghdwmc = new Element("ghdwmc");
-        input.addContent(ghdwmc.setText("上海融族网络科技有限公司"));
-
-        Element ghdwdzdh = new Element("ghdwdzdh");
-        input.addContent(ghdwdzdh.setText("上海市浦东新区康威路1500号3幢1层103室02158958286"));
-
-        Element ghdwyhzh = new Element("ghdwyhzh");
-        input.addContent(ghdwyhzh.setText("中国建设银行股份有限公司上海张江支行31050161393600001918"));
-
-        Element qdbz = new Element("qdbz");
-        input.addContent(qdbz.setText("0"));
-
-        Element fyxm = new Element("fyxm");
-        fyxm.setAttribute("count", "1");
+        Element fyxm = getFyxm(map, groups);
         input.addContent(fyxm);
-        Element group = new Element("group");
-        group.setAttribute("xh", "1");
-        fyxm.addContent(group);
+        business.addContent(body);
+        ByteArrayOutputStream byteRep = new ByteArrayOutputStream();
+        XMLOutputter docWriter = new XMLOutputter();
+        docWriter.output(doc, byteRep);
+        String strXml = byteRep.toString();
+        return strXml;
+    }
 
+    public static Element getFyxm(HashMap<String, String> map, int... groups) {
+        Element fyxm = new Element("fyxm");
+        if (groups.length == 0) {
+            fyxm.setAttribute("count", "" + 1);
+            fyxm.addContent(getGroup(map));
+        } else {
+            fyxm.setAttribute("count", "" + groups[0]);
+            for (int i = 0; i < groups[0]; i++) {
+                Element group = getGroup(map);
+                group.setAttribute("xh",String.valueOf(i+1));
+                fyxm.addContent(group);
+            }
+        }
+        return fyxm;
+    }
+
+    public static Element getGroup(HashMap<String, String> map) {
+        Element group = new Element("group");
         Element fphxz = new Element("fphxz");
         group.addContent(fphxz.setText("0"));
-
         Element spmc = new Element("spmc");
         group.addContent(spmc.setText("服务费"));
-
         Element ggxh = new Element("ggxh");
         group.addContent(ggxh.setText(""));
 
@@ -118,8 +94,105 @@ public class Java2XML {
         Element zzstsgl = new Element("zzstsgl");
         group.addContent(zzstsgl.setText(""));
 
+        Iterator entries = map.entrySet().iterator();
+        while (entries.hasNext()) {
+            Map.Entry entry = (Map.Entry) entries.next();
+            String key = (String) entry.getKey();
+            String values = (String) entry.getValue();
+            if (key == "spmc") {
+                spmc.setText(values);
+            }
+            if (key == "ggxh") {
+                ggxh.setText(values);
+            }
+            if (key == "dw") {
+                dw.setText(values);
+            }
+            if (key == "spsl") {
+//                System.out.println(values);
+                spsl.setText(values);
+            }
+            if (key == "dj"){
+                dj.setText(values);
+            }
+
+            if (key == "je") {
+//                System.out.println("je:"+values);
+                je.setText(values);
+            }
+            if (key == "sl") {
+                sl.setText(values);
+            }
+            if (key == "se") {
+//                System.out.println(values);
+                se.setText(values);
+            }
+            if (key == "spbm") {
+                spbm.setText(values);
+            }
+            if (key == "zxbm") {
+                zxbm.setText(values);
+            }
+            if (key == "yhzcbs") {
+                yhzcbs.setText(values);
+            }
+            if (key == "lslbs") {
+                lslbs.setText(values);
+            }
+            if (key == "zzstsgl") {
+                zzstsgl.setText(values);
+            }
+
+            if (key == "fplxdm") {
+                if (values == "025") {
+                    group.removeChild("je");
+                    group.removeChild("dj");
+                }
+                if (values == "026") {
+                    group.removeChild("hsje");
+                    group.removeChild("hsdj");
+                }
+                if (values == "007") {
+                    group.removeChild("hsje");
+                    group.removeChild("hsdj");
+                }
+                if (values == "004") {
+                    group.removeChild("hsje");
+                    group.removeChild("hsdj");
+                }
+            }
+
+        }
+        return group;
+    }
+
+    public static Element getInput(HashMap<String, String> map) {
+        Element input = new Element("input");
+        Element fppqqlsh = new Element("fpqqlsh");
+        input.addContent(fppqqlsh.setText(UpdateFpqqlsh.numbersLetters()));
+        Element shnsrsbh = new Element("shnsrsbh");
+        input.addContent(shnsrsbh.setText("110101201707010057"));
+        Element jsbh = new Element("jsbh");
+        input.addContent(jsbh.setText("110101201707010057~~499000152456"));
+        Element fplxdm = new Element("fplxdm");
+        input.addContent(fplxdm.setText("026"));
+        Element kplx = new Element("kplx");
+        input.addContent(kplx.setText("0"));
+        Element yhlx = new Element("yhlx");
+        input.addContent(yhlx.setText("0"));
+        Element ghdwsbh = new Element("ghdwsbh");
+        input.addContent(ghdwsbh.setText("91310114MA1GU3NU72"));
+        Element ghdwmc = new Element("ghdwmc");
+        input.addContent(ghdwmc.setText("上海融族网络科技有限公司"));
+        Element ghdwdzdh = new Element("ghdwdzdh");
+        input.addContent(ghdwdzdh.setText("上海市浦东新区康威路1500号3幢1层103室02158958286"));
+        Element ghdwyhzh = new Element("ghdwyhzh");
+        input.addContent(ghdwyhzh.setText("中国建设银行股份有限公司上海张江支行31050161393600001918"));
+        Element qdbz = new Element("qdbz");
+        input.addContent(qdbz.setText("0"));
+
         Element title_type = new Element("title_type");
-        group.addContent(title_type.setText("3"));
+        input.addContent(title_type.setText("3"));
 
         Element extParam = new Element("extParam");
         input.addContent(extParam.setText(""));
@@ -154,7 +227,6 @@ public class Java2XML {
 
         Element sprsjh = new Element("sprsjh");
         input.addContent(sprsjh.setText("zhaokun@shuzutech.com"));
-
         Iterator entries = map.entrySet().iterator();
         while (entries.hasNext()) {
             Map.Entry entry = (Map.Entry) entries.next();
@@ -169,39 +241,16 @@ public class Java2XML {
             if (key == "jsbh") {
                 jsbh.setText(values);
             }
-            if (key == "fplxdm") {
-                fplxdm.setText(values);
-                if (values == "025") {
-                    group.removeChild("je");
-                    group.removeChild("dj");
-                    input.removeChild("qdbz");
-                    input.removeChild("tzdbh");
-                    input.removeChild("ghdwdzdh");
-                    input.removeChild("ghdwyhzh");
-                }
-                if (values == "026") {
-                    group.removeChild("hsje");
-                    group.removeChild("hsdj");
-                    input.removeChild("qdbz");
-                    input.removeChild("tzdbh");
-                }
-                if (values == "007") {
-                    group.removeChild("hsje");
-                    group.removeChild("hsdj");
-                    input.removeChild("tzdbh");
-                }
-                if (values == "004") {
-                    group.removeChild("hsje");
-                    group.removeChild("hsdj");
-                }
-            }
-            if (key == "order_no"){
+            if (key == "order_no") {
                 Element order_no = new Element("order_no");
                 input.addContent(order_no.setText(values));
             }
-            if (key == "order_type"){
+            if (key == "order_type") {
                 Element order_type = new Element("order_type");
                 input.addContent(order_type.setText(values));
+            }
+            if (key == "qdbz") {
+                qdbz.setText(values);
             }
             if (key == "kplx") {
                 kplx.setText(values);
@@ -209,14 +258,6 @@ public class Java2XML {
             if (key == "yhlx") {
                 yhlx.setText(values);
             }
-            /**
-             if (key == "xhdwdzdh"){
-             xhdwdzdh.setText(values);
-             }
-             if (key == "xhdwyhzh"){
-             xhdwyhzh.setText(values);
-             }
-             **/
             if (key == "ghdwsbh") {
                 ghdwsbh.setText(values);
             }
@@ -228,57 +269,6 @@ public class Java2XML {
             }
             if (key == "ghdwyhzh") {
                 ghdwyhzh.setText(values);
-            }
-            if (key == "qdbz") {
-                qdbz.setText(values);
-            }
-            if (key == "fphxz") {
-                fphxz.setText(values);
-            }
-            if (key == "spmc") {
-                spmc.setText(values);
-            }
-            if (key == "ggxh") {
-                ggxh.setText(values);
-            }
-            if (key == "dw") {
-                dw.setText(values);
-            }
-            if (key == "spsl") {
-                spsl.setText(values);
-            }
-            if (key == "hsdj") {
-                hsdj.setText(values);
-            }
-            if (key == "dj") {
-                dj.setText(values);
-            }
-            if (key == "hsje") {
-                hsje.setText(values);
-            }
-            if (key == "je") {
-                je.setText(values);
-            }
-            if (key == "sl") {
-                sl.setText(values);
-            }
-            if (key == "se") {
-                se.setText(values);
-            }
-            if (key == "spbm") {
-                spbm.setText(values);
-            }
-            if (key == "zxbm") {
-                zxbm.setText(values);
-            }
-            if (key == "yhzcbs") {
-                yhzcbs.setText(values);
-            }
-            if (key == "lslbs") {
-                lslbs.setText(values);
-            }
-            if (key == "zzstsgl") {
-                zzstsgl.setText(values);
             }
             if (key == "tytle_type") {
                 title_type.setText(values);
@@ -313,18 +303,39 @@ public class Java2XML {
             if (key == "sprsjh") {
                 sprsjh.setText(values);
             }
-            if (key == "terminalKey"){
+            if (key == "terminalKey") {
                 Element terminalKey = new Element("terminalKey");
                 input.addContent(terminalKey.setText(values));
             }
+            if (key == "fplxdm") {
+                fplxdm.setText(values);
+                if (values == "025") {
+                    input.removeChild("qdbz");
+                    input.removeChild("tzdbh");
+                    input.removeChild("ghdwdzdh");
+                    input.removeChild("ghdwyhzh");
+                    input.removeChild("shnsrsbh");
+                    sprsjh.setText("");
+                }
+                if (values == "026") {
+                    input.removeChild("qdbz");
+                    input.removeChild("tzdbh");
+                }
+                if (values == "007") {
+                    input.removeChild("tzdbh");
+                    input.removeChild("shnsrsbh");
+                    sprsjh.setText("");
+                }
+                if (values == "004") {
+                    input.removeChild("shnsrsbh");
+                    sprsjh.setText("");
+                }
+            }
 
         }
-        business.addContent(body);
-        ByteArrayOutputStream byteRep = new ByteArrayOutputStream();
-        XMLOutputter docWriter = new XMLOutputter();
-        docWriter.output(doc, byteRep);
-        String strXml = byteRep.toString();
-        return strXml;
+
+
+        return input;
     }
 
 }

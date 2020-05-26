@@ -17,31 +17,31 @@
             </run>
         </groups>
         <classes>
-            <class name="Case.Fpqqlsh"/>
-            <class name="Case.Bz"/>
-            <class name="Case.De"/>
-            <class name="Case.DianPiao"/>
-            <class name="Case.Jsbh"/>
-            <class name="Case.Kplx"/>
-            <class name="Case.PuPiao"/>
-            <class name="Case.JuanPiao"/>
-            <class name="Case.Skr"/>
-            <class name="Case.Kpr"/>
-            <class name="Case.Fhr"/>
-            <class name="Case.Yhlx"/>
-            <class name="Case.Zxbm"/>
-            <class name="Case.ZhuanPiao"/>
-            <class name="Case.Fphxz"/>
-            <class name="Case.Fplxdm"/>
-            <class name="Case.Yfpdm"/>
-            <class name="Case.Ggxh"/>
-            <class name="Case.Yhzcbs"/>
-            <class name="Case.Spbm"/>
-            <class name="Case.Shnsrsbh"/>
-            <class name="Case.Ghdwdzdh"/>
-            <class name="Case.Ghdwsbh"/>
-            <class name="Case.Ghdwmc"/>
-            <class name="Case.Ghdwyhzh"/>
+            <class name="Case.InvocieExce.Fpqqlsh"/>
+            <class name="Case.InvocieExce.Bz"/>
+            <class name="Case.InvocieExce.De"/>
+            <class name="Case.Invoice.DianPiao"/>
+            <class name="Case.InvocieExce.Jsbh"/>
+            <class name="Case.InvocieExce.Kplx"/>
+            <class name="Case.Invoice.PuPiao"/>
+            <class name="Case.Invoice.JuanPiao"/>
+            <class name="Case.InvocieExce.Skr"/>
+            <class name="Case.InvocieExce.Kpr"/>
+            <class name="Case.InvocieExce.Fhr"/>
+            <class name="Case.InvocieExce.Yhlx"/>
+            <class name="Case.InvocieExce.Zxbm"/>
+            <class name="Case.Invoice.ZhuanPiao"/>
+            <class name="Case.InvocieExce.Fphxz"/>
+            <class name="Case.InvocieExce.Fplxdm"/>
+            <class name="Case.InvocieExce.Yfpdm"/>
+            <class name="Case.InvocieExce.Ggxh"/>
+            <class name="Case.InvocieExce.Yhzcbs"/>
+            <class name="Case.InvocieExce.Spbm"/>
+            <class name="Case.InvocieExce.Shnsrsbh"/>
+            <class name="Case.InvocieExce.Ghdwdzdh"/>
+            <class name="Case.InvocieExce.Ghdwsbh"/>
+            <class name="Case.InvocieExce.Ghdwmc"/>
+            <class name="Case.InvocieExce.Ghdwyhzh"/>
         </classes>
     </test>
 
