@@ -102,7 +102,7 @@ public class AppInfo {
 
     @Override
     public String toString() {
-        return "AppInfo{" +
+        return getClass().getName()+"{" +
                 "id=" + id +
                 ", appid='" + appid + '\'' +
                 ", appSecret='" + appSecret + '\'' +

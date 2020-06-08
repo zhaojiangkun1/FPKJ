@@ -16,8 +16,16 @@ public class ZhuanPiao {
     public void zhuanPiao_0001() throws IOException, NoSuchAlgorithmException {
         map.put("fplxdm", "004");
         map.put("shnsrsbh","");
-        map.put("jsbh", "91320594346148467C~~537100951479");
-        map.put("spmc","技术服务费");
+        map.put("jsbh", "91320191MA1ML4CL25~~661921253676");
+        map.put("ghdwmc","南京阿有料网络科技有限公司");
+        map.put("ghdwsbh","91320100339341672J");
+        map.put("ghdwdzdh","南京市高新技术产业开发区星火路11号动漫大厦B座2楼C-1室025-68959525");
+        map.put("ghdwyhzh","南京工商银行 3201000323459889");
+        map.put("spsl","1");
+        map.put("dj","100");
+        map.put("je","100");
+        map.put("sl","0.06");
+        map.put("se","6.00");
         // 规格型号过长
 //        map.put("ggxh","285.6g(1.02g*80片*1瓶+1.02g*100片*2瓶)");
         InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("zhuanPiao_0001");

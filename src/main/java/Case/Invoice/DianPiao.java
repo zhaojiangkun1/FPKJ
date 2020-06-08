@@ -34,6 +34,7 @@ public class DianPiao {
      */
 
     /**
+     * threadPoolSize = 3,invocationCount = 3
      * 91320594346148467C
      * 91320594MA1MECA285
      * 110101201707010064
@@ -53,14 +54,14 @@ public class DianPiao {
     @Test(groups = {"开具电票"},description = "所有参数都正常，开具一张电票")
     public void dianPiao_0001() throws IOException, NoSuchAlgorithmException {
         map.put("fplxdm","026");
-        map.put("jsbh","110101201707010037~~499000152093");
-//        map.put("fpqqlsh","xK90020200518164800");
-        map.put("shnsrsbh","110101201707010037");
+        map.put("jsbh","");
+//        map.put("fpqqlsh","oI11520200605144942");
+        map.put("shnsrsbh","110101201707010043");
 //        map.put("fpqqlsh","mB16220200426111010");
         map.put("spmc","技术服务费");
-        map.put("sprsjh","13701476279");
+//        map.put("sprsjh","13701476279");
         InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("dianPiao_0001");
-        GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map,2),invoiceCase);
+        GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map),invoiceCase);
 //        System.out.printf("Thread Id : %s%n",Thread.currentThread().getId());
     }
 

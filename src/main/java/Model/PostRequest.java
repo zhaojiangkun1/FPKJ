@@ -13,6 +13,7 @@ import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class PostRequest {
@@ -24,8 +25,8 @@ public class PostRequest {
         System.out.println("本次请求的url:" + url);
         HttpClient client = HttpClientBuilder.create().build();
         HttpPost post = new HttpPost(url);
-
-        Date date = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMddHHmmSS");
+        String date = simpleDateFormat.format(new Date());
 
         String appId = GetAppInfo.getAppInfo(num).getAppid();
         String accessToken = GetAccessToken.getAccessToken(num);
@@ -38,8 +39,11 @@ public class PostRequest {
         post.setEntity(entity);
 
         post.setHeader("APPID", appId);
-        post.setHeader("Date", date.toString());
+        System.out.println("APPID:"+appId);
+        post.setHeader("Date", date);
+        System.out.println("Date:"+date);
         post.setHeader("Content-MD5", contentMd5);
+        System.out.println("Content-MD5:"+contentMd5);
 
         HttpResponse response = client.execute(post);
         if (response.getStatusLine().getStatusCode() == 200){

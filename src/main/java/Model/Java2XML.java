@@ -8,8 +8,6 @@ import org.jdom.output.XMLOutputter;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
 
 public class Java2XML {
 
@@ -34,12 +32,14 @@ public class Java2XML {
         Element fyxm = new Element("fyxm");
         if (groups.length == 0) {
             fyxm.setAttribute("count", "" + 1);
-            fyxm.addContent(getGroup(map));
+            Element group = getGroup(map);
+            group.setAttribute("xh", String.valueOf(1));
+            fyxm.addContent(group);
         } else {
             fyxm.setAttribute("count", "" + groups[0]);
             for (int i = 0; i < groups[0]; i++) {
                 Element group = getGroup(map);
-                group.setAttribute("xh",String.valueOf(i+1));
+                group.setAttribute("xh", String.valueOf(i + 1));
                 fyxm.addContent(group);
             }
         }
@@ -93,76 +93,39 @@ public class Java2XML {
 
         Element zzstsgl = new Element("zzstsgl");
         group.addContent(zzstsgl.setText(""));
-
-        Iterator entries = map.entrySet().iterator();
-        while (entries.hasNext()) {
-            Map.Entry entry = (Map.Entry) entries.next();
-            String key = (String) entry.getKey();
-            String values = (String) entry.getValue();
-            if (key == "spmc") {
-                spmc.setText(values);
+        if (map.containsKey("spmc")) spmc.setText(map.get("spmc"));
+        if (map.containsKey("ggxh")) ggxh.setText(map.get("ggxh"));
+        if (map.containsKey("dw")) dw.setText(map.get("dw"));
+        if (map.containsKey("spsl")) spsl.setText(map.get("spsl"));
+        if (map.containsKey("dj")) dj.setText(map.get("dj"));
+        if (map.containsKey("je")) je.setText(map.get("je"));
+        if (map.containsKey("sl")) sl.setText(map.get("sl"));
+        if (map.containsKey("se")) se.setText(map.get("se"));
+        if (map.containsKey("spbm")) spbm.setText(map.get("spbm"));
+        if (map.containsKey("zxbm")) zxbm.setText(map.get("zxbm"));
+        if (map.containsKey("yhzcbs")) yhzcbs.setText(map.get("yhzcbs"));
+        if (map.containsKey("lslbs")) lslbs.setText(map.get("lslbs"));
+        if (map.containsKey("zzstsgl")) zzstsgl.setText(map.get("zzstsgl"));
+        if (map.containsKey("fplxdm")) {
+            String values = (String) map.get("fplxdm");
+            if (values == "025") {
+                group.removeChild("je");
+                group.removeChild("dj");
             }
-            if (key == "ggxh") {
-                ggxh.setText(values);
+            if (values == "026") {
+                group.removeChild("hsje");
+                group.removeChild("hsdj");
             }
-            if (key == "dw") {
-                dw.setText(values);
+            if (values == "007") {
+                group.removeChild("hsje");
+                group.removeChild("hsdj");
             }
-            if (key == "spsl") {
-//                System.out.println(values);
-                spsl.setText(values);
+            if (values == "004") {
+                group.removeChild("hsje");
+                group.removeChild("hsdj");
             }
-            if (key == "dj"){
-                dj.setText(values);
-            }
-
-            if (key == "je") {
-//                System.out.println("je:"+values);
-                je.setText(values);
-            }
-            if (key == "sl") {
-                sl.setText(values);
-            }
-            if (key == "se") {
-//                System.out.println(values);
-                se.setText(values);
-            }
-            if (key == "spbm") {
-                spbm.setText(values);
-            }
-            if (key == "zxbm") {
-                zxbm.setText(values);
-            }
-            if (key == "yhzcbs") {
-                yhzcbs.setText(values);
-            }
-            if (key == "lslbs") {
-                lslbs.setText(values);
-            }
-            if (key == "zzstsgl") {
-                zzstsgl.setText(values);
-            }
-
-            if (key == "fplxdm") {
-                if (values == "025") {
-                    group.removeChild("je");
-                    group.removeChild("dj");
-                }
-                if (values == "026") {
-                    group.removeChild("hsje");
-                    group.removeChild("hsdj");
-                }
-                if (values == "007") {
-                    group.removeChild("hsje");
-                    group.removeChild("hsdj");
-                }
-                if (values == "004") {
-                    group.removeChild("hsje");
-                    group.removeChild("hsdj");
-                }
-            }
-
         }
+
         return group;
     }
 
@@ -190,10 +153,8 @@ public class Java2XML {
         input.addContent(ghdwyhzh.setText("中国建设银行股份有限公司上海张江支行31050161393600001918"));
         Element qdbz = new Element("qdbz");
         input.addContent(qdbz.setText("0"));
-
         Element title_type = new Element("title_type");
-        input.addContent(title_type.setText("3"));
-
+        input.addContent(title_type.setText(""));
         Element extParam = new Element("extParam");
         input.addContent(extParam.setText(""));
 
@@ -227,115 +188,60 @@ public class Java2XML {
 
         Element sprsjh = new Element("sprsjh");
         input.addContent(sprsjh.setText("zhaokun@shuzutech.com"));
-        Iterator entries = map.entrySet().iterator();
-        while (entries.hasNext()) {
-            Map.Entry entry = (Map.Entry) entries.next();
-            String key = (String) entry.getKey();
-            String values = (String) entry.getValue();
-            if (key == "fpqqlsh") {
-                fppqqlsh.setText(values);
-            }
-            if (key == "shnsrsbh") {
-                shnsrsbh.setText(values);
-            }
-            if (key == "jsbh") {
-                jsbh.setText(values);
-            }
-            if (key == "order_no") {
-                Element order_no = new Element("order_no");
-                input.addContent(order_no.setText(values));
-            }
-            if (key == "order_type") {
-                Element order_type = new Element("order_type");
-                input.addContent(order_type.setText(values));
-            }
-            if (key == "qdbz") {
-                qdbz.setText(values);
-            }
-            if (key == "kplx") {
-                kplx.setText(values);
-            }
-            if (key == "yhlx") {
-                yhlx.setText(values);
-            }
-            if (key == "ghdwsbh") {
-                ghdwsbh.setText(values);
-            }
-            if (key == "ghdwmc") {
-                ghdwmc.setText(values);
-            }
-            if (key == "ghdwdzdh") {
-                ghdwdzdh.setText(values);
-            }
-            if (key == "ghdwyhzh") {
-                ghdwyhzh.setText(values);
-            }
-            if (key == "tytle_type") {
-                title_type.setText(values);
-            }
-            if (key == "bz") {
-                bz.setText(values);
-            }
-            if (key == "front_url") {
-                front_url.setText(values);
-            }
-            if (key == "readonly") {
-                readonly.setText(values);
-            }
-            if (key == "skr") {
-                skr.setText(values);
-            }
-            if (key == "fhr") {
-                fhr.setText(values);
-            }
-            if (key == "kpr") {
-                kpr.setText(values);
-            }
-            if (key == "tzdbh") {
-                tzdbh.setText(values);
-            }
-            if (key == "yfpdm") {
-                yfpdm.setText(values);
-            }
-            if (key == "yfphm") {
-                yfphm.setText(values);
-            }
-            if (key == "sprsjh") {
-                sprsjh.setText(values);
-            }
-            if (key == "terminalKey") {
-                Element terminalKey = new Element("terminalKey");
-                input.addContent(terminalKey.setText(values));
-            }
-            if (key == "fplxdm") {
-                fplxdm.setText(values);
-                if (values == "025") {
-                    input.removeChild("qdbz");
-                    input.removeChild("tzdbh");
-                    input.removeChild("ghdwdzdh");
-                    input.removeChild("ghdwyhzh");
-                    input.removeChild("shnsrsbh");
-                    sprsjh.setText("");
-                }
-                if (values == "026") {
-                    input.removeChild("qdbz");
-                    input.removeChild("tzdbh");
-                }
-                if (values == "007") {
-                    input.removeChild("tzdbh");
-                    input.removeChild("shnsrsbh");
-                    sprsjh.setText("");
-                }
-                if (values == "004") {
-                    input.removeChild("shnsrsbh");
-                    sprsjh.setText("");
-                }
-            }
-
+        if (map.containsKey("fpqqlsh")) fppqqlsh.setText(map.get("fpqqlsh"));
+        if (map.containsKey("shnsrsbh")) shnsrsbh.setText(map.get("shnsrsbh"));
+        if (map.containsKey("jsbh")) jsbh.setText(map.get("jsbh"));
+        if (map.containsKey("order_no")) {
+            Element order_no = new Element("order_no");
+            input.addContent(order_no.setText(map.get("order_no")));
         }
-
-
+        if (map.containsKey("qdbz")) qdbz.setText(map.get("qdbz"));
+        if (map.containsKey("kplx")) kplx.setText(map.get("kplx"));
+        if (map.containsKey("yhlx")) yhlx.setText(map.get("yhlx"));
+        if (map.containsKey("ghdwsbh")) ghdwsbh.setText(map.get("ghdwsbh"));
+        if (map.containsKey("ghdwmc")) ghdwmc.setText(map.get("ghdwmc"));
+        if (map.containsKey("ghdwdzdh")) ghdwdzdh.setText(map.get("ghdwdzdh"));
+        if (map.containsKey("ghdwyhzh")) ghdwyhzh.setText(map.get("ghdwyhzh"));
+        if (map.containsKey("title_type")) title_type.setText(map.get("title_type"));
+        if (map.containsKey("bz")) bz.setText(map.get("bz"));
+        if (map.containsKey("front_url")) front_url.setText(map.get("front_url"));
+        if (map.containsKey("readonly")) readonly.setText(map.get("readonly"));
+        if (map.containsKey("skr")) skr.setText(map.get("skr"));
+        if (map.containsKey("fhr")) fhr.setText(map.get("fhr"));
+        if (map.containsKey("tzdbh")) tzdbh.setText(map.get("tzdbh"));
+        if (map.containsKey("yfpdm")) yfpdm.setText(map.get("yfpdm"));
+        if (map.containsKey("yfphm")) yfphm.setText(map.get("yfphm"));
+        if (map.containsKey("terminalKey")) {
+            Element terminalKey = new Element("terminalKey");
+            input.addContent(terminalKey.setText(map.get("terminalKey")));
+        }
+        if (map.containsKey("fplxdm")) {
+            String values = (String) map.get("fplxdm");
+            fplxdm.setText(values);
+            if (values == "025") {
+                input.removeChild("qdbz");
+                input.removeChild("tzdbh");
+                input.removeChild("ghdwdzdh");
+                input.removeChild("ghdwyhzh");
+                input.removeChild("shnsrsbh");
+                sprsjh.setText("");
+            }
+            if (values == "026") {
+                input.removeChild("qdbz");
+                input.removeChild("tzdbh");
+            }
+            if (values == "007") {
+                input.removeChild("tzdbh");
+                input.removeChild("shnsrsbh");
+                sprsjh.setText("");
+            }
+            if (values == "004") {
+                input.removeChild("shnsrsbh");
+                sprsjh.setText("");
+            }
+        }
         return input;
+
     }
 
 }

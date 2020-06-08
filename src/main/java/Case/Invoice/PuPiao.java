@@ -17,7 +17,7 @@ public class PuPiao {
         map.put("fplxdm", "007");
 //        map.put("shnsrsbh","");
 //        map.put("jsbh","110101201707010064~~499000152528");
-        map.put("ggxh","DES-2.7535,直径(mm)：2.75,长度(mm)：35");
+        map.put("ggxh","");
         map.put("fpqqlsh","uP92120200520182419");
 
         InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("puPiao_0001");
