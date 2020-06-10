@@ -1,6 +1,8 @@
 package Case.Invoice;
 
+import Bean.EnvNum;
 import Bean.InvoiceCase;
+import Bean.TestEnv;
 import Config.GetInvoiceCase;
 import Model.*;
 import org.testng.annotations.Test;
@@ -31,6 +33,14 @@ public class ZhuanPiao {
         InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("zhuanPiao_0001");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map), invoiceCase);
     }
+
+    @Test
+    public void hzxxbsc() throws IOException, NoSuchAlgorithmException {
+        HashMap<String,String> map1 = new HashMap<>();
+        String body = PostRequest.zhenPiaoYunRequest(ZhuanPiaoChongHong.getHzxxbsc(map1), TestEnv.testEnv);
+        System.out.println(body);
+    }
+
 
     /**
      * 专票冲红，必须带上通知单编号，需要提前上传红字信息表，返回一个通知单编号之后，才能冲红专票
