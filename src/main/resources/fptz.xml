@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<business id="GetTerminalInfo">
+<body>
+    <input>
+        <shnsrsbh>110101201707010041</shnsrsbh>
+        <deviceNo>
+        </deviceNo>
+    </input>
+</body>
+</business>
