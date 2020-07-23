@@ -21,16 +21,22 @@ import static com.shuzutech.model.GongYouFangFa.gongYouFangFa;
 
 public class RedInvoice {
     @Test(groups = {"电票冲红"}, description = "所有参数均正常，冲红一张电子发票")
-    public void dianPiaoChongHong_0003() throws IOException, NoSuchAlgorithmException, InterruptedException {
+    public void eTicketRed() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String,String> map = InvoiceParamters.hashMap("026");
+        map.put("ghdwmc", "上海盛付通电子支付服务有限公司");
+        map.put("ghdwsbh", "9131011567624841X0");
+        map.put("ghdwdzdh", "");
+        map.put("ghdwyhzh", "");
+        map.put("spmc", "智能空气品质控制器");
+        map.put("spbm","1090416990000000000");
         map.put("kplx", "1");
-        map.put("spsl", "-0.5");
-        map.put("dj", "20");
-        map.put("je", "-10");
-        map.put("sl", "0.03");
-        map.put("se", "-0.03");
+        map.put("spsl", "-1");
+        map.put("dj", "282.075472");
+        map.put("je", "-282.08");
+        map.put("sl", "0.06");
+        map.put("se", "-16.92");
         map.put("yfpdm", "050003521107");
-        map.put("yfphm", "20181266");
+        map.put("yfphm", "98416305");
         String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
         map.put("fpqqlsh", fpqqlsh);
         String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map),TestEnv.testEnv);
@@ -40,19 +46,19 @@ public class RedInvoice {
     }
 
     @Test(groups = {"电票冲红"},description = "冲红一张带清单电子发票")
-    public void redListDianPiao() throws IOException, NoSuchAlgorithmException, InterruptedException {
+    public void eListTicketRed() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String,String> map = InvoiceParamters.hashMap("026");
         map.put("kplx", "1");
-        map.put("spsl", "-0.5");
-        map.put("dj", "20");
-        map.put("je", "-10");
-        map.put("sl", "0.03");
-        map.put("se", "-0.03");
+        map.put("spsl", "-1");
+        map.put("dj", "282.075472");
+        map.put("je", "-282.08");
+        map.put("sl", "0.06");
+        map.put("se", "-16.92");
         map.put("yfpdm", "050003521107");
-        map.put("yfphm", "20181266");
+        map.put("yfphm", "98416308");
         String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
         map.put("fpqqlsh", fpqqlsh);
-        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map),TestEnv.testEnv);
+        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map,9),TestEnv.testEnv);
         TestResult.testFpkjResult(result);
         Thread.sleep(50000);
         TestResult.runResult(map);
@@ -66,21 +72,26 @@ public class RedInvoice {
      * @throws NoSuchAlgorithmException
      */
     @Test(groups = {"普票冲红"}, description = "所有参数均正常，冲红一张增值税普通发票")
-    public void puPiaoChongHong_0002() throws IOException, NoSuchAlgorithmException, InterruptedException {
+    public void puPiaoChongHong() throws IOException, NoSuchAlgorithmException, InterruptedException {
         String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
         HashMap<String,String> map = InvoiceParamters.hashMap("007");
         map.put("sprsjh", "");
         map.put("kplx", "1");
-        map.put("spmc", "技术服务费");
-        map.put("spsl", "-1");
-        map.put("dj", "100");
-        map.put("je", "-100");
+        map.put("ghdwmc", "上海盛付通电子支付服务有限公司");
+        map.put("ghdwsbh", "9131011567624841X0");
+        map.put("ghdwdzdh", "");
+        map.put("ghdwyhzh", "");
+        map.put("dj", "");
+        map.put("spsl", "");
+        map.put("je", "-1309.39");
+        map.put("dw", "");
+        map.put("ggxh", "");
         map.put("sl", "0.06");
-        map.put("se", "-6");
-        map.put("yfpdm", "032001900104");
-        map.put("yfphm", "71891448");
+        map.put("se", "-78.56");
+        map.put("yfpdm", "050000000102");
+        map.put("yfphm", "55504129");
         map.put("fpqqlsh", fpqqlsh);
-        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map),TestEnv.testEnv);
+        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map,2),TestEnv.testEnv);
         GongYouFangFa.zpy(map,result);
     }
 
@@ -90,17 +101,16 @@ public class RedInvoice {
         HashMap<String,String> map = InvoiceParamters.hashMap("007");
         map.put("sprsjh", "");
         map.put("kplx", "1");
-        map.put("spmc", "技术服务费");
         map.put("spsl", "-1");
-        map.put("dj", "100");
-        map.put("je", "-100");
+        map.put("dj", "282.075472");
+        map.put("je", "-282.08");
         map.put("sl", "0.06");
-        map.put("se", "-6");
+        map.put("se", "-16.92");
         map.put("qdbz","1");
-        map.put("yfpdm", "032001900104");
-        map.put("yfphm", "71891448");
+        map.put("yfpdm", "050000000102");
+        map.put("yfphm", "55504128");
         map.put("fpqqlsh", fpqqlsh);
-        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map),TestEnv.testEnv);
+        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map,10),TestEnv.testEnv);
         GongYouFangFa.zpy(map,result);
     }
 

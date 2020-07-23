@@ -31,7 +31,7 @@ public class PuPiao {
      * @throws InterruptedException
      */
     @Test(groups = {"开具普票"}, description = "所有参数均正常，开具一张增值税普通发票")
-    public void puPiao_0001() throws IOException, NoSuchAlgorithmException, InterruptedException {
+    public void generalInvoice() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("007");
         String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
         map.put("fpqqlsh", fpqqlsh);
@@ -53,7 +53,7 @@ public class PuPiao {
     }
 
     @Test(groups = {"开具普票"},description = "开具一张带折扣行的普票")
-    public void discountPuPiao() throws IOException, NoSuchAlgorithmException, InterruptedException {
+    public void discountGeneralInvoice() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("007");
         GroupModel groupModel = new GroupModel("2", "1", "20", "20", "0.03", "0.6");
         GroupModel groupModel1 = new GroupModel("1", "", "", "-10", "0.03", "-0.3");
@@ -66,7 +66,7 @@ public class PuPiao {
     }
 
     @Test(groups = {"开具普票"}, description = "所有参数均正常，开具一张6行商品的普票")
-    public void multiLineGroupPuPiao_0003() throws IOException, NoSuchAlgorithmException, InterruptedException {
+    public void generalInvoiceSixCommodity() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("007");
         String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
         map.put("fpqqlsh", fpqqlsh);
@@ -76,7 +76,7 @@ public class PuPiao {
     }
 
     @Test(groups = {"开票普票"}, description = "所有参数均正常,开具一张8行商品的普票")
-    public void multiLineGroupPuPiao_0004() throws IOException, NoSuchAlgorithmException, InterruptedException {
+    public void generalInvoiceEightCommodity() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("007");
         String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
         map.put("fpqqlsh", fpqqlsh);
@@ -86,7 +86,7 @@ public class PuPiao {
     }
 
     @Test(groups = {"开具普票"}, description = "所有参数均正常，开具一张10行商品的普票")
-    public void multiLineGroupPuPiao_0005() throws IOException, NoSuchAlgorithmException, InterruptedException {
+    public void generalInvoiceTenCommodity() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("007");
         String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
         map.put("fpqqlsh", fpqqlsh);

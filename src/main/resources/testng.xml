@@ -11,7 +11,7 @@
                 <exclude name="电票冲红"/>
                 <include name="开具普票"/>
                 <include name="开具专票"/>
-                <exclude name="普票红冲"/>
+                <exclude name="普票冲红"/>
                 <include name="特殊配置发票"/>
             </run>
         </groups>
@@ -41,7 +41,8 @@
             <class name="com.shuzutech.testCase.InvocieExce.Ghdwsbh"/>
             <class name="com.shuzutech.testCase.InvocieExce.Ghdwmc"/>
             <class name="com.shuzutech.testCase.InvocieExce.Ghdwyhzh"/>
-            <class name="com.shuzutech.testCase.Invoice.SpecialInvoice"/>
+            <class name="com.shuzutech.testCase.Invoice.RedInvoice"/>
+            <class name="com.shuzutech.testCase.Invoice.SpecialConfigurationInvoice"/>
         </classes>
     </test>
 

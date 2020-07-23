@@ -56,7 +56,7 @@ public class DianPiao {
 
 
     @Test(groups = {"开具电票"}, description = "所有参数都正常，开具一张电票")
-    public void dianPiao_0001() throws IOException, NoSuchAlgorithmException, InterruptedException {
+    public void electronicInvoice() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("026");
         String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
         map.put("fpqqlsh", fpqqlsh);
@@ -64,7 +64,7 @@ public class DianPiao {
         map.put("ghdwsbh", "9131011567624841X0");
         map.put("ghdwdzdh", "");
         map.put("ghdwyhzh", "");
-        map.put("spmc", "智能空气品质控制器 KF-700RM(RPM+Malino)");
+        map.put("spmc", "智能空气品质控制器");
         map.put("spbm","1090416990000000000");
         String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map), TestEnv.testEnv);
         GongYouFangFa.zpy(map,result);
@@ -73,7 +73,7 @@ public class DianPiao {
 
 
     @Test(groups = {"开具电票"}, description = "所有参数均正常,开具一张6行商品的电票")
-    public void multiGroupDianPiao_0004() throws IOException, NoSuchAlgorithmException, InterruptedException {
+    public void electronicInvoiceSixCommodity() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("026");
         String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
         map.put("fpqqlsh", fpqqlsh);
@@ -83,7 +83,7 @@ public class DianPiao {
     }
 
     @Test(groups = {"开具电票"}, description = "所有参数均正常，开具一张8行商品的电票")
-    public void multiGroupDianPiao_0005() throws IOException, NoSuchAlgorithmException, InterruptedException {
+    public void electronicInvoiceEightCommodity() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("026");
         String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
         map.put("fpqqlsh", fpqqlsh);
@@ -92,8 +92,8 @@ public class DianPiao {
         GongYouFangFa.zpy(map,result);
     }
 
-    @Test(groups = {"开票电票"}, description = "所有参数均正常,开具一张9行商品的电票")
-    public void multiGroupDianPiao_0006() throws IOException, NoSuchAlgorithmException, InterruptedException {
+    @Test(groups = {"开具电票"}, description = "所有参数均正常,开具一张9行商品的电票")
+    public void electronicInvoiceNineCommodity() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("026");
         String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
         map.put("fpqqlsh", fpqqlsh);
@@ -103,7 +103,7 @@ public class DianPiao {
     }
 
     @Test(groups = {"开具电票"},description = "开具一张带折扣行的电票")
-    public void discountDianPiao() throws IOException, NoSuchAlgorithmException, InterruptedException {
+    public void discountElectronicInvoice() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("026");
         ArrayList<GroupModel> groupModels = new ArrayList<>();
         GroupModel groupModel = new GroupModel("2", "1", "20", "20", "0.03", "0.6");

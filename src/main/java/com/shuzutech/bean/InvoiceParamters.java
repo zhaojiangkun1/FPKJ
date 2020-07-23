@@ -5,12 +5,12 @@ import java.util.HashMap;
 public class InvoiceParamters {
     /**
      * 91320191MA1ML4CL25~~661921253676
-     *110101201707010041  499000152131
+     *110101201707010041~~499000152131
      *110101201701010023~~499000150987
      *110101201707010043~~499000152157
      */
 //    private static String shnsrsbh = "110101201701010023";
-    private static String jsbh = "110101201707010043~~499000152157";
+    private static String jsbh = "110101201707010041~~499000152131";
 
 
     public static String kpzdbs = "499000152131";

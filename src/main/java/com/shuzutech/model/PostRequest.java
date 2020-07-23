@@ -54,7 +54,7 @@ public class PostRequest {
         if (response.getStatusLine().getStatusCode() == 200){
             result = EntityUtils.toString(response.getEntity(), "utf-8");
         }
-        System.out.println("开票返回的报文:"+result);
+        System.out.println("臻票云返回的报文:"+result);
         return result;
     }
 

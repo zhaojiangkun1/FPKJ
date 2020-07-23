@@ -19,7 +19,7 @@ public class ZhuanPiao {
     ArrayList<GroupModel> groupModels = new ArrayList<>();
 
     @Test(groups = {"开具专票"}, description = "所有参数均正常，开具一张专票")
-    public void zhuanPiao_0001() throws IOException, NoSuchAlgorithmException, InterruptedException {
+    public void specialInvoice() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("004");
         String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
         map.put("fpqqlsh", fpqqlsh);
@@ -36,7 +36,7 @@ public class ZhuanPiao {
     }
 
     @Test(groups = {"开具专票"}, description = "6行商品的专票开具")
-    public void multiGroupZhuanPiao_0003() throws IOException, NoSuchAlgorithmException, InterruptedException {
+    public void specialInvoiceSixCommodity() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("004");
         String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
         map.put("fpqqlsh", fpqqlsh);
@@ -46,7 +46,7 @@ public class ZhuanPiao {
     }
 
     @Test(groups = {"开具专票"}, description = "8行商品的专票开具")
-    public void multiGroupZhuanPiao_0004() throws IOException, NoSuchAlgorithmException, InterruptedException {
+    public void specialInvoiceEightCommodity() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("004");
         String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
         map.put("fpqqlsh", fpqqlsh);
@@ -56,18 +56,18 @@ public class ZhuanPiao {
     }
 
     @Test(groups = {"开具专票"}, description = "9行商品的专票开具")
-    public void multiGroupZhuanPiao_0005() throws IOException, NoSuchAlgorithmException, InterruptedException {
+    public void specialInvoiceNineCommodity() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("004");
         String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
         map.put("fpqqlsh", fpqqlsh);
         map.put("qdbz", "1");
-        String file = Java2XML.BuildXMLDoc(map, 10);
+        String file = Java2XML.BuildXMLDoc(map, 9);
         String result = PostRequest.zhenPiaoYunRequest(file, TestEnv.testEnv);
         GongYouFangFa.zpy(map, result);
     }
 
-    @Test(groups = {"开具普票"},description = "开具一张带折扣行的普票")
-    public void discountPuPiao() throws IOException, NoSuchAlgorithmException, InterruptedException {
+    @Test(groups = {"开具专票"},description = "开具一张带折扣行的专票")
+    public void discountSpecialInvoice() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("004");
         GroupModel groupModel = new GroupModel("2", "1", "200", "200", "0.03", "6");
         GroupModel groupModel1 = new GroupModel("1", "", "", "-10", "0.03", "-0.3");

@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 
-public class SpecialInvoice {
+public class SpecialConfigurationInvoice {
 
     @Test(groups = {"特殊配置发票"},description = "不传商品，使用默认商品开票")
     public void useDefaultProduct() throws IOException, NoSuchAlgorithmException, InterruptedException {
