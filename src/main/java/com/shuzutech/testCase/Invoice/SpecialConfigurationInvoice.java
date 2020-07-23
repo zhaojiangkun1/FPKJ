@@ -35,9 +35,15 @@ public class SpecialInvoice {
         System.out.printf("Thread Id : %s%n", Thread.currentThread().getId());
     }
 
+    /**
+     * 专票是不能开具0税率发票
+     * @throws InterruptedException
+     * @throws NoSuchAlgorithmException
+     * @throws IOException
+     */
     @Test(groups = {"特殊配置发票"},description = "使用免税政策开票")
     public void useFree() throws InterruptedException, NoSuchAlgorithmException, IOException {
-        HashMap<String,String> map = InvoiceParamters.hashMap("004");
+        HashMap<String,String> map = InvoiceParamters.hashMap("007");
         String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
         map.put("fpqqlsh",fpqqlsh);
         map.put("sl","0");
