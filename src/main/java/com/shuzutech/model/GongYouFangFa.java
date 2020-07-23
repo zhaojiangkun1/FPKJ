@@ -1,16 +1,18 @@
-package Model;
+package com.shuzutech.model;
 
-import com.shuzutech.bean.InvoiceCase;
-import com.shuzutech.bean.TestEnv;
+import com.alibaba.fastjson.JSONObject;
+import com.shuzutech.bean.*;
 import com.shuzutech.config.AddFpInfo;
 import com.shuzutech.config.DataBaseUtil;
 import com.shuzutech.config.GetInvoiceCase;
-import com.alibaba.fastjson.JSONObject;
+import com.shuzutech.config.TestResult;
+import com.shuzutech.config.UpdateFpqqlsh;
 import org.apache.ibatis.session.SqlSession;
 import org.testng.Assert;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
+import java.util.HashMap;
 
 public class GongYouFangFa {
 
@@ -31,8 +33,14 @@ public class GongYouFangFa {
         SqlSession sqlSession = DataBaseUtil.getSqlSession();
         sqlSession.update("updateResult", invoiceCase);
         sqlSession.commit();
-        AddFpInfo.addFpInfo(file);
+//        AddFpInfo.addFpInfo(file);
 
         Assert.assertEquals(actualResult, expectedResult);
+    }
+
+    public static void zpy(HashMap<String,String>map,String result) throws InterruptedException, IOException, NoSuchAlgorithmException {
+        TestResult.testFpkjResult(result);
+        Thread.sleep(50000);
+        TestResult.runResult(map);
     }
 }

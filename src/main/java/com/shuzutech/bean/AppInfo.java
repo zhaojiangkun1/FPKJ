@@ -1,4 +1,4 @@
-package Bean;
+package com.shuzutech.bean;
 
 import java.util.Date;
 import java.util.Objects;

@@ -1,4 +1,4 @@
-package Config;
+package com.shuzutech.config;
 
 
 import com.aventstack.extentreports.ExtentReports;

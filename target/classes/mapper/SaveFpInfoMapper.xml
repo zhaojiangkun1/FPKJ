@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="Bean.SaveFpInfo">
-    <select id="getFpInfo" resultType="Bean.SaveFpInfo" parameterType="Integer">
+<mapper namespace="com.shuzutech.bean.SaveFpInfo">
+    <select id="getFpInfo" resultType="com.shuzutech.bean.SaveFpInfo" parameterType="Integer">
         select * from savefpinfo order by id desc limit 1;
     </select>
 
-    <insert id="insertfpinfo" parameterType="Bean.SaveFpInfo">
+    <insert id="insertfpinfo" parameterType="com.shuzutech.bean.SaveFpInfo">
         insert into savefpinfo(id,fpqqlsh,fplxdm,nsrsbh,updatetime) values (#{id},#{fpqqlsh},#{fplxdm},#{nsrsbh},#{updateTime});
     </insert>
 </mapper>

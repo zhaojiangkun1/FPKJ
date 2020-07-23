@@ -1,6 +1,6 @@
-package Config;
+package com.shuzutech.config;
 
-import Bean.SaveFpInfo;
+import com.shuzutech.bean.SaveFpInfo;
 import org.apache.ibatis.session.SqlSession;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -10,7 +10,6 @@ import org.dom4j.Element;
 
 import java.io.IOException;
 import java.util.Date;
-import java.util.Iterator;
 
 
 public class AddFpInfo {

@@ -1,7 +1,7 @@
-package Config;
+package com.shuzutech.config;
 
-import Bean.AppInfo;
-import Bean.EnvNum;
+import com.shuzutech.bean.AppInfo;
+import com.shuzutech.bean.EnvNum;
 import org.apache.ibatis.session.SqlSession;
 
 import java.io.IOException;

@@ -2,11 +2,11 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 
-<mapper namespace="Bean.InvoiceCase">
-    <select id="queryInvoiceCase" resultType="Bean.InvoiceCase" parameterType="String">
+<mapper namespace="com.shuzutech.bean.InvoiceCase">
+    <select id="queryInvoiceCase" resultType="com.shuzutech.bean.InvoiceCase" parameterType="String">
         select * from invoicecase where id = #{id};
     </select>
-    <update id="updateResult" parameterType="Bean.InvoiceCase">
+    <update id="updateResult" parameterType="com.shuzutech.bean.InvoiceCase">
         update invoicecase set runResult = #{runResult},runStatus = #{runStatus} where id=#{id};
     </update>
 </mapper>

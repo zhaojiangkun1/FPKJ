@@ -1,4 +1,4 @@
-package Model;
+package com.shuzutech.model;
 
 import com.shuzutech.config.UpdateFpqqlsh;
 import org.jdom.Document;
@@ -7,18 +7,38 @@ import org.jdom.output.XMLOutputter;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+
 
 public class Java2XML {
 
+
     public static String BuildXMLDoc(HashMap<String, String> map, int... groups) throws IOException {
         Element business = new Element("business");
-        business.setAttribute("id", "FPKJ");
         Document doc = new Document(business);
         Element body = new Element("body");
+        business.setAttribute("id","FPKJ");
         Element input = getInput(map);
         body.addContent(input);
         Element fyxm = getFyxm(map, groups);
+        input.addContent(fyxm);
+        business.addContent(body);
+        ByteArrayOutputStream byteRep = new ByteArrayOutputStream();
+        XMLOutputter docWriter = new XMLOutputter();
+        docWriter.output(doc, byteRep);
+        String strXml = byteRep.toString();
+        return strXml;
+    }
+
+    public static String BuildXmlDoc(HashMap<String, String> map, ArrayList<GroupModel> groupModels) throws IOException {
+        Element business = new Element("business");
+        Document doc = new Document(business);
+        Element body = new Element("body");
+        business.setAttribute("id","FPKJ");
+        Element input = getInput(map);
+        body.addContent(input);
+        Element fyxm = discountFyxm(groupModels);
         input.addContent(fyxm);
         business.addContent(body);
         ByteArrayOutputStream byteRep = new ByteArrayOutputStream();
@@ -106,6 +126,14 @@ public class Java2XML {
         if (map.containsKey("yhzcbs")) yhzcbs.setText(map.get("yhzcbs"));
         if (map.containsKey("lslbs")) lslbs.setText(map.get("lslbs"));
         if (map.containsKey("zzstsgl")) zzstsgl.setText(map.get("zzstsgl"));
+        if (map.containsKey("hsbz")) {
+            Element hsbz = new Element("hsbz");
+            group.addContent(hsbz.setText(map.get("hsbz")));
+        }
+        if (map.containsKey("spsm")) {
+            Element hsbz = new Element("spsm");
+            group.addContent(hsbz.setText(map.get("spsm")));
+        }
         if (map.containsKey("fplxdm")) {
             String values = (String) map.get("fplxdm");
             if (values == "025") {
@@ -188,6 +216,24 @@ public class Java2XML {
 
         Element sprsjh = new Element("sprsjh");
         input.addContent(sprsjh.setText("zhaokun@shuzutech.com"));
+        if (map.containsKey("tspz")) {
+            Element tspz = new Element("tspz");
+            input.addContent(tspz.setText(map.get("tspz")));
+        }
+        if (map.containsKey("zsfs")) {
+            Element zsfs = new Element("zsfs");
+            input.addContent(zsfs.setText(map.get("zsfs")));
+        }
+        if (map.containsKey("kpzdbs")) {
+            input.removeChild("jsbh");
+            Element kpzdbs = new Element("kpzdbs");
+            input.addContent(kpzdbs.setText(map.get("kpzdbs")));
+        }
+        if (map.containsKey("jqbh")) {
+            input.removeChild("jsbh");
+            Element jqbh = new Element("jqbh");
+            input.addContent(jqbh.setText(map.get("jqbh")));
+        }
         if (map.containsKey("fpqqlsh")) fppqqlsh.setText(map.get("fpqqlsh"));
         if (map.containsKey("shnsrsbh")) shnsrsbh.setText(map.get("shnsrsbh"));
         if (map.containsKey("jsbh")) jsbh.setText(map.get("jsbh"));
@@ -215,6 +261,7 @@ public class Java2XML {
             Element terminalKey = new Element("terminalKey");
             input.addContent(terminalKey.setText(map.get("terminalKey")));
         }
+        if (map.containsKey("sprsjh")) sprsjh.setText(map.get("sprsjh"));
         if (map.containsKey("fplxdm")) {
             String values = (String) map.get("fplxdm");
             fplxdm.setText(values);
@@ -242,6 +289,79 @@ public class Java2XML {
         }
         return input;
 
+    }
+
+    public static Element discountFyxm(ArrayList<GroupModel> groupModels) {
+        Element fyxm = new Element("fyxm");
+        fyxm.setAttribute("count", "" + groupModels.size());
+        for (int i = 0; i < groupModels.size(); i++) {
+            GroupModel groupModel = groupModels.get(i);
+            Element group = discountGroup(groupModel);
+            group.setAttribute("xh", "" + (i + 1));
+            fyxm.addContent(group);
+        }
+
+        return fyxm;
+    }
+
+    public static Element discountGroup(GroupModel groupModel) {
+        Element group = new Element("group");
+        Element fphxz = new Element("fphxz");
+        group.addContent(fphxz.setText(groupModel.getFphxz()));
+
+        Element spmc = new Element("spmc");
+        group.addContent(spmc.setText("服务费"));
+
+        Element ggxh = new Element("ggxh");
+        group.addContent(ggxh.setText(""));
+
+        Element dw = new Element("dw");
+        group.addContent(dw.setText(""));
+
+        Element spsl = new Element("spsl");
+        group.addContent(spsl.setText(groupModel.getSpsl()));
+
+        Element dj = new Element("dj");
+        group.addContent(dj.setText(groupModel.getDj()));
+
+        Element je = new Element("je");
+        group.addContent(je.setText(groupModel.getJe()));
+
+        Element sl = new Element("sl");
+        group.addContent(sl.setText(groupModel.getSl()));
+
+        Element se = new Element("se");
+        System.out.println("se:"+groupModel.getSe());
+        group.addContent(se.setText(groupModel.getSe()));
+
+        if (groupModel.getFphxz() == "1") {
+            ggxh.setText("");
+            dw.setText("");
+            spsl.setText("");
+            dj.setText("");
+        }
+
+        Element spbm = new Element("spbm");
+        group.addContent(spbm.setText("3040201040000000000"));
+        Element zxbm = new Element("zxbm");
+        group.addContent(zxbm.setText(""));
+        Element yhzcbs = new Element("yhzcbs");
+        group.addContent(yhzcbs.setText("0"));
+        Element lslbs = new Element("lslbs");
+        group.addContent(lslbs.setText(""));
+        Element zzstsgl = new Element("zzstsgl");
+        group.addContent(zzstsgl.setText(""));
+        return group;
+    }
+
+    public static void main(String[] args) throws IOException {
+        ArrayList<GroupModel> groupModels = new ArrayList<>();
+        GroupModel groupModel = new GroupModel("2", "1", "20", "20", "0.03", "0.6");
+        GroupModel groupModel1 = new GroupModel("1", "", "", "-10", "0.03", "-0.3");
+        groupModels.add(groupModel);
+        groupModels.add(groupModel1);
+        HashMap<String,String> map = new HashMap<>();
+        System.out.println(Java2XML.BuildXmlDoc(map,groupModels));
     }
 
 }

@@ -1,4 +1,4 @@
-package Config;
+package com.shuzutech.config;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -43,6 +43,13 @@ public class UpdateFpqqlsh {
         Random r = new Random();
         int sub = r.nextInt(A_z.length);
         return A_z[sub];
+    }
+
+    public static String generateFpqqlsh(){
+        String prefix = "SZZPY";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+        String date = simpleDateFormat.format(new Date());
+        return prefix+date;
     }
 
     public static void main(String[] args) {

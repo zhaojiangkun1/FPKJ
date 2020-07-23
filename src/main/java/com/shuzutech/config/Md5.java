@@ -1,4 +1,4 @@
-package Config;
+package com.shuzutech.config;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;

@@ -4,48 +4,48 @@
     <test name="臻票云接口自动化测试">
         <groups>
             <run>
-                <include name="正常开票"/>
-                <include name="异常开票"/>
-                <include name="多行电票开具"/>
-                <include name="自助开票"/>
-                <include name="电票冲红"/>
+                <exclude name="正常开票"/>
+                <exclude name="异常开票"/>
+                <include name="开具电票"/>
+                <exclude name="自助开票"/>
+                <exclude name="电票冲红"/>
                 <include name="开具普票"/>
-                <include name="多行普票开具"/>
                 <include name="开具专票"/>
-                <include name="多行专票开具"/>
-                <include name="普票红冲"/>
+                <exclude name="普票红冲"/>
+                <include name="特殊配置发票"/>
             </run>
         </groups>
         <classes>
-            <class name="Case.InvocieExce.Fpqqlsh"/>
-            <class name="Case.InvocieExce.Bz"/>
-            <class name="Case.InvocieExce.De"/>
-            <class name="Case.Invoice.DianPiao"/>
-            <class name="Case.InvocieExce.Jsbh"/>
-            <class name="Case.InvocieExce.Kplx"/>
-            <class name="Case.Invoice.PuPiao"/>
-            <class name="Case.Invoice.JuanPiao"/>
-            <class name="Case.InvocieExce.Skr"/>
-            <class name="Case.InvocieExce.Kpr"/>
-            <class name="Case.InvocieExce.Fhr"/>
-            <class name="Case.InvocieExce.Yhlx"/>
-            <class name="Case.InvocieExce.Zxbm"/>
-            <class name="Case.Invoice.ZhuanPiao"/>
-            <class name="Case.InvocieExce.Fphxz"/>
-            <class name="Case.InvocieExce.Fplxdm"/>
-            <class name="Case.InvocieExce.Yfpdm"/>
-            <class name="Case.InvocieExce.Ggxh"/>
-            <class name="Case.InvocieExce.Yhzcbs"/>
-            <class name="Case.InvocieExce.Spbm"/>
-            <class name="Case.InvocieExce.Shnsrsbh"/>
-            <class name="Case.InvocieExce.Ghdwdzdh"/>
-            <class name="Case.InvocieExce.Ghdwsbh"/>
-            <class name="Case.InvocieExce.Ghdwmc"/>
-            <class name="Case.InvocieExce.Ghdwyhzh"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Fpqqlsh"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Bz"/>
+            <class name="com.shuzutech.testCase.InvocieExce.De"/>
+            <class name="com.shuzutech.testCase.Invoice.DianPiao"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Jsbh"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Kplx"/>
+            <class name="com.shuzutech.testCase.Invoice.PuPiao"/>
+            <class name="com.shuzutech.testCase.Invoice.JuanPiao"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Skr"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Kpr"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Fhr"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Yhlx"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Zxbm"/>
+            <class name="com.shuzutech.testCase.Invoice.ZhuanPiao"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Fphxz"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Fplxdm"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Yfpdm"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Ggxh"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Yhzcbs"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Spbm"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Shnsrsbh"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Ghdwdzdh"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Ghdwsbh"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Ghdwmc"/>
+            <class name="com.shuzutech.testCase.InvocieExce.Ghdwyhzh"/>
+            <class name="com.shuzutech.testCase.Invoice.SpecialInvoice"/>
         </classes>
     </test>
 
     <listeners>
-        <listener class-name="Config.ExtentTestNGIReporterListener"/>
+        <listener class-name="com.shuzutech.config.ExtentTestNGIReporterListener"/>
     </listeners>
 </suite>

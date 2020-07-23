@@ -1,78 +1,100 @@
-package testCase.Invoice;
+package com.shuzutech.testCase.Invoice;
 
-import com.shuzutech.bean.InvoiceCase;
-import com.shuzutech.config.GetInvoiceCase;
-import Model.*;
+import com.shuzutech.bean.*;
+import com.shuzutech.config.TestResult;
+import com.shuzutech.config.UpdateFpqqlsh;
+import com.shuzutech.model.GongYouFangFa;
+import com.shuzutech.model.GroupModel;
+import com.shuzutech.model.Java2XML;
+import com.shuzutech.model.PostRequest;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 import java.util.HashMap;
 
+import static com.shuzutech.config.GetInvoiceCase.getInvoiceCase;
+import static com.shuzutech.model.GongYouFangFa.gongYouFangFa;
+
 public class PuPiao {
-    HashMap<String, String> map = new HashMap<>();
 
-    @Test(groups = {"开具普票"}, description = "所有参数均正常，开具一张增值税普通发票")
-    public void puPiao_0001() throws IOException, NoSuchAlgorithmException {
-        map.put("fplxdm", "007");
-//        map.put("shnsrsbh","");
-        map.put("jsbh","110101201707010057~~499000152456");
-        map.put("ggxh","");
-        map.put("fpqqlsh","Wg61920200618170947");
-
-        InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("puPiao_0001");
-        GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map), invoiceCase);
-    }
+    ArrayList<GroupModel> groupModels = new ArrayList<>();
 
     /**
-     * map.put("spmc","详见销货清单");
+     * 合力："HOLY",10001,"商品名称格式有误_FyxmN1"
+     * 旋极：{"returnmsg":"开票明细中包含GBK无法编码字符,请检查！","returncode":1000008}
+     *
+     * 智能空气品质控制器 KF-700RM(RPM+Malino)
      * @throws IOException
      * @throws NoSuchAlgorithmException
+     * @throws InterruptedException
      */
-    @Test(groups = {"普票冲红"}, description = "所有参数均正常，冲红一张增值税普通发票")
-    public void puPiaoChongHong_0002() throws IOException, NoSuchAlgorithmException {
-        map.put("shnsrsbh","");
-        map.put("jsbh","91320594MA1MECA285~~537100950610");
-        map.put("fplxdm", "007");
-        map.put("sprsjh", "");
-        map.put("kplx", "1");
-        map.put("spmc","技术服务费");
-        map.put("spsl","-1");
-        map.put("dj","100");
-        map.put("je","-100");
-        map.put("sl","0.06");
-        map.put("se","-6");
-        map.put("yfpdm", "032001900104");
-        map.put("yfphm", "71891448");
-        InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("puPiao_0002");
-        GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map), invoiceCase);
+    @Test(groups = {"开具普票"}, description = "所有参数均正常，开具一张增值税普通发票")
+    public void puPiao_0001() throws IOException, NoSuchAlgorithmException, InterruptedException {
+        HashMap<String, String> map = InvoiceParamters.hashMap("007");
+        String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
+        map.put("fpqqlsh", fpqqlsh);
+        map.put("ghdwmc", "上海盛付通电子支付服务有限公司");
+        map.put("ghdwsbh", "9131011567624841X0");
+        map.put("ghdwdzdh", "");
+        map.put("ghdwyhzh", "");
+        map.put("dj", "");
+        map.put("spsl", "");
+        map.put("je", "1309.39");
+        map.put("dw", "");
+        map.put("ggxh", "");
+        map.put("sl", "0.06");
+        map.put("se", "78.56");
+//        map.put("tspz","01");
+        map.put("front_url", "http://www.shuzutech.com/");
+        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map,2),TestEnv.testEnv);
+        GongYouFangFa.zpy(map,result);
     }
 
-    @Test(groups = {"多行普票开具"}, description = "所有参数均正常，开具一张6行商品的普票")
-    public void multiLineGroupPuPiao_0003() throws IOException, NoSuchAlgorithmException {
-        map.put("fplxdm","007");
-        map.put("jsbh","110101201707010064~~499000152528");
-        String file = Java2XML.BuildXMLDoc(map,6);
-        InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("puPiao_0003");
-        GongYouFangFa.gongYouFangFa(file, invoiceCase);
+    @Test(groups = {"开具普票"},description = "开具一张带折扣行的普票")
+    public void discountPuPiao() throws IOException, NoSuchAlgorithmException, InterruptedException {
+        HashMap<String, String> map = InvoiceParamters.hashMap("007");
+        GroupModel groupModel = new GroupModel("2", "1", "20", "20", "0.03", "0.6");
+        GroupModel groupModel1 = new GroupModel("1", "", "", "-10", "0.03", "-0.3");
+        groupModels.add(groupModel);
+        groupModels.add(groupModel1);
+        String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
+        map.put("fpqqlsh", fpqqlsh);
+        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXmlDoc(map,groupModels), TestEnv.testEnv);
+        GongYouFangFa.zpy(map,result);
     }
 
-    @Test(groups = {"多行普票开具"}, description = "所有参数均正常,开具一张8行商品的普票")
-    public void multiLineGroupPuPiao_0004() throws IOException, NoSuchAlgorithmException {
-        map.put("fplxdm","007");
-        map.put("jsbh","110101201707010064~~499000152528");
-        String file = Java2XML.BuildXMLDoc(map,8);
-        InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("puPiao_0004");
-        GongYouFangFa.gongYouFangFa(file, invoiceCase);
+    @Test(groups = {"开具普票"}, description = "所有参数均正常，开具一张6行商品的普票")
+    public void multiLineGroupPuPiao_0003() throws IOException, NoSuchAlgorithmException, InterruptedException {
+        HashMap<String, String> map = InvoiceParamters.hashMap("007");
+        String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
+        map.put("fpqqlsh", fpqqlsh);
+        String file = Java2XML.BuildXMLDoc(map, 6);
+        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
+        GongYouFangFa.zpy(map,result);
     }
 
-    @Test(groups = {"多行普票开具"}, description = "所有参数均正常，开具一张10行商品的普票")
-    public void multiLineGroupPuPiao_0005() throws IOException, NoSuchAlgorithmException {
-        map.put("jsbh","110101201707010064~~499000152528");
-        map.put("fplxdm","007");
-        String file = Java2XML.BuildXMLDoc(map,10);
-        InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("puPiao_0005");
-        GongYouFangFa.gongYouFangFa(file, invoiceCase);
+    @Test(groups = {"开票普票"}, description = "所有参数均正常,开具一张8行商品的普票")
+    public void multiLineGroupPuPiao_0004() throws IOException, NoSuchAlgorithmException, InterruptedException {
+        HashMap<String, String> map = InvoiceParamters.hashMap("007");
+        String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
+        map.put("fpqqlsh", fpqqlsh);
+        String file = Java2XML.BuildXMLDoc(map, 8);
+        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
+        GongYouFangFa.zpy(map,result);
+    }
+
+    @Test(groups = {"开具普票"}, description = "所有参数均正常，开具一张10行商品的普票")
+    public void multiLineGroupPuPiao_0005() throws IOException, NoSuchAlgorithmException, InterruptedException {
+        HashMap<String, String> map = InvoiceParamters.hashMap("007");
+        String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
+        map.put("fpqqlsh", fpqqlsh);
+        map.put("qdbz","1");
+        String file = Java2XML.BuildXMLDoc(map, 10);
+        String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
+        GongYouFangFa.zpy(map,result);
 
     }
+
 }

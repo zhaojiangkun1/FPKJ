@@ -1,4 +1,4 @@
-package Model;
+package com.shuzutech.model;
 
 import com.alibaba.fastjson.JSONObject;
 

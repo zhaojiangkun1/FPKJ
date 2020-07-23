@@ -1,4 +1,4 @@
-package Model;
+package com.shuzutech.model;
 
 import com.shuzutech.bean.EnvNum;
 import com.shuzutech.config.GetAppInfo;
@@ -41,6 +41,11 @@ public class PostRequest {
         post.setHeader("APPID", appId);
         System.out.println("APPID:"+appId);
         post.setHeader("Date", date);
+        String env = String.valueOf(num);
+        if (env.contains("bwt")){
+            System.out.println("version:2.0.0");
+            post.setHeader("version","2.0.0");
+        }
         System.out.println("Date:"+date);
         post.setHeader("Content-MD5", contentMd5);
         System.out.println("Content-MD5:"+contentMd5);
@@ -49,7 +54,7 @@ public class PostRequest {
         if (response.getStatusLine().getStatusCode() == 200){
             result = EntityUtils.toString(response.getEntity(), "utf-8");
         }
-
+        System.out.println("开票返回的报文:"+result);
         return result;
     }
 

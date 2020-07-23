@@ -1,4 +1,4 @@
-package Config;
+package com.shuzutech.config;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;

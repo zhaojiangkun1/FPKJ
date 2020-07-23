@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="Bean.AppInfo">
+<mapper namespace="com.shuzutech.bean.AppInfo">
 
-    <resultMap id="AppInfoMap" type="Bean.AppInfo">
+    <resultMap id="AppInfoMap" type="com.shuzutech.bean.AppInfo">
         <id column="id" jdbcType="VARCHAR" property="id"/>
         <result column="appid" jdbcType="VARCHAR" property="appId"/>
         <result column="appsecret" jdbcType="VARCHAR" property="appSecret"/>
@@ -16,7 +16,7 @@
         id,appid,appSecret,accessToken,updateTime,env,address
     </sql>
 
-    <select id="getAppInfo" resultType="Bean.AppInfo" parameterType="String">
+    <select id="getAppInfo" resultType="com.shuzutech.bean.AppInfo" parameterType="String">
         select
         <include refid="Base_Column_List"/>
         from appinfo
@@ -24,7 +24,7 @@
     </select>
 
 
-    <update id="updateToken" parameterType="Bean.AppInfo">
+    <update id="updateToken" parameterType="com.shuzutech.bean.AppInfo">
         update appinfo set updatetime = #{updateTime},accesstoken = #{accessToken} where env = #{env};
     </update>
 

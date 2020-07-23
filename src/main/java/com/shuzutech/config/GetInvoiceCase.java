@@ -1,7 +1,7 @@
-package Config;
+package com.shuzutech.config;
 
-import Bean.InvoiceCase;
 import com.alibaba.fastjson.JSONObject;
+import com.shuzutech.bean.InvoiceCase;
 import org.apache.ibatis.session.SqlSession;
 
 import java.io.IOException;

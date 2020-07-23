@@ -1,8 +1,9 @@
-package testCase.InvocieExce;
+package com.shuzutech.testCase.InvocieExce;
 
-import com.shuzutech.bean.*;
+import com.shuzutech.bean.InvoiceCase;
 import com.shuzutech.config.GetInvoiceCase;
-import Model.*;
+import com.shuzutech.model.GongYouFangFa;
+import com.shuzutech.model.Java2XML;
 import org.testng.annotations.Test;
 
 import java.io.IOException;

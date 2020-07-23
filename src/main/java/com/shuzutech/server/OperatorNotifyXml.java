@@ -13,12 +13,22 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.StringReader;
 
-public class JudgeNotifyXml {
+public class OperatorNotifyXml {
+
+    public static void write(String result) throws IOException {
+        BufferedWriter bw = new BufferedWriter(new FileWriter("D:\\IdeaProjects\\FPKJ\\src\\main\\resources\\fptz.xml"));
+        bw.write(result);
+        bw.newLine();
+        bw.close();
+        System.out.println("写入成功");
+    }
 
     public static String readFile(String fileName) throws IOException{
         String s;
@@ -52,21 +62,21 @@ public class JudgeNotifyXml {
     }
 
 
-    public static void parseXml(String file, String nodeName) throws IOException, SAXException, ParserConfigurationException {
+    public static String parseXml(String file, String nodeName) throws IOException, SAXException, ParserConfigurationException {
         DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
         Document document = documentBuilder.parse(file);
         Element root = document.getDocumentElement();
-        NodeList inputlist = root.getElementsByTagName("input");
+        NodeList inputlist = root.getElementsByTagName("body");
         Node item = inputlist.item(0);
         Element inputElement = (Element) item;
         NodeList nodeList = inputElement.getElementsByTagName(nodeName);
-        System.out.println(nodeList.item(0).getTextContent());
+        return nodeList.item(0).getTextContent();
 
     }
 
 
     public static void main(String[] args){
-        String file = "D:\\IdeaProjects\\FPKJ\\src\\main\\resources\\fp.xml";
+        String file = "D:\\IdeaProjects\\FPKJ\\src\\main\\resources\\fptz.xml";
         String sFile = "";
         try {
             sFile = readFile(file);
@@ -75,7 +85,7 @@ public class JudgeNotifyXml {
         }
         System.out.println(isXmlDocument(sFile));
         try {
-            parseXml(file, "shnsrsbh");
+            parseXml(file, "returnmsg");
         } catch (IOException e) {
             e.printStackTrace();
         } catch (SAXException e) {

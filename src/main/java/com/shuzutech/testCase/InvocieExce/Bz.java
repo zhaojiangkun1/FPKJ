@@ -1,8 +1,9 @@
-package testCase.InvocieExce;
+package com.shuzutech.testCase.InvocieExce;
 
-import com.shuzutech.bean.*;
+import com.shuzutech.bean.InvoiceCase;
 import com.shuzutech.config.GetInvoiceCase;
-import Model.*;
+import com.shuzutech.model.GongYouFangFa;
+import com.shuzutech.model.Java2XML;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -12,13 +13,12 @@ import java.util.HashMap;
 public class Bz {
 
     HashMap<String, String> map = new HashMap();
-    InvoiceCase invoiceCase = new InvoiceCase();
 
     @Test(groups = {"正常开票"}, description = "备注长度为空")
     public void bz_0001() throws IOException, NoSuchAlgorithmException {
         map.put("fplxdm", "026");
         map.put("bz", "");
-        invoiceCase = GetInvoiceCase.getInvoiceCase("bz_0001");
+       InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("bz_0001");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map), invoiceCase);
     }
 
@@ -26,7 +26,7 @@ public class Bz {
     public void bz_0002() throws IOException, NoSuchAlgorithmException {
         map.put("fplxdm", "026");
         map.put("bz", null);
-        invoiceCase = GetInvoiceCase.getInvoiceCase("bz_0002");
+       InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("bz_0002");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map), invoiceCase);
     }
 
@@ -38,7 +38,7 @@ public class Bz {
                 "----------------------------------------------------------------" +
                 "----------------1-----------------------------------------------" +
                 "-------------------------------------------------");
-        invoiceCase = GetInvoiceCase.getInvoiceCase("bz_0003");
+       InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("bz_0003");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map), invoiceCase);
     }
 

@@ -1,11 +1,14 @@
-package testCase.InvocieExce;
+package com.shuzutech.testCase.InvocieExce;
 
+import com.alibaba.fastjson.JSONObject;
 import com.shuzutech.bean.EnvNum;
 import com.shuzutech.bean.InvoiceCase;
 import com.shuzutech.config.GetInvoiceCase;
 import com.shuzutech.config.UpdateFpqqlsh;
-import Model.*;
-import com.alibaba.fastjson.JSONObject;
+import com.shuzutech.model.AcquireSubstr;
+import com.shuzutech.model.GongYouFangFa;
+import com.shuzutech.model.Java2XML;
+import com.shuzutech.model.PostRequest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -103,7 +106,7 @@ public class Fpqqlsh {
         System.out.println("本次请求的报文:"+Java2XML.BuildXMLDoc(map));
         expectedResult.put("returncode",0);
         expectedResult.put("returnmsg","提交成功，请稍后查询");
-        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map), EnvNum.DEV1);
+        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map), EnvNum.DEV);
         System.out.println(result);
         JSONObject actualResult = AcquireSubstr.analyzeString(result);
         Assert.assertEquals(actualResult,expectedResult);

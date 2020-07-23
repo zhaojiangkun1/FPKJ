@@ -1,4 +1,4 @@
-package Model;
+package com.shuzutech.model;
 
 import com.shuzutech.bean.AppInfo;
 import com.shuzutech.bean.EnvNum;
