@@ -331,7 +331,6 @@ public class Java2XML {
         group.addContent(sl.setText(groupModel.getSl()));
 
         Element se = new Element("se");
-        System.out.println("se:"+groupModel.getSe());
         group.addContent(se.setText(groupModel.getSe()));
 
         if (groupModel.getFphxz() == "1") {

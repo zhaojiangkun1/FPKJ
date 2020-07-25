@@ -158,7 +158,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
                     }
                 } else {
 //                    name = result.getMethod().getMethodName();
-                    name = "方法名：" + result.getMethod().getMethodName() + "，用例名称" + result.getMethod().getDescription();
+                    name = "方法名：" + result.getMethod().getMethodName() + "，用例名称：" + result.getMethod().getDescription();
 //                    name=result.getName();
                 }
                 if (extenttest == null) {
