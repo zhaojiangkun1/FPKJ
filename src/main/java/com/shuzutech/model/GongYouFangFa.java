@@ -2,11 +2,9 @@ package com.shuzutech.model;
 
 import com.alibaba.fastjson.JSONObject;
 import com.shuzutech.bean.*;
-import com.shuzutech.config.AddFpInfo;
 import com.shuzutech.config.DataBaseUtil;
 import com.shuzutech.config.GetInvoiceCase;
 import com.shuzutech.config.TestResult;
-import com.shuzutech.config.UpdateFpqqlsh;
 import org.apache.ibatis.session.SqlSession;
 import org.testng.Assert;
 
@@ -19,7 +17,6 @@ public class GongYouFangFa {
     public static void gongYouFangFa(String file, InvoiceCase invoiceCase) throws IOException, NoSuchAlgorithmException {
         JSONObject expectedResult = GetInvoiceCase.expectedResult(invoiceCase.getStatusCode(), invoiceCase.getReturnMsg());
         String result = PostRequest.zhenPiaoYunRequest(file, TestEnv.testEnv);
-        System.out.println(result);
         JSONObject actualResult = AcquireSubstr.analyzeString(result);
         String runStatus = "";
         if (expectedResult.toString().equals(actualResult.toString())) {

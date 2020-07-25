@@ -10,6 +10,8 @@ public class GroupModel {
     private String je;
     private String sl;
     private String se;
+    private String spmc;
+    private String spbm;
 //    private String spbm;
 //    private String zxbm;
 //    private String yhzcbs;
@@ -24,6 +26,14 @@ public class GroupModel {
         this.je = je;
         this.sl = sl;
         this.se = se;
+    }
+
+    public GroupModel(String spmc,String je,String sl,String se,String spbm){
+        this.spmc = spmc;
+        this.je = je;
+        this.sl = sl;
+        this.se = se;
+        this.spbm = spbm;
     }
 
     public String getFphxz() {
@@ -72,5 +82,21 @@ public class GroupModel {
 
     public void setSe(String se) {
         this.se = se;
+    }
+
+    public String getSpmc() {
+        return spmc;
+    }
+
+    public void setSpmc(String spmc) {
+        this.spmc = spmc;
+    }
+
+    public String getSpbm() {
+        return spbm;
+    }
+
+    public void setSpbm(String spbm) {
+        this.spbm = spbm;
     }
 }

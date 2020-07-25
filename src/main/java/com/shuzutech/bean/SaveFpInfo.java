@@ -8,20 +8,12 @@ import java.util.Objects;
 public class SaveFpInfo {
     private String fpqqlsh;
     private String fplxdm;
+    private String jsbh;
     private String nsrsbh;
+    private String fpdm;
+    private String fphm;
     private Date updateTime;
     private int id;
-
-    public SaveFpInfo() {
-    }
-
-    public SaveFpInfo(String fpqqlsh, String fplxdm, String nsrsbh, Date updateTime, int id) {
-        this.fpqqlsh = fpqqlsh;
-        this.fplxdm = fplxdm;
-        this.nsrsbh = nsrsbh;
-        this.updateTime = updateTime;
-        this.id = id;
-    }
 
     public String getFpqqlsh() {
         return fpqqlsh;
@@ -47,6 +39,22 @@ public class SaveFpInfo {
         this.nsrsbh = nsrsbh;
     }
 
+    public String getFpdm() {
+        return fpdm;
+    }
+
+    public void setFpdm(String fpdm) {
+        this.fpdm = fpdm;
+    }
+
+    public String getFphm() {
+        return fphm;
+    }
+
+    public void setFphm(String fphm) {
+        this.fphm = fphm;
+    }
+
     public Date getUpdateTime() {
         return updateTime;
     }
@@ -61,6 +69,14 @@ public class SaveFpInfo {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getJsbh() {
+        return jsbh;
+    }
+
+    public void setJsbh(String jsbh) {
+        this.jsbh = jsbh;
     }
 
     @Override

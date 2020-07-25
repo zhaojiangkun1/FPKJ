@@ -23,15 +23,7 @@ public class ZhuanPiao {
         HashMap<String, String> map = InvoiceParamters.hashMap("004");
         String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
         map.put("fpqqlsh", fpqqlsh);
-        map.put("ghdwmc", "南京阿有料网络科技有限公司");
-        map.put("ghdwsbh", "91320100339341672J");
-        map.put("ghdwdzdh", "南京市高新技术产业开发区星火路11号动漫大厦B座2楼C-1室025-68959525");
-        map.put("ghdwyhzh", "南京工商银行 3201000323459889");
-        map.put("spmc", "智能空气品质控制器 KF-700RM(RPM+Malino)");
-        map.put("spbm", "1090416990000000000");
-        // 规格型号过长
-//        map.put("ggxh","285.6g(1.02g*80片*1瓶+1.02g*100片*2瓶)");
-        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map,3), TestEnv.testEnv);
+        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map), TestEnv.testEnv);
         GongYouFangFa.zpy(map, result);
     }
 

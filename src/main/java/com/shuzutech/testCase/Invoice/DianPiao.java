@@ -2,8 +2,9 @@ package com.shuzutech.testCase.Invoice;
 
 
 import com.shuzutech.bean.InvoiceParamters;
+import com.shuzutech.bean.SaveFpInfo;
 import com.shuzutech.bean.TestEnv;
-import com.shuzutech.config.UpdateFpqqlsh;
+import com.shuzutech.config.TestResult;
 import com.shuzutech.model.*;
 import org.testng.annotations.Test;
 
@@ -55,65 +56,100 @@ public class DianPiao {
      */
 
 
-    @Test(groups = {"开具电票"}, description = "所有参数都正常，开具一张电票")
+    @Test(groups = {"开具电票"}, description = "所有参数都正常，开具一张电票",priority = 1)
     public void electronicInvoice() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("026");
-        String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
-        map.put("fpqqlsh", fpqqlsh);
-        map.put("ghdwmc", "上海盛付通电子支付服务有限公司");
-        map.put("ghdwsbh", "9131011567624841X0");
-        map.put("ghdwdzdh", "");
-        map.put("ghdwyhzh", "");
-        map.put("spmc", "智能空气品质控制器");
-        map.put("spbm","1090416990000000000");
         String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map), TestEnv.testEnv);
         GongYouFangFa.zpy(map,result);
         System.out.printf("Thread Id : %s%n", Thread.currentThread().getId());
     }
 
+    @Test(groups = {"电票冲红"}, description = "所有参数均正常，冲红一张电子发票",priority = 2)
+    public void eTicketRed() throws IOException, NoSuchAlgorithmException, InterruptedException {
+        SaveFpInfo saveFpInfo = GetSaveFpInfo.getSaveFpInfo();
+        HashMap<String, String> map = hashMap("026");
+        map.put("yfpdm", saveFpInfo.getFpdm());
+        map.put("yfphm", saveFpInfo.getFphm());
+        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map), TestEnv.testEnv);
+        TestResult.testFpkjResult(result);
+        Thread.sleep(50000);
+        TestResult.runResult(map);
+    }
 
-    @Test(groups = {"开具电票"}, description = "所有参数均正常,开具一张6行商品的电票")
+
+    @Test(groups = {"开具电票"}, description = "所有参数均正常,开具一张6行商品的电票",priority = 3)
     public void electronicInvoiceSixCommodity() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("026");
-        String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
-        map.put("fpqqlsh", fpqqlsh);
         String file = Java2XML.BuildXMLDoc(map, 6);
         String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
         GongYouFangFa.zpy(map,result);
     }
 
-    @Test(groups = {"开具电票"}, description = "所有参数均正常，开具一张8行商品的电票")
+    @Test(groups = {"开具电票"}, description = "所有参数均正常，开具一张8行商品的电票",priority = 4)
     public void electronicInvoiceEightCommodity() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("026");
-        String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
-        map.put("fpqqlsh", fpqqlsh);
         String file = Java2XML.BuildXMLDoc(map, 8);
         String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
         GongYouFangFa.zpy(map,result);
     }
 
-    @Test(groups = {"开具电票"}, description = "所有参数均正常,开具一张9行商品的电票")
+    @Test(groups = {"开具电票"}, description = "所有参数均正常,开具一张9行商品的电票",priority = 5)
     public void electronicInvoiceNineCommodity() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("026");
-        String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
-        map.put("fpqqlsh", fpqqlsh);
         String file = Java2XML.BuildXMLDoc(map, 9);
         String result = PostRequest.zhenPiaoYunRequest(file,TestEnv.testEnv);
         GongYouFangFa.zpy(map,result);
     }
 
-    @Test(groups = {"开具电票"},description = "开具一张带折扣行的电票")
+    @Test(groups = {"电票冲红"}, description = "冲红一张带清单电子发票",priority = 6)
+    public void eListTicketRed() throws IOException, NoSuchAlgorithmException, InterruptedException {
+        SaveFpInfo saveFpInfo = GetSaveFpInfo.getSaveFpInfo();
+        HashMap<String, String> map = hashMap("026");
+        map.put("yfpdm", saveFpInfo.getFpdm());
+        map.put("yfphm", saveFpInfo.getFphm());
+        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map, 9), TestEnv.testEnv);
+        TestResult.testFpkjResult(result);
+        Thread.sleep(50000);
+        TestResult.runResult(map);
+    }
+
+    @Test(groups = {"开具电票"},description = "开具一张带折扣行的电票",priority = 7)
     public void discountElectronicInvoice() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("026");
         ArrayList<GroupModel> groupModels = new ArrayList<>();
-        GroupModel groupModel = new GroupModel("2", "1", "20", "20", "0.03", "0.6");
+        GroupModel groupModel = new GroupModel("2", "", "", "20", "0.03", "0.6");
         GroupModel groupModel1 = new GroupModel("1", "", "", "-10", "0.03", "-0.3");
         groupModels.add(groupModel);
         groupModels.add(groupModel1);
-        String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
-        map.put("fpqqlsh", fpqqlsh);
         String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXmlDoc(map,groupModels), TestEnv.testEnv);
         GongYouFangFa.zpy(map,result);
+    }
+
+    @Test(groups = {"电票冲红"},description = "冲红一张带折扣的电子发票",priority = 8)
+    public void discountInvoiceRed() throws IOException, NoSuchAlgorithmException, InterruptedException {
+        SaveFpInfo saveFpInfo = GetSaveFpInfo.getSaveFpInfo();
+        HashMap<String,String> map = InvoiceParamters.hashMap("026");
+        ArrayList<GroupModel> groupModels = new ArrayList<>();
+        GroupModel groupModel = new GroupModel("0", "", "", "-10", "0.03", "-0.3");
+        groupModels.add(groupModel);
+        map.put("kplx","1");
+        map.put("yfpdm",saveFpInfo.getFpdm());
+        map.put("yfphm",saveFpInfo.getFphm());
+        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXmlDoc(map,groupModels), TestEnv.testEnv);
+        GongYouFangFa.zpy(map,result);
+    }
+
+
+
+    private static HashMap<String, String> hashMap(String fplxdm) {
+        HashMap<String, String> map = InvoiceParamters.hashMap(fplxdm);
+        map.put("kplx", "1");
+        map.put("spsl", "-1");
+        map.put("dj", "282.075472");
+        map.put("je", "-282.08");
+        map.put("sl", "0.06");
+        map.put("se", "-16.92");
+        return map;
     }
 
 

@@ -54,4 +54,21 @@ public class SpecialConfigurationInvoice {
         String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map), TestEnv.testEnv);
         GongYouFangFa.zpy(map,result);
     }
+
+    /**
+     * 目前是仅合力接口支持特殊票种的开具，专票是没有校验码
+     * 特殊票种：01、02、06、07、08
+     * @throws InterruptedException
+     * @throws NoSuchAlgorithmException
+     * @throws IOException
+     */
+    @Test
+    public void useTspzInvoice() throws InterruptedException, NoSuchAlgorithmException, IOException {
+        HashMap<String,String> map = InvoiceParamters.hashMap("004");
+        String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
+        map.put("fpqqlsh",fpqqlsh);
+        map.put("tspz","06");
+        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map), TestEnv.testEnv);
+        GongYouFangFa.zpy(map,result);
+    }
 }

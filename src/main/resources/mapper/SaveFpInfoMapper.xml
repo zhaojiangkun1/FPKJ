@@ -5,7 +5,7 @@
         select * from savefpinfo order by id desc limit 1;
     </select>
 
-    <insert id="insertfpinfo" parameterType="com.shuzutech.bean.SaveFpInfo">
-        insert into savefpinfo(id,fpqqlsh,fplxdm,nsrsbh,updatetime) values (#{id},#{fpqqlsh},#{fplxdm},#{nsrsbh},#{updateTime});
+    <insert id="insertFpInfo" parameterType="com.shuzutech.bean.SaveFpInfo">
+        insert into savefpinfo(id,fpqqlsh,fplxdm,jsbh,fpdm,fphm,updatetime) values (#{id},#{fpqqlsh},#{fplxdm},#{jsbh},#{fpdm},#{fphm},#{updateTime});
     </insert>
 </mapper>

@@ -21,53 +21,9 @@ import static com.shuzutech.config.GetInvoiceCase.getInvoiceCase;
 import static com.shuzutech.model.GongYouFangFa.gongYouFangFa;
 
 
-public class RedInvoice {
+public class ZhuanPiaoRed {
 
 
-
-    @Test(groups = {"电票冲红"}, description = "冲红一张带清单电子发票")
-    public void eListTicketRed() throws IOException, NoSuchAlgorithmException, InterruptedException {
-        HashMap<String, String> map = hashMap("026");
-        map.put("yfpdm", "050003521107");
-        map.put("yfphm", "98416308");
-        String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
-        map.put("fpqqlsh", fpqqlsh);
-        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map, 9), TestEnv.testEnv);
-        TestResult.testFpkjResult(result);
-        Thread.sleep(50000);
-        TestResult.runResult(map);
-    }
-
-    /**
-     * map.put("spmc","详见销货清单");
-     *
-     * @throws IOException
-     * @throws NoSuchAlgorithmException
-     */
-    @Test(groups = {"普票冲红"}, description = "所有参数均正常，冲红一张增值税普通发票")
-    public void puPiaoChongHong() throws IOException, NoSuchAlgorithmException, InterruptedException {
-        String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
-        HashMap<String, String> map = hashMap("007");
-        map.put("sprsjh", "");
-        map.put("yfpdm", "050000000102");
-        map.put("yfphm", "55504129");
-        map.put("fpqqlsh", fpqqlsh);
-        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map, 2), TestEnv.testEnv);
-        GongYouFangFa.zpy(map, result);
-    }
-
-    @Test(groups = {"普票冲红"}, description = "冲红一张带清单普票")
-    public void redListPuPiao() throws IOException, NoSuchAlgorithmException, InterruptedException {
-        String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
-        HashMap<String, String> map = hashMap("007");
-        map.put("sprsjh", "");
-        map.put("qdbz", "1");
-        map.put("yfpdm", "050000000102");
-        map.put("yfphm", "55504128");
-        map.put("fpqqlsh", fpqqlsh);
-        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map, 10), TestEnv.testEnv);
-        GongYouFangFa.zpy(map, result);
-    }
 
     @Test
     public void hzxxbsc() throws IOException, NoSuchAlgorithmException {
@@ -83,7 +39,7 @@ public class RedInvoice {
      * @throws IOException
      * @throws NoSuchAlgorithmException
      */
-    @Test(groups = {"专票冲红"}, description = "所有参数均正常，冲红一张增值税专票")
+    @Test(groups = {"专票冲红"}, description = "所有参数均正常，冲红一张增值税专票",enabled = false)
     public void zhuanPiaoHongChong_0002() throws IOException, NoSuchAlgorithmException {
         HashMap<String, String> map = hashMap("004");
         map.put("sprsjh", "");
@@ -94,7 +50,7 @@ public class RedInvoice {
         gongYouFangFa(Java2XML.BuildXMLDoc(map), invoiceCase);
     }
 
-    @Test(groups = {"专票冲红"}, description = "所有参数均正常，冲红一张带清单的增值税专票")
+    @Test(groups = {"专票冲红"}, description = "所有参数均正常，冲红一张带清单的增值税专票",enabled = false)
     public void redListZhuanPiao() throws IOException, NoSuchAlgorithmException {
         HashMap<String, String> map = hashMap("004");
         map.put("sprsjh", "");

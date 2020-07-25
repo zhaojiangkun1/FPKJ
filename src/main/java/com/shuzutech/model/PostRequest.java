@@ -1,9 +1,11 @@
 package com.shuzutech.model;
 
+import com.alibaba.fastjson.JSONObject;
 import com.shuzutech.bean.EnvNum;
 import com.shuzutech.config.GetAppInfo;
 import com.shuzutech.config.GetSaveAddr;
 import com.shuzutech.config.Md5;
+import com.shuzutech.config.TestResult;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
@@ -39,22 +41,27 @@ public class PostRequest {
         post.setEntity(entity);
 
         post.setHeader("APPID", appId);
-        System.out.println("APPID:"+appId);
+        System.out.println("APPID:" + appId);
         post.setHeader("Date", date);
         String env = String.valueOf(num);
-        if (env.contains("bwt")){
+        if (env.contains("bwt")) {
             System.out.println("version:2.0.0");
-            post.setHeader("version","2.0.0");
+            post.setHeader("version", "2.0.0");
         }
-        System.out.println("Date:"+date);
+        System.out.println("Date:" + date);
         post.setHeader("Content-MD5", contentMd5);
-        System.out.println("Content-MD5:"+contentMd5);
+        System.out.println("Content-MD5:" + contentMd5);
 
         HttpResponse response = client.execute(post);
-        if (response.getStatusLine().getStatusCode() == 200){
+        if (response.getStatusLine().getStatusCode() == 200) {
             result = EntityUtils.toString(response.getEntity(), "utf-8");
         }
-        System.out.println("臻票云返回的报文:"+result);
+        System.out.println("臻票云返回的报文:" + result);
+        JSONObject jsonObject = TestResult.parseResult(result);
+        while (jsonObject.get("returnmsg") == "“开票码”不匹配") {
+            result = zhenPiaoYunRequest(body, num);
+            jsonObject = TestResult.parseResult(result);
+        }
         return result;
     }
 

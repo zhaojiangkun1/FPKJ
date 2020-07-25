@@ -18,7 +18,7 @@ public class Java2XML {
         Element business = new Element("business");
         Document doc = new Document(business);
         Element body = new Element("body");
-        business.setAttribute("id","FPKJ");
+        business.setAttribute("id", "FPKJ");
         Element input = getInput(map);
         body.addContent(input);
         Element fyxm = getFyxm(map, groups);
@@ -35,7 +35,7 @@ public class Java2XML {
         Element business = new Element("business");
         Document doc = new Document(business);
         Element body = new Element("body");
-        business.setAttribute("id","FPKJ");
+        business.setAttribute("id", "FPKJ");
         Element input = getInput(map);
         body.addContent(input);
         Element fyxm = discountFyxm(groupModels);
@@ -307,10 +307,13 @@ public class Java2XML {
     public static Element discountGroup(GroupModel groupModel) {
         Element group = new Element("group");
         Element fphxz = new Element("fphxz");
-        group.addContent(fphxz.setText(groupModel.getFphxz()));
-
+        group.addContent(fphxz.setText("0"));
+        if (groupModel.getFphxz() != null) {
+            fphxz.setText(groupModel.getFphxz());
+        }
         Element spmc = new Element("spmc");
         group.addContent(spmc.setText("服务费"));
+        if (groupModel.getSpmc() != null) spmc.setText(groupModel.getSpmc());
 
         Element ggxh = new Element("ggxh");
         group.addContent(ggxh.setText(""));
@@ -320,18 +323,23 @@ public class Java2XML {
 
         Element spsl = new Element("spsl");
         group.addContent(spsl.setText(groupModel.getSpsl()));
+        if (groupModel.getSpsl() != null) spsl.setText(groupModel.getSpsl());
 
         Element dj = new Element("dj");
         group.addContent(dj.setText(groupModel.getDj()));
+        if (groupModel.getDj() != null) dj.setText(groupModel.getDj());
 
         Element je = new Element("je");
         group.addContent(je.setText(groupModel.getJe()));
+        if (groupModel.getJe() != null) je.setText(groupModel.getJe());
 
         Element sl = new Element("sl");
         group.addContent(sl.setText(groupModel.getSl()));
+        if (groupModel.getSl() != null) sl.setText(groupModel.getSl());
 
         Element se = new Element("se");
         group.addContent(se.setText(groupModel.getSe()));
+        if (groupModel.getSe() != null) se.setText(groupModel.getSe());
 
         if (groupModel.getFphxz() == "1") {
             ggxh.setText("");
@@ -342,6 +350,8 @@ public class Java2XML {
 
         Element spbm = new Element("spbm");
         group.addContent(spbm.setText("3040201040000000000"));
+        if (groupModel.getSpbm() != null) spbm.setText(groupModel.getSpbm());
+
         Element zxbm = new Element("zxbm");
         group.addContent(zxbm.setText(""));
         Element yhzcbs = new Element("yhzcbs");
@@ -355,12 +365,13 @@ public class Java2XML {
 
     public static void main(String[] args) throws IOException {
         ArrayList<GroupModel> groupModels = new ArrayList<>();
-        GroupModel groupModel = new GroupModel("2", "1", "20", "20", "0.03", "0.6");
-        GroupModel groupModel1 = new GroupModel("1", "", "", "-10", "0.03", "-0.3");
+        GroupModel groupModel = new GroupModel("1231", "2", "", "", "123123");
+        GroupModel groupModel1 = new GroupModel("12312", "2", "0.06", "0.12", "55555");
         groupModels.add(groupModel);
         groupModels.add(groupModel1);
-        HashMap<String,String> map = new HashMap<>();
-        System.out.println(Java2XML.BuildXmlDoc(map,groupModels));
+        HashMap<String, String> map = new HashMap<>();
+        map.put("fplxdm", "026");
+        System.out.println(BuildXmlDoc(map, groupModels));
     }
 
 }

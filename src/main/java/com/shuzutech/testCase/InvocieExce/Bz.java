@@ -30,14 +30,16 @@ public class Bz {
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map), invoiceCase);
     }
 
+    /**
+     * 165也能开出来
+     * @throws IOException
+     * @throws NoSuchAlgorithmException
+     */
     @Test(groups = {"异常开票"}, description = "备注长度超过数据库存储长度")
     public void bz_0003() throws IOException, NoSuchAlgorithmException {
         map.put("fplxdm", "026");
-        map.put("bz", "1------------------------------------------------------------" +
-                "-----------------------------------------------------------------" +
-                "----------------------------------------------------------------" +
-                "----------------1-----------------------------------------------" +
-                "-------------------------------------------------");
+//        map.put("fpqqlsh","Lm20820200724114212");
+        map.put("bz", "888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888213123131231231243526");
        InvoiceCase invoiceCase = GetInvoiceCase.getInvoiceCase("bz_0003");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map), invoiceCase);
     }
