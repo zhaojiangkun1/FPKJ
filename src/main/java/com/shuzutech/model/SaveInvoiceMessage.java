@@ -15,7 +15,12 @@ public class SaveInvoiceMessage {
         SqlSession session = DataBaseUtil.getSqlSession();
         SaveFpInfo saveFpInfo = new SaveFpInfo();
         saveFpInfo.setId(id);
-        saveFpInfo.setJsbh(map.get("jsbh"));
+        if (map.containsKey("jsbh")){
+            saveFpInfo.setJsbh(map.get("jsbh"));
+        }
+       if (map.containsKey("kpzdbs")){
+           saveFpInfo.setJsbh(map.get("kpzdbs"));
+       }
         saveFpInfo.setFpqqlsh(map.get("fpqqlsh"));
         saveFpInfo.setFplxdm(map.get("fplxdm"));
         saveFpInfo.setFpdm(map.get("fpdm"));

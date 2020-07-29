@@ -55,7 +55,6 @@ public class DianPiao {
      * @throws NoSuchAlgorithmException
      */
 
-
     @Test(groups = {"开具电票"}, description = "所有参数都正常，开具一张电票",priority = 1)
     public void electronicInvoice() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("026");
@@ -71,9 +70,7 @@ public class DianPiao {
         map.put("yfpdm", saveFpInfo.getFpdm());
         map.put("yfphm", saveFpInfo.getFphm());
         String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map), TestEnv.testEnv);
-        TestResult.testFpkjResult(result);
-        Thread.sleep(50000);
-        TestResult.runResult(map);
+        GongYouFangFa.zpy(map,result);
     }
 
 
@@ -108,9 +105,7 @@ public class DianPiao {
         map.put("yfpdm", saveFpInfo.getFpdm());
         map.put("yfphm", saveFpInfo.getFphm());
         String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map, 9), TestEnv.testEnv);
-        TestResult.testFpkjResult(result);
-        Thread.sleep(50000);
-        TestResult.runResult(map);
+        GongYouFangFa.zpy(map,result);
     }
 
     @Test(groups = {"开具电票"},description = "开具一张带折扣行的电票",priority = 7)

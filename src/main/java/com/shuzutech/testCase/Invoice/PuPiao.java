@@ -17,7 +17,6 @@ import java.util.HashMap;
 public class PuPiao {
 
     ArrayList<GroupModel> groupModels = new ArrayList<>();
-
     /**
      * 合力："HOLY",10001,"商品名称格式有误_FyxmN1"
      * 旋极：{"returnmsg":"开票明细中包含GBK无法编码字符,请检查！","returncode":1000008}
@@ -60,9 +59,9 @@ public class PuPiao {
     @Test(groups = {"普票冲红"},description = "冲红一张带折扣的增值税普通发票",priority = 16)
     public void discountPuPiaoRed() throws IOException, NoSuchAlgorithmException, InterruptedException {
         SaveFpInfo saveFpInfo = GetSaveFpInfo.getSaveFpInfo();
-        HashMap<String,String> map = InvoiceParamters.hashMap("026");
+        HashMap<String,String> map = InvoiceParamters.hashMap("007");
         ArrayList<GroupModel> groupModels = new ArrayList<>();
-        GroupModel groupModel = new GroupModel("0", "", "", "-10", "0.03", "-0.3");
+        GroupModel groupModel = new GroupModel("0", "-1", "10", "-10", "0.03", "-0.3");
         groupModels.add(groupModel);
         map.put("kplx","1");
         map.put("yfpdm",saveFpInfo.getFpdm());

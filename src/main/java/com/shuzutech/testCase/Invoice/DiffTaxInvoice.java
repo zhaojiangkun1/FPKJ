@@ -24,8 +24,6 @@ public class DiffTaxInvoice {
     @Test(groups = {"开具电票"}, description = "不同商品，不同税率的电票开具",priority = 9)
     public void diffTaxElectronicInvoice() throws InterruptedException, NoSuchAlgorithmException, IOException {
         HashMap<String, String> map = InvoiceParamters.hashMap("026");
-        String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
-        map.put("fpqqlsh", fpqqlsh);
         String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXmlDoc(map, groupModels), TestEnv.testEnv);
         GongYouFangFa.zpy(map, result);
 //        new SaveInvoiceMessage().saveSuccessInvoiceMessage(map, new Date());

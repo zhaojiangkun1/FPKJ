@@ -24,7 +24,7 @@ public class Ggxh {
     public void ggxh_0001() throws IOException, NoSuchAlgorithmException {
 //        map.put("fpqqlsh","de67820200724140714");
 //        map.put("spmc","氨糖软骨素钙片");
-        map.put("ggxh", "285.6g(1.02g*80片*1瓶+1.02g*100片*222");
+        map.put("ggxh", "智能空气品质控制器 KF-700RM(RPM+Malino)");
         invoiceCase = GetInvoiceCase.getInvoiceCase("ggxh_0001");
         GongYouFangFa.gongYouFangFa(Java2XML.BuildXMLDoc(map), invoiceCase);
     }

@@ -58,9 +58,11 @@ public class PostRequest {
         }
         System.out.println("臻票云返回的报文:" + result);
         JSONObject jsonObject = TestResult.parseResult(result);
-        while (jsonObject.get("returnmsg") == "“开票码”不匹配") {
+        boolean flag = jsonObject.getString("returnmsg").equals("“开票码”不匹配");
+        while (flag) {
             result = zhenPiaoYunRequest(body, num);
             jsonObject = TestResult.parseResult(result);
+            flag = jsonObject.getString("returnmsg").equals("“开票码”不匹配");
         }
         return result;
     }

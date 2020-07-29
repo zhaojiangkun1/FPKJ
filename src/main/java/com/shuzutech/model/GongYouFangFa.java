@@ -37,7 +37,7 @@ public class GongYouFangFa {
 
     public static void zpy(HashMap<String,String>map,String result) throws InterruptedException, IOException, NoSuchAlgorithmException {
         TestResult.testFpkjResult(result);
-        Thread.sleep(50000);
+        Thread.sleep(20000);
         TestResult.runResult(map);
     }
 }
