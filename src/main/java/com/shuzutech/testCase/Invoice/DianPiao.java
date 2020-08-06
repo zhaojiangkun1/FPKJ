@@ -5,6 +5,7 @@ import com.shuzutech.bean.InvoiceParamters;
 import com.shuzutech.bean.SaveFpInfo;
 import com.shuzutech.bean.TestEnv;
 import com.shuzutech.config.TestResult;
+import com.shuzutech.config.UpdateFpqqlsh;
 import com.shuzutech.model.*;
 import org.testng.annotations.Test;
 
@@ -55,7 +56,10 @@ public class DianPiao {
      * @throws NoSuchAlgorithmException
      */
 
-    @Test(groups = {"开具电票"}, description = "所有参数都正常，开具一张电票",priority = 1)
+    ArrayList<GroupModel> groupModels = GroupModelList.groupModelArrayList();
+    ArrayList<GroupModel> groupModelsRed = GroupModelList.groupModelArrayListRed();
+
+    @Test(groups = {"开具电票"}, description = "所有参数都正常，开具一张电票")
     public void electronicInvoice() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("026");
         String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map), TestEnv.testEnv);
@@ -63,7 +67,7 @@ public class DianPiao {
         System.out.printf("Thread Id : %s%n", Thread.currentThread().getId());
     }
 
-    @Test(groups = {"电票冲红"}, description = "所有参数均正常，冲红一张电子发票",priority = 2)
+    @Test(groups = {"开具电票"}, description = "所有参数均正常，冲红一张电子发票",dependsOnMethods = {"electronicInvoice"})
     public void eTicketRed() throws IOException, NoSuchAlgorithmException, InterruptedException {
         SaveFpInfo saveFpInfo = GetSaveFpInfo.getSaveFpInfo();
         HashMap<String, String> map = hashMap("026");
@@ -74,7 +78,7 @@ public class DianPiao {
     }
 
 
-    @Test(groups = {"开具电票"}, description = "所有参数均正常,开具一张6行商品的电票",priority = 3)
+    @Test(groups = {"开具电票"}, description = "所有参数均正常,开具一张6行商品的电票",dependsOnMethods = {"eTicketRed"})
     public void electronicInvoiceSixCommodity() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("026");
         String file = Java2XML.BuildXMLDoc(map, 6);
@@ -82,7 +86,7 @@ public class DianPiao {
         GongYouFangFa.zpy(map,result);
     }
 
-    @Test(groups = {"开具电票"}, description = "所有参数均正常，开具一张8行商品的电票",priority = 4)
+    @Test(groups = {"开具电票"}, description = "所有参数均正常，开具一张8行商品的电票",dependsOnMethods = {"electronicInvoiceSixCommodity"})
     public void electronicInvoiceEightCommodity() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("026");
         String file = Java2XML.BuildXMLDoc(map, 8);
@@ -90,7 +94,7 @@ public class DianPiao {
         GongYouFangFa.zpy(map,result);
     }
 
-    @Test(groups = {"开具电票"}, description = "所有参数均正常,开具一张9行商品的电票",priority = 5)
+    @Test(groups = {"开具电票"}, description = "所有参数均正常,开具一张9行商品的电票",dependsOnMethods = {"electronicInvoiceEightCommodity"})
     public void electronicInvoiceNineCommodity() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("026");
         String file = Java2XML.BuildXMLDoc(map, 9);
@@ -98,7 +102,7 @@ public class DianPiao {
         GongYouFangFa.zpy(map,result);
     }
 
-    @Test(groups = {"电票冲红"}, description = "冲红一张带清单电子发票",priority = 6)
+    @Test(groups = {"开具电票"}, description = "冲红一张带清单电子发票",dependsOnMethods = {"electronicInvoiceNineCommodity"})
     public void eListTicketRed() throws IOException, NoSuchAlgorithmException, InterruptedException {
         SaveFpInfo saveFpInfo = GetSaveFpInfo.getSaveFpInfo();
         HashMap<String, String> map = hashMap("026");
@@ -108,7 +112,7 @@ public class DianPiao {
         GongYouFangFa.zpy(map,result);
     }
 
-    @Test(groups = {"开具电票"},description = "开具一张带折扣行的电票",priority = 7)
+    @Test(groups = {"开具电票"},description = "开具一张带折扣行的电票",dependsOnMethods = {"eListTicketRed"})
     public void discountElectronicInvoice() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("026");
         ArrayList<GroupModel> groupModels = new ArrayList<>();
@@ -120,7 +124,7 @@ public class DianPiao {
         GongYouFangFa.zpy(map,result);
     }
 
-    @Test(groups = {"电票冲红"},description = "冲红一张带折扣的电子发票",priority = 8)
+    @Test(groups = {"开具电票"},description = "冲红一张带折扣的电子发票",dependsOnMethods = {"discountElectronicInvoice"})
     public void discountInvoiceRed() throws IOException, NoSuchAlgorithmException, InterruptedException {
         SaveFpInfo saveFpInfo = GetSaveFpInfo.getSaveFpInfo();
         HashMap<String,String> map = InvoiceParamters.hashMap("026");
@@ -133,6 +137,70 @@ public class DianPiao {
         String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXmlDoc(map,groupModels), TestEnv.testEnv);
         GongYouFangFa.zpy(map,result);
     }
+
+    @Test(groups = {"开具电票"}, description = "不同商品，不同税率的电票开具",dependsOnMethods = {"discountInvoiceRed"})
+    public void diffTaxElectronicInvoice() throws InterruptedException, NoSuchAlgorithmException, IOException {
+        HashMap<String, String> map = InvoiceParamters.hashMap("026");
+        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXmlDoc(map, groupModels), TestEnv.testEnv);
+        GongYouFangFa.zpy(map, result);
+    }
+
+    @Test(groups = {"开具电票"}, description = "不同商品、税率的电票冲红",dependsOnMethods = {"diffTaxElectronicInvoice"})
+    public void diffTaxElectronicRed() throws IOException, NoSuchAlgorithmException, InterruptedException {
+        SaveFpInfo saveFpInfo = GetSaveFpInfo.getSaveFpInfo();
+        HashMap<String, String> map = InvoiceParamters.hashMap("026");
+        map.put("kplx", "1");
+        String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
+        map.put("fpqqlsh", fpqqlsh);
+        map.put("yfpdm", saveFpInfo.getFpdm());
+        map.put("yfphm", saveFpInfo.getFphm());
+        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXmlDoc(map, groupModelsRed), TestEnv.testEnv);
+        GongYouFangFa.zpy(map, result);
+    }
+
+    @Test(groups = {"开具电票"},description = "不传商品，使用默认商品开票",dependsOnMethods = {"diffTaxElectronicRed"})
+    public void useDefaultProduct() throws IOException, NoSuchAlgorithmException, InterruptedException {
+        HashMap<String,String> map = InvoiceParamters.hashMap("026");
+        String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
+        map.put("fpqqlsh", fpqqlsh);
+        map.put("ghdwmc", "上海盛付通电子支付服务有限公司");
+        map.put("ghdwsbh", "9131011567624841X0");
+        map.put("ghdwdzdh", "");
+        map.put("ghdwyhzh", "");
+        map.put("spmc", "");
+        map.put("dj","");
+        map.put("spsl","");
+        map.put("je","200");
+        map.put("sl","");
+        map.put("se","");
+        map.put("spbm","");
+        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map), TestEnv.testEnv);
+        GongYouFangFa.zpy(map,result);
+        System.out.printf("Thread Id : %s%n", Thread.currentThread().getId());
+    }
+    @Test(groups = {"开具电票"},description = "不传商品，使用默认商品冲红",dependsOnMethods = {"useDefaultProduct"})
+    public void useDefaultProductRed() throws IOException, NoSuchAlgorithmException, InterruptedException {
+        SaveFpInfo saveFpInfo = GetSaveFpInfo.getSaveFpInfo();
+        HashMap<String,String> map = InvoiceParamters.hashMap("026");
+        map.put("kplx","1");
+        map.put("ghdwmc", "上海盛付通电子支付服务有限公司");
+        map.put("ghdwsbh", "9131011567624841X0");
+        map.put("ghdwdzdh", "");
+        map.put("ghdwyhzh", "");
+        map.put("spmc", "");
+        map.put("dj","");
+        map.put("spsl","");
+        map.put("je","-200");
+        map.put("sl","");
+        map.put("se","");
+        map.put("spbm","");
+        map.put("yfpdm",saveFpInfo.getFpdm());
+        map.put("yfphm",saveFpInfo.getFphm());
+        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXMLDoc(map), TestEnv.testEnv);
+        GongYouFangFa.zpy(map,result);
+        System.out.printf("Thread Id : %s%n", Thread.currentThread().getId());
+    }
+
 
 
 

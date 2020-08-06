@@ -17,12 +17,11 @@ public class InvoiceParamters {
      * 宁波：
      * 500102010001408~~499000115188
      * 500102010001459~~499000115698
-     *
+     * <p>
      * 上线前：旋极、合力、宁波、百旺通
-     *
      */
 //    private static String shnsrsbh = "110101201701010023";
-    private static String jsbh = "110101201707010031~~499000152034";
+    private static String jsbh = "110101201707010041~~499000152131";
 
 
     public static String kpzdbs = "499000152131";
@@ -41,8 +40,8 @@ public class InvoiceParamters {
         map.put("fplxdm", fplxdm);
         map.put("shnsrsbh", "");
 //        map.put("kpzdbs", InvoiceParamters.kpzdbs);
-        map.put("jsbh",jsbh);
-        map.put("fpqqlsh",fpqqlsh);
+        map.put("jsbh", jsbh);
+        map.put("fpqqlsh", fpqqlsh);
         return map;
     }
 }

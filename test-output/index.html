@@ -49,7 +49,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 29, 2020 11:54:28 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 31, 2020 02:24:26 PM</span>
 				</a>
 			</li>
 			<li>
@@ -88,12 +88,10 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>特殊配置发票</a></li>
 					<li><a href='#'>开具专票</a></li>
 					<li><a href='#'>开具电票</a></li>
-					<li><a href='#'>电票冲红</a></li>
 					<li><a href='#'>开具普票</a></li>
-					<li><a href='#'>普票冲红</a></li>
+					<li><a href='#'>开票普票</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -141,10 +139,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='96.296%'><span class='strong'>26</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='96.429%'><span class='strong'>27</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='3.704%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='3.571%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -156,10 +154,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='96.296%'><span class='strong'>26</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='96.429%'><span class='strong'>27</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='3.704%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='3.571%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -176,19 +174,19 @@
 				
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>方法名：useDefaultProduct，用例名称：不传商品，使用默认商品开票</span>
-						<span class='test-time'>Jul 29, 2020 11:56:15 AM</span>
+						<span class='test-name'>方法名：specialInvoiceNineCommodity，用例名称：9行商品的专票开具</span>
+						<span class='test-time'>Jul 31, 2020 02:28:16 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 11:56:15 AM</span>
-	<span class='label end-time'>Jul 29, 2020 11:56:16 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+463ms</span>
+	<span class='label start-time'>Jul 31, 2020 02:28:16 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:29:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 51s+939ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>特殊配置发票</span>
+				<span class='category label white-text'>开具专票</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -203,16 +201,17 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
-					<td class='step-details'><pre>java.lang.AssertionError: expected [{"returnmsg":"提交成功，请稍后查询","returncode":0}] but found [{"returnmsg":"设备:未配置默认商品","returncode":1000023}]
+					<td class='timestamp'>2:29:14 PM</td>
+					<td class='step-details'><pre>java.lang.AssertionError: expected [{"returnmsg":"成功","returncode":0}] but found [{"returnmsg":"该发票正在开具中，请稍后查询","returncode":300077}]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:442)
-	at com.shuzutech.config.TestResult.testFpkjResult(TestResult.java:30)
-	at com.shuzutech.model.GongYouFangFa.zpy(GongYouFangFa.java:39)
-	at com.shuzutech.testCase.Invoice.SpecialConfigurationInvoice.useDefaultProduct(SpecialConfigurationInvoice.java:34)
+	at com.shuzutech.config.TestResult.testFpcxResult(TestResult.java:22)
+	at com.shuzutech.config.TestResult.runResult(TestResult.java:59)
+	at com.shuzutech.model.GongYouFangFa.zpy(GongYouFangFa.java:41)
+	at com.shuzutech.testCase.Invoice.ZhuanPiao.specialInvoiceNineCommodity(ZhuanPiao.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -248,19 +247,19 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>方法名：discountSpecialInvoice，用例名称：开具一张带折扣行的专票</span>
-						<span class='test-time'>Jul 29, 2020 11:54:28 AM</span>
+						<span class='test-name'>方法名：electronicInvoice，用例名称：所有参数都正常，开具一张电票</span>
+						<span class='test-time'>Jul 31, 2020 02:24:26 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 11:54:28 AM</span>
-	<span class='label end-time'>Jul 29, 2020 11:54:50 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+513ms</span>
+	<span class='label start-time'>Jul 31, 2020 02:24:26 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:24:39 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+791ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>开具专票</span>
+				<span class='category label white-text'>开具电票</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -275,7 +274,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
+					<td class='timestamp'>2:29:14 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -287,19 +286,19 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>方法名：specialInvoice，用例名称：所有参数均正常，开具一张专票</span>
-						<span class='test-time'>Jul 29, 2020 11:54:50 AM</span>
+						<span class='test-name'>方法名：eTicketRed，用例名称：所有参数均正常，冲红一张电子发票</span>
+						<span class='test-time'>Jul 31, 2020 02:24:39 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 11:54:50 AM</span>
-	<span class='label end-time'>Jul 29, 2020 11:55:11 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+182ms</span>
+	<span class='label start-time'>Jul 31, 2020 02:24:39 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:24:50 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+557ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>开具专票</span>
+				<span class='category label white-text'>开具电票</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -314,7 +313,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
+					<td class='timestamp'>2:29:14 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -326,19 +325,19 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>方法名：specialInvoiceEightCommodity，用例名称：8行商品的专票开具</span>
-						<span class='test-time'>Jul 29, 2020 11:55:11 AM</span>
+						<span class='test-name'>方法名：electronicInvoiceSixCommodity，用例名称：所有参数均正常,开具一张6行商品的电票</span>
+						<span class='test-time'>Jul 31, 2020 02:24:50 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 11:55:11 AM</span>
-	<span class='label end-time'>Jul 29, 2020 11:55:32 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+219ms</span>
+	<span class='label start-time'>Jul 31, 2020 02:24:50 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:25:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+510ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>开具专票</span>
+				<span class='category label white-text'>开具电票</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -353,7 +352,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
+					<td class='timestamp'>2:29:14 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -365,19 +364,19 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
-						<span class='test-name'>方法名：specialInvoiceNineCommodity，用例名称：9行商品的专票开具</span>
-						<span class='test-time'>Jul 29, 2020 11:55:32 AM</span>
+						<span class='test-name'>方法名：electronicInvoiceEightCommodity，用例名称：所有参数均正常，开具一张8行商品的电票</span>
+						<span class='test-time'>Jul 31, 2020 02:25:07 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 11:55:32 AM</span>
-	<span class='label end-time'>Jul 29, 2020 11:55:54 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+579ms</span>
+	<span class='label start-time'>Jul 31, 2020 02:25:07 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:25:21 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+169ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>开具专票</span>
+				<span class='category label white-text'>开具电票</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -392,7 +391,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
+					<td class='timestamp'>2:29:14 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -404,19 +403,19 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
 					<div class='test-heading'>
-						<span class='test-name'>方法名：specialInvoiceSixCommodity，用例名称：6行商品的专票开具</span>
-						<span class='test-time'>Jul 29, 2020 11:55:54 AM</span>
+						<span class='test-name'>方法名：electronicInvoiceNineCommodity，用例名称：所有参数均正常,开具一张9行商品的电票</span>
+						<span class='test-time'>Jul 31, 2020 02:25:21 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 11:55:54 AM</span>
-	<span class='label end-time'>Jul 29, 2020 11:56:15 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+193ms</span>
+	<span class='label start-time'>Jul 31, 2020 02:25:21 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:25:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+31ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>开具专票</span>
+				<span class='category label white-text'>开具电票</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -431,7 +430,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
+					<td class='timestamp'>2:29:14 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -443,19 +442,19 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
 					<div class='test-heading'>
-						<span class='test-name'>方法名：useFree，用例名称：使用免税政策开票</span>
-						<span class='test-time'>Jul 29, 2020 11:56:16 AM</span>
+						<span class='test-name'>方法名：eListTicketRed，用例名称：冲红一张带清单电子发票</span>
+						<span class='test-time'>Jul 31, 2020 02:25:31 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 11:56:16 AM</span>
-	<span class='label end-time'>Jul 29, 2020 11:56:37 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+86ms</span>
+	<span class='label start-time'>Jul 31, 2020 02:25:31 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:25:40 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+908ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>特殊配置发票</span>
+				<span class='category label white-text'>开具电票</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -470,7 +469,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
+					<td class='timestamp'>2:29:14 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -482,15 +481,639 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
 					<div class='test-heading'>
-						<span class='test-name'>方法名：diffTaxZhuanInvoice，用例名称：不同商品，不同税率的专票开具</span>
-						<span class='test-time'>Jul 29, 2020 11:56:37 AM</span>
+						<span class='test-name'>方法名：discountElectronicInvoice，用例名称：开具一张带折扣行的电票</span>
+						<span class='test-time'>Jul 31, 2020 02:25:40 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 11:56:37 AM</span>
-	<span class='label end-time'>Jul 29, 2020 11:56:58 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+17ms</span>
+	<span class='label start-time'>Jul 31, 2020 02:25:40 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:25:50 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+937ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>开具电票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:29:14 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>方法名：discountInvoiceRed，用例名称：冲红一张带折扣的电子发票</span>
+						<span class='test-time'>Jul 31, 2020 02:25:50 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 31, 2020 02:25:50 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:26:02 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+604ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>开具电票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:29:14 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>方法名：diffTaxElectronicInvoice，用例名称：不同商品，不同税率的电票开具</span>
+						<span class='test-time'>Jul 31, 2020 02:26:02 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 31, 2020 02:26:02 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:26:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+638ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>开具电票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:29:14 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>方法名：diffTaxElectronicRed，用例名称：不同商品、税率的电票冲红</span>
+						<span class='test-time'>Jul 31, 2020 02:26:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 31, 2020 02:26:11 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:26:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+122ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>开具电票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:29:14 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>方法名：useDefaultProduct，用例名称：不传商品，使用默认商品开票</span>
+						<span class='test-time'>Jul 31, 2020 02:26:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 31, 2020 02:26:22 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:26:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+46ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>开具电票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:29:14 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>方法名：useDefaultProductRed，用例名称：不传商品，使用默认商品冲红</span>
+						<span class='test-time'>Jul 31, 2020 02:26:32 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 31, 2020 02:26:32 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:26:42 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+841ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>开具电票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:29:14 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>方法名：generalInvoice，用例名称：所有参数均正常，开具一张增值税普通发票</span>
+						<span class='test-time'>Jul 31, 2020 02:26:42 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 31, 2020 02:26:42 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:26:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+951ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>开具普票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:29:14 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>方法名：generalInvoiceRed，用例名称：所有参数均正常，冲红一张增值税普通发票</span>
+						<span class='test-time'>Jul 31, 2020 02:26:47 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 31, 2020 02:26:47 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:26:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+398ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>开具普票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:29:14 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>方法名：discountGeneralInvoice，用例名称：开具一张带折扣行的普票</span>
+						<span class='test-time'>Jul 31, 2020 02:26:54 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 31, 2020 02:26:54 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:27:00 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+79ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>开具普票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:29:14 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>方法名：discountPuPiaoRed，用例名称：冲红一张带折扣的增值税普通发票</span>
+						<span class='test-time'>Jul 31, 2020 02:27:00 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 31, 2020 02:27:00 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:27:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+683ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>开具普票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:29:14 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>方法名：generalInvoiceSixCommodity，用例名称：所有参数均正常，开具一张6行商品的普票</span>
+						<span class='test-time'>Jul 31, 2020 02:27:08 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 31, 2020 02:27:08 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:27:14 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+170ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>开具普票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:29:14 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>方法名：generalInvoiceEightCommodity，用例名称：所有参数均正常,开具一张8行商品的普票</span>
+						<span class='test-time'>Jul 31, 2020 02:27:14 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 31, 2020 02:27:14 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:27:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+149ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>开票普票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:29:14 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>方法名：generalInvoiceTenCommodity，用例名称：所有参数均正常，开具一张10行商品的普票</span>
+						<span class='test-time'>Jul 31, 2020 02:27:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 31, 2020 02:27:20 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:27:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+448ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>开具普票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:29:14 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>方法名：redListGeneralInvoice，用例名称：冲红一张带清单普票</span>
+						<span class='test-time'>Jul 31, 2020 02:27:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 31, 2020 02:27:27 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:27:36 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+879ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>开具普票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:29:14 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>方法名：diffTaxPuInvoice，用例名称：不同商品，不同税率的普票开具</span>
+						<span class='test-time'>Jul 31, 2020 02:27:36 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 31, 2020 02:27:36 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:27:43 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+164ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>开具普票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:29:14 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>方法名：diffTaxPuPiaoRed，用例名称：不同商品、税率的普票冲红</span>
+						<span class='test-time'>Jul 31, 2020 02:27:43 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 31, 2020 02:27:43 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:27:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+617ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>开具普票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:29:14 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>方法名：diffTaxZhuanInvoice，用例名称：不同商品，不同税率的专票开具</span>
+						<span class='test-time'>Jul 31, 2020 02:27:51 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 31, 2020 02:27:51 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:27:57 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+119ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -509,631 +1132,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
-					<div class='test-heading'>
-						<span class='test-name'>方法名：electronicInvoice，用例名称：所有参数都正常，开具一张电票</span>
-						<span class='test-time'>Jul 29, 2020 11:56:58 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 11:56:58 AM</span>
-	<span class='label end-time'>Jul 29, 2020 11:57:19 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+166ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>开具电票</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
-					<div class='test-heading'>
-						<span class='test-name'>方法名：eTicketRed，用例名称：所有参数均正常，冲红一张电子发票</span>
-						<span class='test-time'>Jul 29, 2020 11:57:19 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 11:57:19 AM</span>
-	<span class='label end-time'>Jul 29, 2020 11:57:40 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+135ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>电票冲红</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
-					<div class='test-heading'>
-						<span class='test-name'>方法名：electronicInvoiceSixCommodity，用例名称：所有参数均正常,开具一张6行商品的电票</span>
-						<span class='test-time'>Jul 29, 2020 11:57:40 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 11:57:40 AM</span>
-	<span class='label end-time'>Jul 29, 2020 11:58:01 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+117ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>开具电票</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
-					<div class='test-heading'>
-						<span class='test-name'>方法名：electronicInvoiceEightCommodity，用例名称：所有参数均正常，开具一张8行商品的电票</span>
-						<span class='test-time'>Jul 29, 2020 11:58:01 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 11:58:01 AM</span>
-	<span class='label end-time'>Jul 29, 2020 11:58:23 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+284ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>开具电票</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
-					<div class='test-heading'>
-						<span class='test-name'>方法名：electronicInvoiceNineCommodity，用例名称：所有参数均正常,开具一张9行商品的电票</span>
-						<span class='test-time'>Jul 29, 2020 11:58:23 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 11:58:23 AM</span>
-	<span class='label end-time'>Jul 29, 2020 11:58:44 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+196ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>开具电票</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
-					<div class='test-heading'>
-						<span class='test-name'>方法名：eListTicketRed，用例名称：冲红一张带清单电子发票</span>
-						<span class='test-time'>Jul 29, 2020 11:58:44 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 11:58:44 AM</span>
-	<span class='label end-time'>Jul 29, 2020 11:59:05 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+129ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>电票冲红</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
-					<div class='test-heading'>
-						<span class='test-name'>方法名：discountElectronicInvoice，用例名称：开具一张带折扣行的电票</span>
-						<span class='test-time'>Jul 29, 2020 11:59:05 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 11:59:05 AM</span>
-	<span class='label end-time'>Jul 29, 2020 11:59:26 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+67ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>开具电票</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
-					<div class='test-heading'>
-						<span class='test-name'>方法名：discountInvoiceRed，用例名称：冲红一张带折扣的电子发票</span>
-						<span class='test-time'>Jul 29, 2020 11:59:26 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 11:59:26 AM</span>
-	<span class='label end-time'>Jul 29, 2020 11:59:47 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+8ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>电票冲红</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
-					<div class='test-heading'>
-						<span class='test-name'>方法名：diffTaxElectronicInvoice，用例名称：不同商品，不同税率的电票开具</span>
-						<span class='test-time'>Jul 29, 2020 11:59:47 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 11:59:47 AM</span>
-	<span class='label end-time'>Jul 29, 2020 12:00:08 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+971ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>开具电票</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
-					<div class='test-heading'>
-						<span class='test-name'>方法名：diffTaxElectronicRed，用例名称：不同商品、税率的电票冲红</span>
-						<span class='test-time'>Jul 29, 2020 12:00:08 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 12:00:08 PM</span>
-	<span class='label end-time'>Jul 29, 2020 12:00:29 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+102ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>电票冲红</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
-					<div class='test-heading'>
-						<span class='test-name'>方法名：diffTaxPuInvoice，用例名称：不同商品，不同税率的普票开具</span>
-						<span class='test-time'>Jul 29, 2020 12:00:29 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 12:00:29 PM</span>
-	<span class='label end-time'>Jul 29, 2020 12:00:50 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+21ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>开具普票</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
-					<div class='test-heading'>
-						<span class='test-name'>方法名：diffTaxPuPiaoRed，用例名称：不同商品、税率的普票冲红</span>
-						<span class='test-time'>Jul 29, 2020 12:00:50 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 12:00:50 PM</span>
-	<span class='label end-time'>Jul 29, 2020 12:01:11 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+1ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>普票冲红</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
-					<div class='test-heading'>
-						<span class='test-name'>方法名：generalInvoice，用例名称：所有参数均正常，开具一张增值税普通发票</span>
-						<span class='test-time'>Jul 29, 2020 12:01:11 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 12:01:11 PM</span>
-	<span class='label end-time'>Jul 29, 2020 12:01:32 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+14ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>开具普票</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
-					<div class='test-heading'>
-						<span class='test-name'>方法名：puPiaoChongHong，用例名称：所有参数均正常，冲红一张增值税普通发票</span>
-						<span class='test-time'>Jul 29, 2020 12:01:32 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 12:01:32 PM</span>
-	<span class='label end-time'>Jul 29, 2020 12:01:53 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+22ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>普票冲红</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
-					<div class='test-heading'>
-						<span class='test-name'>方法名：discountGeneralInvoice，用例名称：开具一张带折扣行的普票</span>
-						<span class='test-time'>Jul 29, 2020 12:01:53 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 12:01:53 PM</span>
-	<span class='label end-time'>Jul 29, 2020 12:02:14 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+12ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>开具普票</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
-					<div class='test-heading'>
-						<span class='test-name'>方法名：discountPuPiaoRed，用例名称：冲红一张带折扣的增值税普通发票</span>
-						<span class='test-time'>Jul 29, 2020 12:02:14 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 12:02:14 PM</span>
-	<span class='label end-time'>Jul 29, 2020 12:02:35 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+79ms</span>
-</div>
-	<div class='test-attributes'>
-			<div class='category-list'>
-				<span class='category label white-text'>普票冲红</span>
-			</div>
-	</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
+					<td class='timestamp'>2:29:14 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -1145,19 +1144,19 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='25'>
 					<div class='test-heading'>
-						<span class='test-name'>方法名：generalInvoiceSixCommodity，用例名称：所有参数均正常，开具一张6行商品的普票</span>
-						<span class='test-time'>Jul 29, 2020 12:02:35 PM</span>
+						<span class='test-name'>方法名：discountSpecialInvoice，用例名称：开具一张带折扣行的专票</span>
+						<span class='test-time'>Jul 31, 2020 02:27:57 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 12:02:35 PM</span>
-	<span class='label end-time'>Jul 29, 2020 12:02:56 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+17ms</span>
+	<span class='label start-time'>Jul 31, 2020 02:27:57 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:28:04 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+304ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>开具普票</span>
+				<span class='category label white-text'>开具专票</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -1172,7 +1171,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
+					<td class='timestamp'>2:29:14 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -1184,19 +1183,19 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='26'>
 					<div class='test-heading'>
-						<span class='test-name'>方法名：generalInvoiceTenCommodity，用例名称：所有参数均正常，开具一张10行商品的普票</span>
-						<span class='test-time'>Jul 29, 2020 12:02:56 PM</span>
+						<span class='test-name'>方法名：specialInvoice，用例名称：所有参数均正常，开具一张专票</span>
+						<span class='test-time'>Jul 31, 2020 02:28:04 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 12:02:56 PM</span>
-	<span class='label end-time'>Jul 29, 2020 12:03:17 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+100ms</span>
+	<span class='label start-time'>Jul 31, 2020 02:28:04 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:28:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+255ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>开具普票</span>
+				<span class='category label white-text'>开具专票</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -1211,7 +1210,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
+					<td class='timestamp'>2:29:14 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -1223,19 +1222,19 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='27'>
 					<div class='test-heading'>
-						<span class='test-name'>方法名：redListPuPiao，用例名称：冲红一张带清单普票</span>
-						<span class='test-time'>Jul 29, 2020 12:03:17 PM</span>
+						<span class='test-name'>方法名：specialInvoiceEightCommodity，用例名称：8行商品的专票开具</span>
+						<span class='test-time'>Jul 31, 2020 02:28:10 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 29, 2020 12:03:17 PM</span>
-	<span class='label end-time'>Jul 29, 2020 12:03:38 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+219ms</span>
+	<span class='label start-time'>Jul 31, 2020 02:28:10 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:28:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+970ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
-				<span class='category label white-text'>普票冲红</span>
+				<span class='category label white-text'>开具专票</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -1250,7 +1249,46 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:03:39 PM</td>
+					<td class='timestamp'>2:29:14 PM</td>
+					<td class='step-details'>Test passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='28'>
+					<div class='test-heading'>
+						<span class='test-name'>方法名：specialInvoiceSixCommodity，用例名称：6行商品的专票开具</span>
+						<span class='test-time'>Jul 31, 2020 02:29:08 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jul 31, 2020 02:29:08 PM</span>
+	<span class='label end-time'>Jul 31, 2020 02:29:14 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+232ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>开具专票</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:29:14 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -1310,15 +1348,15 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>特殊配置发票</span>
+						<span class='category-name'>开具专票</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label pass'>5</span>
 							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 5</span>
 							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
@@ -1334,72 +1372,33 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 29, 2020 11:56:15 AM</td>
-										<td class='linked' test-id='1'>方法名：useDefaultProduct，用例名称：不传商品，使用默认商品开票</td>
+										<td>Jul 31, 2020 02:28:16 PM</td>
+										<td class='linked' test-id='1'>方法名：specialInvoiceNineCommodity，用例名称：9行商品的专票开具</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 29, 2020 11:56:16 AM</td>
-										<td class='linked' test-id='7'>方法名：useFree，用例名称：使用免税政策开票</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>开具专票</span>
-						<span class='category-status right'>
-							<span class='label pass'>6</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 6</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 29, 2020 11:54:28 AM</td>
-										<td class='linked' test-id='2'>方法名：discountSpecialInvoice，用例名称：开具一张带折扣行的专票</td>
+										<td>Jul 31, 2020 02:27:51 PM</td>
+										<td class='linked' test-id='24'>方法名：diffTaxZhuanInvoice，用例名称：不同商品，不同税率的专票开具</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 29, 2020 11:54:50 AM</td>
-										<td class='linked' test-id='3'>方法名：specialInvoice，用例名称：所有参数均正常，开具一张专票</td>
+										<td>Jul 31, 2020 02:27:57 PM</td>
+										<td class='linked' test-id='25'>方法名：discountSpecialInvoice，用例名称：开具一张带折扣行的专票</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 29, 2020 11:55:11 AM</td>
-										<td class='linked' test-id='4'>方法名：specialInvoiceEightCommodity，用例名称：8行商品的专票开具</td>
+										<td>Jul 31, 2020 02:28:04 PM</td>
+										<td class='linked' test-id='26'>方法名：specialInvoice，用例名称：所有参数均正常，开具一张专票</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 29, 2020 11:55:32 AM</td>
-										<td class='linked' test-id='5'>方法名：specialInvoiceNineCommodity，用例名称：9行商品的专票开具</td>
+										<td>Jul 31, 2020 02:28:10 PM</td>
+										<td class='linked' test-id='27'>方法名：specialInvoiceEightCommodity，用例名称：8行商品的专票开具</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 29, 2020 11:55:54 AM</td>
-										<td class='linked' test-id='6'>方法名：specialInvoiceSixCommodity，用例名称：6行商品的专票开具</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 29, 2020 11:56:37 AM</td>
-										<td class='linked' test-id='8'>方法名：diffTaxZhuanInvoice，用例名称：不同商品，不同税率的专票开具</td>
+										<td>Jul 31, 2020 02:29:08 PM</td>
+										<td class='linked' test-id='28'>方法名：specialInvoiceSixCommodity，用例名称：6行商品的专票开具</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -1411,12 +1410,12 @@
 					<div class='category-heading'>
 						<span class='category-name'>开具电票</span>
 						<span class='category-status right'>
-							<span class='label pass'>6</span>
+							<span class='label pass'>12</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 6</span>
+							<span class='label green accent-4 white-text'>Passed: 12</span>
 							
 							
 						</div>
@@ -1432,82 +1431,63 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 29, 2020 11:56:58 AM</td>
-										<td class='linked' test-id='9'>方法名：electronicInvoice，用例名称：所有参数都正常，开具一张电票</td>
+										<td>Jul 31, 2020 02:24:26 PM</td>
+										<td class='linked' test-id='2'>方法名：electronicInvoice，用例名称：所有参数都正常，开具一张电票</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 29, 2020 11:57:40 AM</td>
-										<td class='linked' test-id='11'>方法名：electronicInvoiceSixCommodity，用例名称：所有参数均正常,开具一张6行商品的电票</td>
+										<td>Jul 31, 2020 02:24:39 PM</td>
+										<td class='linked' test-id='3'>方法名：eTicketRed，用例名称：所有参数均正常，冲红一张电子发票</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 29, 2020 11:58:01 AM</td>
-										<td class='linked' test-id='12'>方法名：electronicInvoiceEightCommodity，用例名称：所有参数均正常，开具一张8行商品的电票</td>
+										<td>Jul 31, 2020 02:24:50 PM</td>
+										<td class='linked' test-id='4'>方法名：electronicInvoiceSixCommodity，用例名称：所有参数均正常,开具一张6行商品的电票</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 29, 2020 11:58:23 AM</td>
-										<td class='linked' test-id='13'>方法名：electronicInvoiceNineCommodity，用例名称：所有参数均正常,开具一张9行商品的电票</td>
+										<td>Jul 31, 2020 02:25:07 PM</td>
+										<td class='linked' test-id='5'>方法名：electronicInvoiceEightCommodity，用例名称：所有参数均正常，开具一张8行商品的电票</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 29, 2020 11:59:05 AM</td>
-										<td class='linked' test-id='15'>方法名：discountElectronicInvoice，用例名称：开具一张带折扣行的电票</td>
+										<td>Jul 31, 2020 02:25:21 PM</td>
+										<td class='linked' test-id='6'>方法名：electronicInvoiceNineCommodity，用例名称：所有参数均正常,开具一张9行商品的电票</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 29, 2020 11:59:47 AM</td>
-										<td class='linked' test-id='17'>方法名：diffTaxElectronicInvoice，用例名称：不同商品，不同税率的电票开具</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>电票冲红</span>
-						<span class='category-status right'>
-							<span class='label pass'>4</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 4</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 29, 2020 11:57:19 AM</td>
-										<td class='linked' test-id='10'>方法名：eTicketRed，用例名称：所有参数均正常，冲红一张电子发票</td>
+										<td>Jul 31, 2020 02:25:31 PM</td>
+										<td class='linked' test-id='7'>方法名：eListTicketRed，用例名称：冲红一张带清单电子发票</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 29, 2020 11:58:44 AM</td>
-										<td class='linked' test-id='14'>方法名：eListTicketRed，用例名称：冲红一张带清单电子发票</td>
+										<td>Jul 31, 2020 02:25:40 PM</td>
+										<td class='linked' test-id='8'>方法名：discountElectronicInvoice，用例名称：开具一张带折扣行的电票</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 29, 2020 11:59:26 AM</td>
-										<td class='linked' test-id='16'>方法名：discountInvoiceRed，用例名称：冲红一张带折扣的电子发票</td>
+										<td>Jul 31, 2020 02:25:50 PM</td>
+										<td class='linked' test-id='9'>方法名：discountInvoiceRed，用例名称：冲红一张带折扣的电子发票</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 29, 2020 12:00:08 PM</td>
-										<td class='linked' test-id='18'>方法名：diffTaxElectronicRed，用例名称：不同商品、税率的电票冲红</td>
+										<td>Jul 31, 2020 02:26:02 PM</td>
+										<td class='linked' test-id='10'>方法名：diffTaxElectronicInvoice，用例名称：不同商品，不同税率的电票开具</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 31, 2020 02:26:11 PM</td>
+										<td class='linked' test-id='11'>方法名：diffTaxElectronicRed，用例名称：不同商品、税率的电票冲红</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 31, 2020 02:26:22 PM</td>
+										<td class='linked' test-id='12'>方法名：useDefaultProduct，用例名称：不传商品，使用默认商品开票</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 31, 2020 02:26:32 PM</td>
+										<td class='linked' test-id='13'>方法名：useDefaultProductRed，用例名称：不传商品，使用默认商品冲红</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -1519,12 +1499,12 @@
 					<div class='category-heading'>
 						<span class='category-name'>开具普票</span>
 						<span class='category-status right'>
-							<span class='label pass'>5</span>
+							<span class='label pass'>9</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 5</span>
+							<span class='label green accent-4 white-text'>Passed: 9</span>
 							
 							
 						</div>
@@ -1540,28 +1520,48 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 29, 2020 12:00:29 PM</td>
-										<td class='linked' test-id='19'>方法名：diffTaxPuInvoice，用例名称：不同商品，不同税率的普票开具</td>
+										<td>Jul 31, 2020 02:26:42 PM</td>
+										<td class='linked' test-id='14'>方法名：generalInvoice，用例名称：所有参数均正常，开具一张增值税普通发票</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 29, 2020 12:01:11 PM</td>
-										<td class='linked' test-id='21'>方法名：generalInvoice，用例名称：所有参数均正常，开具一张增值税普通发票</td>
+										<td>Jul 31, 2020 02:26:47 PM</td>
+										<td class='linked' test-id='15'>方法名：generalInvoiceRed，用例名称：所有参数均正常，冲红一张增值税普通发票</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 29, 2020 12:01:53 PM</td>
-										<td class='linked' test-id='23'>方法名：discountGeneralInvoice，用例名称：开具一张带折扣行的普票</td>
+										<td>Jul 31, 2020 02:26:54 PM</td>
+										<td class='linked' test-id='16'>方法名：discountGeneralInvoice，用例名称：开具一张带折扣行的普票</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 29, 2020 12:02:35 PM</td>
-										<td class='linked' test-id='25'>方法名：generalInvoiceSixCommodity，用例名称：所有参数均正常，开具一张6行商品的普票</td>
+										<td>Jul 31, 2020 02:27:00 PM</td>
+										<td class='linked' test-id='17'>方法名：discountPuPiaoRed，用例名称：冲红一张带折扣的增值税普通发票</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 29, 2020 12:02:56 PM</td>
-										<td class='linked' test-id='26'>方法名：generalInvoiceTenCommodity，用例名称：所有参数均正常，开具一张10行商品的普票</td>
+										<td>Jul 31, 2020 02:27:08 PM</td>
+										<td class='linked' test-id='18'>方法名：generalInvoiceSixCommodity，用例名称：所有参数均正常，开具一张6行商品的普票</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 31, 2020 02:27:20 PM</td>
+										<td class='linked' test-id='20'>方法名：generalInvoiceTenCommodity，用例名称：所有参数均正常，开具一张10行商品的普票</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 31, 2020 02:27:27 PM</td>
+										<td class='linked' test-id='21'>方法名：redListGeneralInvoice，用例名称：冲红一张带清单普票</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 31, 2020 02:27:36 PM</td>
+										<td class='linked' test-id='22'>方法名：diffTaxPuInvoice，用例名称：不同商品，不同税率的普票开具</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 31, 2020 02:27:43 PM</td>
+										<td class='linked' test-id='23'>方法名：diffTaxPuPiaoRed，用例名称：不同商品、税率的普票冲红</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -1571,14 +1571,14 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>普票冲红</span>
+						<span class='category-name'>开票普票</span>
 						<span class='category-status right'>
-							<span class='label pass'>4</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 4</span>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
 						</div>
@@ -1594,23 +1594,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 29, 2020 12:00:50 PM</td>
-										<td class='linked' test-id='20'>方法名：diffTaxPuPiaoRed，用例名称：不同商品、税率的普票冲红</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 29, 2020 12:01:32 PM</td>
-										<td class='linked' test-id='22'>方法名：puPiaoChongHong，用例名称：所有参数均正常，冲红一张增值税普通发票</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 29, 2020 12:02:14 PM</td>
-										<td class='linked' test-id='24'>方法名：discountPuPiaoRed，用例名称：冲红一张带折扣的增值税普通发票</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 29, 2020 12:03:17 PM</td>
-										<td class='linked' test-id='27'>方法名：redListPuPiao，用例名称：冲红一张带清单普票</td>
+										<td>Jul 31, 2020 02:27:14 PM</td>
+										<td class='linked' test-id='19'>方法名：generalInvoiceEightCommodity，用例名称：所有参数均正常,开具一张8行商品的普票</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -1672,17 +1657,18 @@
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Jul 29, 2020 11:56:15 AM</td>
-                                                        <td class='linked' test-id='1'>方法名：useDefaultProduct，用例名称：不传商品，使用默认商品开票</td>
-                                                        <td><pre><pre>java.lang.AssertionError: expected [{"returnmsg":"提交成功，请稍后查询","returncode":0}] but found [{"returnmsg":"设备:未配置默认商品","returncode":1000023}]
+                                                        <td>Jul 31, 2020 02:28:16 PM</td>
+                                                        <td class='linked' test-id='1'>方法名：specialInvoiceNineCommodity，用例名称：9行商品的专票开具</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [{"returnmsg":"成功","returncode":0}] but found [{"returnmsg":"该发票正在开具中，请稍后查询","returncode":300077}]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:442)
-	at com.shuzutech.config.TestResult.testFpkjResult(TestResult.java:30)
-	at com.shuzutech.model.GongYouFangFa.zpy(GongYouFangFa.java:39)
-	at com.shuzutech.testCase.Invoice.SpecialConfigurationInvoice.useDefaultProduct(SpecialConfigurationInvoice.java:34)
+	at com.shuzutech.config.TestResult.testFpcxResult(TestResult.java:22)
+	at com.shuzutech.config.TestResult.runResult(TestResult.java:59)
+	at com.shuzutech.model.GongYouFangFa.zpy(GongYouFangFa.java:41)
+	at com.shuzutech.testCase.Invoice.ZhuanPiao.specialInvoiceNineCommodity(ZhuanPiao.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1733,31 +1719,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>27</div>
+					<div class='panel-lead'>28</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>27</div>
+					<div class='panel-lead'>28</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 29, 2020 11:54:28 AM</div>
+					<div class='panel-lead'>Jul 31, 2020 02:24:26 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 29, 2020 11:54:50 AM</div>
+			 		<div class='panel-lead'>Jul 31, 2020 02:24:39 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>22,513ms</div>
+					<div class='panel-lead'>12,791ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1772,38 +1758,26 @@
 							<th>Others</th>
 						</tr>
 						<tr>
-							<td>特殊配置发票</td>
-							<td>1</td>
-							<td>1</td>
-							<td>0</td>
-						</tr>
-						<tr>
 							<td>开具专票</td>
-							<td>6</td>
-							<td>0</td>
+							<td>5</td>
+							<td>1</td>
 							<td>0</td>
 						</tr>
 						<tr>
 							<td>开具电票</td>
-							<td>6</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>电票冲红</td>
-							<td>4</td>
+							<td>12</td>
 							<td>0</td>
 							<td>0</td>
 						</tr>
 						<tr>
 							<td>开具普票</td>
-							<td>5</td>
+							<td>9</td>
 							<td>0</td>
 							<td>0</td>
 						</tr>
 						<tr>
-							<td>普票冲红</td>
-							<td>4</td>
+							<td>开票普票</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 						</tr>
@@ -1820,7 +1794,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 26,
+				passParent: 27,
 				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
@@ -1828,7 +1802,7 @@
 				skipParent: 0,
 				exceptionsParent: 1,
 				
-				passChild: 26,
+				passChild: 27,
 				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,

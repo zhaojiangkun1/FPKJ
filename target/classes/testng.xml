@@ -4,47 +4,15 @@
     <test name="臻票云接口自动化测试">
         <groups>
             <run>
-                <exclude name="正常开票"/>
-                <exclude name="异常开票"/>
                 <include name="开具电票"/>
-                <include name="自助开票"/>
-                <include name="电票冲红"/>
                 <include name="开具普票"/>
                 <include name="开具专票"/>
-                <include name="普票冲红"/>
-                <include name="特殊配置发票"/>
             </run>
         </groups>
         <classes>
-            <class name="com.shuzutech.testCase.InvocieExce.Fpqqlsh"/>
-            <class name="com.shuzutech.testCase.InvocieExce.Bz"/>
-            <class name="com.shuzutech.testCase.InvocieExce.De"/>
             <class name="com.shuzutech.testCase.Invoice.DianPiao"/>
-            <class name="com.shuzutech.testCase.InvocieExce.Jsbh"/>
-            <class name="com.shuzutech.testCase.InvocieExce.Kplx"/>
             <class name="com.shuzutech.testCase.Invoice.PuPiao"/>
-            <class name="com.shuzutech.testCase.Invoice.JuanPiao"/>
-            <class name="com.shuzutech.testCase.InvocieExce.Skr"/>
-            <class name="com.shuzutech.testCase.InvocieExce.Kpr"/>
-            <class name="com.shuzutech.testCase.InvocieExce.Fhr"/>
-            <class name="com.shuzutech.testCase.InvocieExce.Yhlx"/>
-            <class name="com.shuzutech.testCase.InvocieExce.Zxbm"/>
             <class name="com.shuzutech.testCase.Invoice.ZhuanPiao"/>
-            <class name="com.shuzutech.testCase.InvocieExce.Fphxz"/>
-            <class name="com.shuzutech.testCase.InvocieExce.Fplxdm"/>
-            <class name="com.shuzutech.testCase.InvocieExce.Yfpdm"/>
-            <class name="com.shuzutech.testCase.InvocieExce.Ggxh"/>
-            <class name="com.shuzutech.testCase.InvocieExce.Yhzcbs"/>
-
-            <class name="com.shuzutech.testCase.InvocieExce.Spbm"/>
-            <class name="com.shuzutech.testCase.InvocieExce.Shnsrsbh"/>
-            <class name="com.shuzutech.testCase.InvocieExce.Ghdwdzdh"/>
-            <class name="com.shuzutech.testCase.InvocieExce.Ghdwsbh"/>
-            <class name="com.shuzutech.testCase.InvocieExce.Ghdwmc"/>
-            <class name="com.shuzutech.testCase.InvocieExce.Ghdwyhzh"/>
-            <class name="com.shuzutech.testCase.Invoice.ZhuanPiaoRed"/>
-            <class name="com.shuzutech.testCase.Invoice.SpecialConfigurationInvoice"/>
-            <class name="com.shuzutech.testCase.Invoice.DiffTaxInvoice"/>
         </classes>
     </test>
 

@@ -4,6 +4,7 @@ import com.shuzutech.bean.*;
 import com.shuzutech.config.UpdateFpqqlsh;
 import com.shuzutech.model.GongYouFangFa;
 import com.shuzutech.model.GroupModel;
+import com.shuzutech.model.GroupModelList;
 import com.shuzutech.model.Java2XML;
 import com.shuzutech.model.PostRequest;
 import org.testng.annotations.Test;
@@ -13,8 +14,9 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-
+//@Test(dependsOnGroups = {"开具普票"})
 public class ZhuanPiao {
+
 
     ArrayList<GroupModel> groupModels = new ArrayList<>();
     @Test(groups = {"开具专票"}, description = "所有参数均正常，开具一张专票")
@@ -44,6 +46,7 @@ public class ZhuanPiao {
     public void specialInvoiceNineCommodity() throws IOException, NoSuchAlgorithmException, InterruptedException {
         HashMap<String, String> map = InvoiceParamters.hashMap("004");
         map.put("qdbz", "1");
+        map.put("fpqqlsh","SZZPY20200731142816");
         String file = Java2XML.BuildXMLDoc(map, 9);
         String result = PostRequest.zhenPiaoYunRequest(file, TestEnv.testEnv);
         GongYouFangFa.zpy(map, result);
@@ -58,6 +61,17 @@ public class ZhuanPiao {
         groupModels.add(groupModel1);
         String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXmlDoc(map,groupModels), TestEnv.testEnv);
         GongYouFangFa.zpy(map,result);
+    }
+
+    @Test(groups = {"开具专票"}, description = "不同商品，不同税率的专票开具")
+    public void diffTaxZhuanInvoice() throws InterruptedException, NoSuchAlgorithmException, IOException {
+        ArrayList<GroupModel> groupModels = GroupModelList.groupModelArrayList();
+//        ArrayList<GroupModel> groupModelsRed = GroupModelList.groupModelArrayListRed();
+        HashMap<String, String> map = InvoiceParamters.hashMap("004");
+        String fpqqlsh = UpdateFpqqlsh.generateFpqqlsh();
+        map.put("fpqqlsh", fpqqlsh);
+        String result = PostRequest.zhenPiaoYunRequest(Java2XML.BuildXmlDoc(map, groupModels), TestEnv.testEnv);
+        GongYouFangFa.zpy(map, result);
     }
 
 
